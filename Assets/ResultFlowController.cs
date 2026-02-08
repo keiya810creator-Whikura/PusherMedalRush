@@ -76,7 +76,7 @@ public class ResultFlowController : MonoBehaviour
 
     public void GoToResult()
     {
-        SceneManager.LoadScene("メインメニュー");
+        SceneManager.LoadScene("MainMenu");
     }
 
     // =========================
@@ -93,7 +93,7 @@ public class ResultFlowController : MonoBehaviour
         {
             // 秒数を切り上げ表示（5,4,3,2,1）
             int display = Mathf.CeilToInt(timer);
-            countdownText.text = "撤退可能まで:"+display.ToString()+"秒";
+            countdownText.text = TextManager.Instance.GetUI("ui_sentou_8");
 
             timer -= Time.deltaTime*WaveManager.Instance.CurrentGameSpeed;
 
@@ -139,13 +139,13 @@ public class ResultFlowController : MonoBehaviour
     // ★ リトライボタンもここを呼ぶようにする
     public void OnClickRetry()
     {
-        SceneManager.LoadScene("戦闘シーン");
+        SceneManager.LoadScene("Stage1");
     }
 
     // ついでに、手動でメニューへ戻るボタン等も分けられる
     public void OnClickBackToMenu()
     {
         AdventureSession.IsAutoRun = false; // 必要なら止める
-        SceneManager.LoadScene("メインメニュー");
+        SceneManager.LoadScene("MainMenu");
     }
 }

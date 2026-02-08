@@ -4,10 +4,10 @@ public class SceneChange : MonoBehaviour
 {
     public void BattleSceneChange()
     {
-        SceneManager.LoadScene("戦闘シーン");
+        SceneManager.LoadScene("Stage1");
     }
     public void MainMenuChange()
     {
-        SceneManager.LoadScene("メインメニュー");
+        SceneManager.LoadScene("MainMenu");
     }
 }

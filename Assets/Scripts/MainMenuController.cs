@@ -109,7 +109,7 @@ public class MainMenuController : MonoBehaviour
         AdBuffManager.Instance.ActivateRewardBuff(2f);
     }
 
-    SceneManager.LoadScene("戦闘シーン");
+    SceneManager.LoadScene("Stage1");
 }
     public void OnClickAutoRun()
     {
@@ -153,7 +153,7 @@ public class MainMenuController : MonoBehaviour
         AdventureSession.EndWave = waveRangeUI.EndWave;
 
         AutoRunController.Instance.StartAutoRun();
-        SceneManager.LoadScene("戦闘シーン");
+        SceneManager.LoadScene("Stage1");
     }
 
 

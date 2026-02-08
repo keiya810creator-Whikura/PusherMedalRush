@@ -11,9 +11,9 @@ public class PlayFromTitle
         {
             if (state == PlayModeStateChange.EnteredPlayMode)
             {
-                if (SceneManager.GetActiveScene().name != "タイトルシーン")
+                if (SceneManager.GetActiveScene().name != "TieleScene")
                 {
-                    SceneManager.LoadScene("タイトルシーン");
+                    SceneManager.LoadScene("TieleScene");
                 }
             }
         };

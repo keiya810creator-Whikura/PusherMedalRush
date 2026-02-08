@@ -41,7 +41,7 @@ public class ResultPanel : MonoBehaviour
     public void OnClickRetry()
     {
         ResultManager.Instance.Clear();
-        SceneManager.LoadScene("í“¬ƒV[ƒ“");
+        SceneManager.LoadScene("Stage1");
     }
 
     public void OnClickBackToMenu()
