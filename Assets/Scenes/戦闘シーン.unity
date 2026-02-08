@@ -3381,6 +3381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 227168662}
+  - component: {fileID: 227168663}
   m_Layer: 5
   m_Name: "\u30C1\u30E5\u30FC\u30C8\u30EA\u30A2\u30EB\u30D1\u30CD\u30EB2"
   m_TagString: Untagged
@@ -3406,6 +3407,7 @@ RectTransform:
   - {fileID: 507738717}
   - {fileID: 657825199}
   - {fileID: 844534137}
+  - {fileID: 1719511689}
   m_Father: {fileID: 869328921}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3413,6 +3415,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &227168663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227168661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39eab2c21dfd5b7418cc53ca647bfde3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialID: 2
 --- !u!4 &231700059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5448255274662671575, guid: dafa36903864d9d429540d1504400c13, type: 3}
@@ -3579,7 +3594,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1719511688}
+      - m_Target: {fileID: 1719511690}
+        m_TargetAssemblyTypeName: TutorialPanelUI, Assembly-CSharp
+        m_MethodName: OnClickOK
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 227168661}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -10680,7 +10707,6 @@ RectTransform:
   - {fileID: 878609615}
   - {fileID: 1544642627}
   - {fileID: 92326283}
-  - {fileID: 1719511689}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -11586,10 +11612,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 227168661}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 869328924}
+        m_TargetAssemblyTypeName: SentouTyuutorialPanelOpen, Assembly-CSharp
+        m_MethodName: OnClickBattle1OK
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11597,18 +11623,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1719511688}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &709677956
 MonoBehaviour:
@@ -14661,6 +14675,7 @@ GameObject:
   - component: {fileID: 869328921}
   - component: {fileID: 869328923}
   - component: {fileID: 869328922}
+  - component: {fileID: 869328924}
   m_Layer: 5
   m_Name: "\u30E1\u30C0\u30EB\u6B8BPanel"
   m_TagString: Untagged
@@ -14728,6 +14743,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869328920}
   m_CullTransparentMesh: 1
+--- !u!114 &869328924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869328920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64abd4f6d9fbafb47927d97c82381898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleTutorial1: {fileID: 227168661}
+  battleTutorial2: {fileID: 1719511688}
 --- !u!4 &869804508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5448255274662671575, guid: eeb93e1b92743ec4b877211ba951383d, type: 3}
@@ -27295,6 +27324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1719511689}
+  - component: {fileID: 1719511690}
   m_Layer: 5
   m_Name: "\u30C1\u30E5\u30FC\u30C8\u30EA\u30A2\u30EB\u30D1\u30CD\u30EB3"
   m_TagString: Untagged
@@ -27317,13 +27347,26 @@ RectTransform:
   - {fileID: 1652605133}
   - {fileID: 46126966}
   - {fileID: 1103762319}
-  m_Father: {fileID: 672447457}
+  m_Father: {fileID: 227168662}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 231.95, y: -460.94}
+  m_SizeDelta: {x: 517.88257, y: 2054.8496}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1719511690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719511688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39eab2c21dfd5b7418cc53ca647bfde3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialID: 3
 --- !u!4 &1721919981 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5448255274662671575, guid: dafa36903864d9d429540d1504400c13, type: 3}

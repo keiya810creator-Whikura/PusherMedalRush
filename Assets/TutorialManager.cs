@@ -1,49 +1,42 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
+
+public enum TutorialID
+{
+    MainMenu = 1,        // 初回起動 メインメニュー
+    FirstBattle_1 = 2,   // 初戦闘①
+    FirstBattle_2 = 3,   // 初戦闘②
+    StatusMenu = 4,      // 初ステータスメニュー
+    EquipmentMenu = 5,   // 初装備メニュー
+    TitleAssign = 6      // 初称号付与
+}
 
 public class TutorialManager : MonoBehaviour
 {
-    [Header("Step Prefabs（順番通りに手動登録）")]
-    [SerializeField] private GameObject[] tutorialStepPrefabs;
+    public static TutorialManager Instance;
 
-    [Header("生成先（Canvasの中にする）")]
-    [SerializeField] private Transform tutorialParent;
+    private HashSet<TutorialID> opened = new();
 
-    private int currentIndex = 0;
-
-    private const string PREF_KEY = "TutorialDone";
-
-    void Start()
+    void Awake()
     {
-        // ✅2回目以降は表示しない
-        if (PlayerPrefs.GetInt(PREF_KEY, 0) == 1)
-            return;
-
-        ShowStep(0);
-    }
-
-    public void ShowStep(int index)
-    {
-        if (index >= tutorialStepPrefabs.Length)
+        if (Instance != null)
         {
-            FinishTutorial();
+            Destroy(gameObject);
             return;
         }
-
-        currentIndex = index;
-
-        // ✅Prefab生成
-        Instantiate(tutorialStepPrefabs[currentIndex], tutorialParent);
+        Instance = this;
+        //DontDestroyOnLoad(gameObject);
     }
 
-    public void NextStep()
+    public bool CanShow(TutorialID id)
     {
-        currentIndex++;
-        ShowStep(currentIndex);
+        return PlayerPrefs.GetInt($"Tutorial_{id}", 0) == 0;
     }
 
-    private void FinishTutorial()
+    public void MarkDone(TutorialID id)
     {
-        PlayerPrefs.SetInt(PREF_KEY, 1);
-        Debug.Log("✅ Tutorial Finished!");
+        PlayerPrefs.SetInt($"Tutorial_{id}", 1);
+        PlayerPrefs.Save();
     }
 }
+

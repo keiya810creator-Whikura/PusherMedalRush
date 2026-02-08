@@ -5,17 +5,12 @@ public class EquipmentInventoryPanel : MonoBehaviour
     [SerializeField] Transform content;
     [SerializeField] EquipmentSlotUI slotPrefab;
 
-    private void OnEnable()
+    public GameObject soubiMenuTutorialPanel;
+    void Start()
     {
-        
+        if (TutorialManager.Instance.CanShow(TutorialID.EquipmentMenu))
+            soubiMenuTutorialPanel.SetActive(true);
     }
-
-    private void OnDisable()
-    {
-        
-    }
-
-
     public void Refresh()
     {
         foreach (Transform c in content)

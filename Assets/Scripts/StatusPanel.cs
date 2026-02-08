@@ -17,6 +17,13 @@ public class StatusPanel : MonoBehaviour
         }
         Instance = this;
     }
+    public GameObject statusMenuTutorialPanel;
+    void Start()
+    {
+        if (TutorialManager.Instance.CanShow(TutorialID.StatusMenu))
+            statusMenuTutorialPanel.SetActive(true);
+    }
+
     private void OnEnable()
     {
         BuildStatusRows();

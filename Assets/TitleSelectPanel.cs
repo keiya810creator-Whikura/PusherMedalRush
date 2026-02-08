@@ -31,6 +31,12 @@ public class TitleSelectPanel : MonoBehaviour
         // ✅Dropdownイベントはここでは管理しない！
         // TitleSortUIController側だけで管理する
     }
+    public GameObject syougoututorialPanel;
+    void Start()
+    {
+        if (TutorialManager.Instance.CanShow(TutorialID.TitleAssign))
+            syougoututorialPanel.SetActive(true);
+    }
 
     // ===============================
     // 表示エントリポイント

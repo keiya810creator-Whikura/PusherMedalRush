@@ -9,7 +9,7 @@ public class EnemyRandomMove : MonoBehaviour
     [SerializeField] Vector2 moveTimeRange = new Vector2(0.5f, 2.0f);
     [SerializeField] Vector2 stopTimeRange = new Vector2(0.3f, 1.5f);
 
-    [Header("ˆÚ“®‰Â”\”ÍˆÍ")]
+    //[Header("ˆÚ“®‰Â”\”ÍˆÍ")]
     [SerializeField] Vector2 minPos = new Vector2(-4.37f, -10.67f);
     [SerializeField] Vector2 maxPos = new Vector2(4.36f, -6.27f);
 

@@ -16,13 +16,22 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject sonotaPanel;
     [SerializeField] private GameObject shopPanel;
 
+    [SerializeField] private GameObject mainMenuTutorialPanel;
 
     private void Start()
     {
+        /*foreach (TutorialID id in System.Enum.GetValues(typeof(TutorialID)))
+            PlayerPrefs.DeleteKey($"Tutorial_{id}");
+
+        PlayerPrefs.Save();*/
+
         AudioManager.Instance.PlayBGM(AudioManager.Instance.titleBGM);
         
         if(AdventureSession.IsAutoRun==false)
         ResultManager.Instance.Clear();
+
+        if (TutorialManager.Instance.CanShow(TutorialID.MainMenu))
+            mainMenuTutorialPanel.SetActive(true);
     }
     public void RefreshRewardBoostButton()
     {// ✅広告削除課金済なら常時ON表示

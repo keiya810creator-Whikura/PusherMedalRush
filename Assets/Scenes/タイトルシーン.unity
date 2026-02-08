@@ -522,6 +522,52 @@ MonoBehaviour:
   medalSpawn: {fileID: 8300000, guid: 77cb2f44864d3ff4b9d76e4288ad5cd3, type: 3}
   skillHatudou: {fileID: 8300000, guid: fa7ee303ddee1034c9a4f93fc55d91b3, type: 3}
   medalKakutoku: {fileID: 8300000, guid: 090d881f84ed7174eb55116d9fab2d75, type: 3}
+--- !u!1 &155831208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155831209}
+  - component: {fileID: 155831210}
+  m_Layer: 0
+  m_Name: TutorialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &155831209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155831208}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 669955517}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &155831210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155831208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d331561c0c0ac448beb43500531d6fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialStepPrefabs: []
+  tutorialParent: {fileID: 0}
 --- !u!1 &159926943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1740,7 @@ Transform:
   - {fileID: 1652611921}
   - {fileID: 78103917}
   - {fileID: 726866617}
+  - {fileID: 155831209}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &670617899
