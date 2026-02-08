@@ -1,0 +1,543 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d5f4ceba70e9141a1a2fde487e51c4, type: 3}
+  m_Name: SyougouTextDictionary
+  m_EditorClassIdentifier: 
+  entries:
+  - key: sy_1_name
+    ja: "\u9759\u6C34\u306E\u5FAE\u7B11\u307F"
+    en: Smile of Still Waters
+  - key: sy_2_name
+    ja: "\u707C\u71B1\u306E\u3054\u6A5F\u5ACC"
+    en: Cheer of Scorching Heat
+  - key: sy_3_name
+    ja: "\u82BD\u5439\u304F\u751F\u547D\u306E\u7B11\u9854"
+    en: "Blooming Life\u2019s Smile"
+  - key: sy_4_name
+    ja: "\u7D05\u84EE\u306B\u543C\u3048\u308B\u7A81\u9032\u7363"
+    en: Crimson Lotus Roaring Charger
+  - key: sy_5_name
+    ja: "\u84BC\u6C37\u3092\u7E8F\u3046\u6C88\u9ED9\u306E\u7363"
+    en: Silent Beast Wrapped in Azure Ice
+  - key: sy_6_name
+    ja: "\u91CD\u306A\u308A\u3057\u5F69\u5C64\u306E\u4E3B"
+    en: Lord of Layered Rainbow Veils
+  - key: sy_7_name
+    ja: "\u7DD1\u5F71\u306E\u5C0F\u72E9\u4EBA"
+    en: Emerald Shadow Little Hunter
+  - key: sy_8_name
+    ja: "\u9244\u5203\u306E\u86EE\u6226\u58EB"
+    en: Ironblade Barbarian Warrior
+  - key: sy_9_name
+    ja: "\u546A\u7D0B\u306E\u90AA\u8853\u58EB"
+    en: Runemark Dark Sorcerer
+  - key: sy_10_name
+    ja: "\u80A5\u5927\u305B\u3057\u51F6\u8155"
+    en: Swollen Savage Arm
+  - key: sy_11_name
+    ja: "\u932C\u6210\u3055\u308C\u3057\u7C98\u584A"
+    en: Refined Slime Mass
+  - key: sy_12_name
+    ja: "\u738B\u51A0\u3092\u6234\u304F\u7565\u596A\u738B"
+    en: Crowned King of Plunder
+  - key: sy_13_name
+    ja: "\u673D\u5854\u3092\u9019\u3046\u5F71"
+    en: Shadow Crawling the Ruined Tower
+  - key: sy_14_name
+    ja: "\u96F7\u5149\u3092\u7E8F\u3046\u7C98\u7363"
+    en: Lightning-Clad Slime Beast
+  - key: sy_15_name
+    ja: "\u8584\u95C7\u306E\u5F77\u5FA8\u3044"
+    en: Wanderer of Dim Gloom
+  - key: sy_16_name
+    ja: "\u5606\u304D\u306E\u6B8B\u97FF"
+    en: Echo of Lamentation
+  - key: sy_17_name
+    ja: "\u5C4D\u7ADC\u306E\u5486\u54EE"
+    en: Roar of the Corpse Dragon
+  - key: sy_18_name
+    ja: "\u7D42\u7109\u3092\u544A\u3052\u308B\u546A\u8A5B"
+    en: Curse that Heralds the End
+  - key: sy_19_name
+    ja: "\u6D1E\u7A74\u306E\u4FCA\u7259"
+    en: Swift Fang of the Cavern
+  - key: sy_20_name
+    ja: "\u6708\u5F71\u306E\u75BE\u8D70"
+    en: Moonshadow Sprint
+  - key: sy_21_name
+    ja: "\u7D05\u7259\u306E\u72E9\u4EBA"
+    en: Crimson Fang Hunter
+  - key: sy_22_name
+    ja: "\u6E80\u6708\u306B\u72C2\u3046\u7363"
+    en: Beast Maddened by the Full Moon
+  - key: sy_23_name
+    ja: "\u6C37\u5D50\u306E\u9B54\u72FC"
+    en: Demonic Wolf of Ice Storm
+  - key: sy_24_name
+    ja: "\u50B7\u75D5\u3092\u523B\u3080\u7363\u738B"
+    en: Beast King Carving Scars
+  - key: sy_25_name
+    ja: "\u6050\u6016\u3092\u72E9\u308B\u5F71"
+    en: Shadow that Hunts Fear
+  - key: sy_26_name
+    ja: "\u8150\u8755\u306E\u7C98\u6DB2"
+    en: Corrosive Slime
+  - key: sy_27_name
+    ja: "\u6F02\u3046\u4EA1\u9A0E\u58EB"
+    en: Drifting Death Knight
+  - key: sy_28_name
+    ja: "\u5893\u5B88\u306E\u9244\u9A0E"
+    en: Iron Rider of the Gravewatch
+  - key: sy_29_name
+    ja: "\u51A5\u706B\u306E\u5C0F\u9B3C\u706F"
+    en: Netherfire Goblin Lantern
+  - key: sy_30_name
+    ja: "\u9AA8\u754C\u306E\u7D42\u7109\u7363"
+    en: Doom Beast of the Bone Realm
+  - key: sy_31_name
+    ja: "\u767D\u9AA8\u306E\u5175\u5352"
+    en: Soldier of White Bones
+  - key: sy_32_name
+    ja: "\u7802\u6D77\u306E\u6355\u98DF\u8005"
+    en: Predator of the Sand Sea
+  - key: sy_33_name
+    ja: "\u9ED2\u7802\u306E\u6DF1\u6DF5"
+    en: Abyss of Black Sand
+  - key: sy_34_name
+    ja: "\u6697\u7259\u306E\u4F0F\u5175"
+    en: Ambusher of Dark Fangs
+  - key: sy_35_name
+    ja: "\u5C01\u5370\u3055\u308C\u3057\u5DE8\u6BBB"
+    en: Sealed Colossal Shell
+  - key: sy_36_name
+    ja: "\u6EB6\u5CA9\u5954\u6D41\u306E\u7344\u7363"
+    en: Infernal Beast of Lava Torrent
+  - key: sy_37_name
+    ja: "\u79D8\u5965\u3092\u8B58\u308B\u8005"
+    en: Seeker of Hidden Mysteries
+  - key: sy_38_name
+    ja: "\u9ED2\u68EE\u306E\u5996\u5A66"
+    en: Witch of the Black Forest
+  - key: sy_39_name
+    ja: "\u53CC\u661F\u306E\u9B54\u59C9\u59B9"
+    en: Twin-Star Demon Sisters
+  - key: sy_40_name
+    ja: "\u84BC\u5929\u306E\u9B54\u5C0E\u738B"
+    en: Sorcerer King of the Azure Sky
+  - key: sy_41_name
+    ja: "\u5927\u8CE2\u8005\u306E\u7CFB\u8B5C"
+    en: Heir of the Great Sage
+  - key: sy_42_name
+    ja: "\u9B54\u8853\u5B66\u9662\u306E\u9996\u5E2D"
+    en: Top Student of the Arcane Academy
+  - key: sy_43_name
+    ja: "\u5CA9\u92FC\u306E\u9A0E\u58EB"
+    en: Knight of Rock and Steel
+  - key: sy_44_name
+    ja: "\u707C\u71B1\u306E\u5DE8\u795E"
+    en: Scorching Colossus
+  - key: sy_45_name
+    ja: "\u84BC\u7114\u306E\u9B54\u8EAF"
+    en: Azure Flame Demon Body
+  - key: sy_46_name
+    ja: "\u546A\u571F\u306E\u5076\u50CF"
+    en: Idol of Cursed Earth
+  - key: sy_47_name
+    ja: "\u84BC\u91CD\u529B\u306E\u652F\u914D\u8005"
+    en: Ruler of Azure Gravity
+  - key: sy_48_name
+    ja: "\u88C2\u5CA9\u306E\u731B\u5C06"
+    en: Riftrock Warlord
+  - key: sy_49_name
+    ja: "\u5B88\u8B77\u5CA9\u58C1"
+    en: Guardian Stonewall
+  - key: sy_50_name
+    ja: "\u9280\u9244\u306E\u5DE8\u5175"
+    en: Silversteel Giant Soldier
+  - key: sy_51_name
+    ja: "\u9EC4\u91D1\u6A5F\u795E"
+    en: Golden Machine God
+  - key: sy_52_name
+    ja: "\u9280\u5149\u306E\u5E0C\u5C11\u7A2E"
+    en: Rare Silver Radiance
+  - key: sy_53_name
+    ja: "\u661F\u7815\u304D\u306E\u5DE8\u50CF"
+    en: Star-Shattering Colossus
+  - key: sy_54_name
+    ja: "\u7815\u77F3\u306E\u66B4\u541B"
+    en: Tyrant of Crushed Stone
+  - key: sy_55_name
+    ja: "\u708E\u9C57\u306E\u8725\u8734"
+    en: Flame-Scaled Lizard
+  - key: sy_56_name
+    ja: "\u72EC\u773C\u306E\u5DE8\u69CC"
+    en: One-Eyed Giant Hammer
+  - key: sy_57_name
+    ja: "\u92FC\u5FC3\u306E\u5B88\u8B77\u5DE8\u4EBA"
+    en: Steel-Hearted Guardian Titan
+  - key: sy_58_name
+    ja: "\u6226\u798D\u306E\u72EC\u773C\u738B"
+    en: One-Eyed King of War
+  - key: sy_59_name
+    ja: "\u5927\u5730\u306E\u795E\u62F3"
+    en: "Earth\u2019s Divine Fist"
+  - key: sy_60_name
+    ja: "\u714C\u708E\u306E\u7344\u9A0E\u58EB"
+    en: Radiant Inferno Knight
+  - key: sy_61_name
+    ja: "\u9020\u5CA9\u306E\u5DE5\u5320"
+    en: Stoneforging Artisan
+  - key: sy_62_name
+    ja: "\u6DF1\u6D77\u3092\u7D71\u3079\u308B\u84BC\u59EB"
+    en: Azure Princess Who Rules the Deep
+  - key: sy_63_name
+    ja: "\u6C34\u5F8B\u306E\u8ABF\u505C\u8005"
+    en: "Arbiter of Water\u2019s Law"
+  - key: sy_64_name
+    ja: "\u7FE0\u68EE\u306E\u5C04\u624B"
+    en: Emerald Forest Archer
+  - key: sy_65_name
+    ja: "\u62D2\u7D76\u306E\u8981\u585E\u7363"
+    en: Fortress Beast of Rejection
+  - key: sy_66_name
+    ja: "\u7344\u708E\u6A5F\u88C5"
+    en: Inferno Mechanical Armament
+  - key: sy_67_name
+    ja: "\u706B\u7CBE\u306E\u7737\u5C5E"
+    en: Kin of the Fire Spirit
+  - key: sy_68_name
+    ja: "\u7D05\u5929\u306E\u66B4\u5E1D"
+    en: Crimson Sky Tyrant
+  - key: sy_69_name
+    ja: "\u53E4\u7D05\u7ADC\u306E\u4F1D\u8AAC"
+    en: Legend of the Ancient Red Dragon
+  - key: sy_70_name
+    ja: "\u7114\u738B\u306E\u5316\u8EAB"
+    en: Avatar of the Flame King
+  - key: sy_71_name
+    ja: "\u5730\u7344\u9244\u306E\u7ADC"
+    en: Helliron Dragon
+  - key: sy_72_name
+    ja: "\u7C98\u754C\u306E\u5927\u516C"
+    en: Grand Duke of the Slime Realm
+  - key: sy_73_name
+    ja: "\u6C34\u8DEF\u306E\u7565\u596A\u8005"
+    en: Canal Raider
+  - key: sy_74_name
+    ja: "\u6FC0\u6D41\u306E\u64CD\u821F\u9B3C"
+    en: Demon Oarsman of the Rapids
+  - key: sy_75_name
+    ja: "\u6DF1\u6DF5\u306E\u88C2\u7259"
+    en: Abyss-Cleaving Fang
+  - key: sy_76_name
+    ja: "\u84BC\u6D77\u306E\u7D42\u6975\u7363"
+    en: Final Beast of the Azure Sea
+  - key: sy_77_name
+    ja: "\u6D77\u795E\u306E\u7737\u5C5E"
+    en: Servant of the Sea God
+  - key: sy_78_name
+    ja: "\u6DF1\u6D77\u738B\u306E\u5486\u54EE"
+    en: Roar of the Deep Sea King
+  - key: sy_79_name
+    ja: "\u8840\u8FFD\u3044\u306E\u8FFD\u8DE1\u8005"
+    en: Blood-Tracking Pursuer
+  - key: sy_80_name
+    ja: "\u5922\u5149\u306E\u5C0F\u5996\u7CBE"
+    en: Dreamlight Fairy
+  - key: sy_81_name
+    ja: "\u8001\u7DF4\u306A\u308B\u7B56\u8B00\u8005"
+    en: Seasoned Mastermind
+  - key: sy_82_name
+    ja: "\u84BC\u9C57\u306E\u6226\u59EB"
+    en: Azure-Scaled War Princess
+  - key: sy_83_name
+    ja: "\u7259\u89D2\u306E\u731B\u5C06"
+    en: Fang-Horn Warlord
+  - key: sy_84_name
+    ja: "\u72FC\u5E1D\u306E\u7737\u5C5E"
+    en: Servant of the Wolf Emperor
+  - key: sy_85_name
+    ja: "\u80DE\u5B50\u306E\u6355\u98DF\u82B1"
+    en: Spore-Eating Predator Flower
+  - key: sy_86_name
+    ja: "\u9EC4\u91D1\u306E\u5947\u8DE1"
+    en: Golden Miracle
+  - key: sy_87_name
+    ja: "\u7C98\u754C\u306E\u738B\u51A0"
+    en: Crown of the Slime Realm
+  - key: sy_88_name
+    ja: "\u6EB6\u878D\u3059\u308B\u738B\u6CE5"
+    en: Molten King Sludge
+  - key: sy_89_name
+    ja: "\u9244\u6CE5\u306E\u652F\u914D\u8005"
+    en: Ruler of Iron Mud
+  - key: sy_90_name
+    ja: "\u5149\u6EF4\u306E\u5E7B\u7363"
+    en: Phantom Beast of Light Drops
+  - key: sy_91_name
+    ja: "\u6B7B\u938C\u306E\u72E9\u4EBA"
+    en: Death Scythe Hunter
+  - key: sy_92_name
+    ja: "\u89D2\u93A7\u306E\u731B\u866B"
+    en: Horn-Armored Savage Insect
+  - key: sy_93_name
+    ja: "\u767E\u811A\u306E\u6050\u6016"
+    en: Terror of a Hundred Legs
+  - key: sy_94_name
+    ja: "\u6BD2\u5263\u306E\u5973\u738B\u8702"
+    en: Venomblade Queen Wasp
+  - key: sy_95_name
+    ja: "\u7344\u708E\u306E\u7532\u866B\u738B"
+    en: Inferno Beetle King
+  - key: sy_96_name
+    ja: "\u5149\u5E7B\u306E\u5996\u5F71"
+    en: Fairy Shadow of Light Illusion
+  - key: sy_97_name
+    ja: "\u7D42\u672B\u306E\u6838"
+    en: Core of Apocalypse
+  - key: sy_98_name
+    ja: "\u7D42\u7AEF\u6A5F\u795E\u738B"
+    en: Terminal Machine God King
+  - key: sy_99_name
+    ja: "\u66B4\u8D70\u3059\u308B\u5730\u7344\u7089"
+    en: Runaway Hell Furnace
+  - key: sy_100_name
+    ja: "\u84BC\u5D50\u306E\u6E26\u738B"
+    en: Azure Storm Vortex King
+  - key: sy_101_name
+    ja: "\u6A5F\u92FC\u306E\u5DE8\u795E"
+    en: Steel Machine Titan
+  - key: sy_102_name
+    ja: "\u8056\u5F27\u306E\u71BE\u5929\u4F7F"
+    en: Blazing Seraph of the Sacred Arc
+  - key: sy_103_name
+    ja: "\u8352\u91CE\u306E\u7259\u5175"
+    en: Fang Soldier of the Wasteland
+  - key: sy_104_name
+    ja: "\u6226\u6B4C\u306E\u86EE\u52C7"
+    en: Savage Valor of War Song
+  - key: sy_105_name
+    ja: "\u8840\u5857\u308C\u306E\u5DE8\u6F22"
+    en: Bloodstained Giant
+  - key: sy_106_name
+    ja: "\u9EC4\u91D1\u3092\u55B0\u3089\u3046\u8005"
+    en: Devourer of Gold
+  - key: sy_107_name
+    ja: "\u6226\u5BB4\u306E\u9B54\u5C06"
+    en: Demon General of War Feast
+  - key: sy_108_name
+    ja: "\u546A\u66F8\u306E\u4E3B"
+    en: Master of the Cursed Tome
+  - key: sy_109_name
+    ja: "\u5149\u7A74\u306E\u9019\u3044\u866B"
+    en: Crawling Worm of the Light Hollow
+  - key: sy_110_name
+    ja: "\u6D1E\u7A9F\u306E\u6BD2\u7CF8"
+    en: Venom Thread of the Cave
+  - key: sy_111_name
+    ja: "\u51A5\u5751\u306E\u52B4\u50CD\u970A"
+    en: Labor Spirit of the Nether Mine
+  - key: sy_112_name
+    ja: "\u83CC\u7FFC\u306E\u5C0F\u7ADC"
+    en: Fungal-Winged Drake
+  - key: sy_113_name
+    ja: "\u5730\u8108\u306E\u7ADC\u738B"
+    en: Dragon King of the Earth Veins
+  - key: sy_114_name
+    ja: "\u6DF1\u6DF5\u306E\u9ED2\u7ADC"
+    en: Abyssal Black Dragon
+  - key: sy_115_name
+    ja: "\u7FE0\u82B1\u306E\u5B88\u308A\u624B"
+    en: Guardian of Emerald Blossoms
+  - key: sy_116_name
+    ja: "\u970A\u6A39\u306E\u6B4C\u59EB"
+    en: Songstress of the Spirit Tree
+  - key: sy_117_name
+    ja: "\u6BD2\u5BB4\u306E\u8718\u86DB\u59EB"
+    en: Spider Princess of Poison Feast
+  - key: sy_118_name
+    ja: "\u7802\u5D50\u306E\u9B54\u7363"
+    en: Sandstorm Demon Beast
+  - key: sy_119_name
+    ja: "\u66B4\u98A8\u306E\u5DE8\u7FFC"
+    en: Colossal Wing of the Tempest
+  - key: sy_120_name
+    ja: "\u751F\u547D\u3092\u555C\u308B\u5F71"
+    en: Shadow that Drinks Life
+  - key: sy_121_name
+    ja: "\u84BC\u7A7A\u306E\u9ED2\u7FFC"
+    en: Black Wing of the Azure Sky
+  - key: sy_122_name
+    ja: "\u88C2\u98A8\u306E\u731B\u79BD"
+    en: Riftwind Raptor
+  - key: sy_123_name
+    ja: "\u9AA8\u5544\u3080\u6B7B\u9CE5"
+    en: Bone-Pecking Deathbird
+  - key: sy_124_name
+    ja: "\u5996\u6B4C\u306E\u7FFC\u5973"
+    en: Winged Siren of Bewitching Song
+  - key: sy_125_name
+    ja: "\u96F7\u5D50\u306E\u738B\u9CE5"
+    en: King Bird of Thunderstorm
+  - key: sy_126_name
+    ja: "\u5929\u7FD4\u3051\u308B\u8987\u9CE5"
+    en: Skyborne Overlord Bird
+  - key: sy_127_name
+    ja: "\u9B54\u8987\u306E\u9B3C\u795E"
+    en: Demon God of Dark Supremacy
+  - key: sy_128_name
+    ja: "\u6A5F\u68B0\u738B\u306E\u5486\u54EE"
+    en: Roar of the Machine King
+  - key: sy_129_name
+    ja: "\u9ED2\u92FC\u306E\u7834\u58CA\u8005"
+    en: Blacksteel Destroyer
+  - key: sy_130_name
+    ja: "\u707C\u71B1\u5CA9\u306E\u738B"
+    en: King of Scorching Rock
+  - key: sy_131_name
+    ja: "\u8CAA\u6B32\u306A\u308B\u6EB6\u5CA9\u738B"
+    en: Greedy Lava King
+  - key: sy_132_name
+    ja: "\u96F7\u7259\u306E\u8987\u738B"
+    en: Overlord of Thunder Fangs
+  - key: sy_133_name
+    ja: "\u6F06\u9ED2\u306E\u6BD2\u6BCD"
+    en: Jet-Black Venom Mother
+  - key: sy_134_name
+    ja: "\u6B7B\u970A\u738B\u306E\u79D8\u5B9D"
+    en: Secret Treasure of the Lich King
+  - key: sy_135_name
+    ja: "\u51A5\u7ADC\u306E\u5486\u54EE"
+    en: Roar of the Nether Dragon
+  - key: sy_136_name
+    ja: "\u9B54\u7344\u306E\u5927\u541B"
+    en: Archlord of the Demon Prison
+  - key: sy_137_name
+    ja: "\u8840\u69CC\u306E\u731B\u725B\u738B"
+    en: Bloodhammer Minotaur King
+  - key: sy_138_name
+    ja: "\u84BC\u86C7\u306E\u707D\u5384"
+    en: Calamity of the Azure Serpent
+  - key: sy_139_name
+    ja: "\u707C\u6CE5\u306E\u5730\u9F8D"
+    en: Scorch Mud Earth Dragon
+  - key: sy_140_name
+    ja: "\u6C37\u846C\u306E\u93AE\u9B42\u6B4C"
+    en: Requiem of Frozen Burial
+  - key: sy_141_name
+    ja: "\u7344\u708E\u306E\u66B4\u5C06"
+    en: Inferno Warlord of Destruction
+  - key: sy_142_name
+    ja: "\u51A5\u7802\u306E\u5DE8\u8C61\u795E"
+    en: Nether Sand Colossal Elephant God
+  - key: sy_143_name
+    ja: "\u591C\u738B\u306E\u5316\u8EAB"
+    en: Avatar of the Night King
+  - key: sy_144_name
+    ja: "\u51A5\u9A0E\u58EB\u56E3\u9577"
+    en: Commander of the Nether Knights
+  - key: sy_145_name
+    ja: "\u7FE0\u707D\u306E\u7D42\u672B"
+    en: Emerald Cataclysm of Doom
+  - key: sy_146_name
+    ja: "\u6DF1\u6D77\u306E\u9759\u8B10\u59EB"
+    en: Silent Princess of the Deep Sea
+  - key: sy_147_name
+    ja: "\u9AB8\u9AA8\u306E\u8987\u738B"
+    en: Skeleton Overlord
+  - key: sy_148_name
+    ja: "\u5815\u5929\u306E\u9B54\u83EF"
+    en: Fallen Demon Flower
+  - key: sy_149_name
+    ja: "\u5C60\u6BBA\u306E\u5DE8\u9B3C"
+    en: Butcher Giant Ogre
+  - key: sy_150_name
+    ja: "\u865A\u7121\u306E\u66B4\u738B"
+    en: Void Tyrant
+  - key: sy_151_name
+    ja: "\u4E07\u8C61\u3092\u675F\u306D\u3057\u7D42\u7109\u306E\u539F\u521D\u7ADC"
+    en: The Primordial End Dragon Who Binds All Creation
+  - key: sy_100000_name
+    ja: "\u5883\u754C\u3092\u8E0F\u307F\u8D8A\u3048\u3057\u8005"
+    en: One Who Crossed the Boundary
+  - key: sy_100001_name
+    ja: "\u307E\u3060\u6298\u308C\u3066\u3044\u306A\u3044\u8005"
+    en: Still Unbroken
+  - key: sy_100002_name
+    ja: "\u9084\u308C\u306C\u6DF1\u5C64\u3078\u306E\u4E00\u6B69"
+    en: The First Step into the Abyss
+  - key: sy_100003_name
+    ja: "\u72C2\u6C17\u3092\u98F2\u307F\u5E72\u3059\u8005"
+    en: Devourer of Madness
+  - key: sy_100004_name
+    ja: "\u5343\u5C64\u3092\u8D8A\u3048\u305F\u4EE3\u511F"
+    en: The Price of a Thousand Layers
+  - key: sy_100005_name
+    ja: "\u7D42\u308F\u308A\u3092\u62D2\u3080\u610F\u5FD7"
+    en: The Will That Rejects the End
+  - key: sy_100006_name
+    ja: "\u6DF1\u5C64\u306B\u99B4\u67D3\u307F\u3057\u8089\u4F53"
+    en: A Body Adapted to the Deep
+  - key: sy_100007_name
+    ja: "\u6B6A\u307F\u3092\u80AF\u5B9A\u3059\u308B\u9078\u629E"
+    en: The Choice to Embrace Distortion
+  - key: sy_100008_name
+    ja: "\u7834\u58CA\u306B\u9806\u5FDC\u305B\u3057\u9B42"
+    en: A Soul Tempered by Destruction
+  - key: sy_100009_name
+    ja: "\u524A\u308C\u3086\u304F\u672A\u6765"
+    en: A Future Slowly Shaved Away
+  - key: sy_100010_name
+    ja: "\u6B7B\u7DDA\u306B\u7B11\u3046\u8005"
+    en: One Who Laughs at the Edge of Death
+  - key: sy_100011_name
+    ja: "\u5931\u3046\u3053\u3068\u3092\u9078\u3093\u3060\u8005"
+    en: The One Who Chose to Lose
+  - key: sy_100012_name
+    ja: "\u529B\u3068\u5F15\u304D\u63DB\u3048\u306E\u8A93\u7D04"
+    en: A Pact Exchanged for Power
+  - key: sy_100013_name
+    ja: "\u75DB\u307F\u3092\u529B\u306B\u5909\u3048\u308B\u8005"
+    en: Pain Turned into Strength
+  - key: sy_100014_name
+    ja: "\u58CA\u308C\u3066\u306A\u304A\u9032\u3080\u8005"
+    en: '"Still Advancing'
+  - key: sy_100015_name
+    ja: "\u8A08\u7B97\u3092\u6368\u3066\u305F\u7834\u58CA\u885D\u52D5"
+    en: Uncalculated Destructive Impulse
+  - key: sy_100016_name
+    ja: "\u751F\u5B58\u306E\u307F\u3092\u671B\u3080\u5B58\u5728"
+    en: An Existence That Seeks Only Survival
+  - key: sy_100017_name
+    ja: "\u9650\u754C\u3092\u8E0F\u307F\u6F70\u3059\u610F\u5FD7"
+    en: A Will That Crushes Its Limits
+  - key: sy_100018_name
+    ja: "\u5831\u308F\u308C\u306C\u4EE3\u511F\u8AD6"
+    en: The Theory of an Unrewarded Price
+  - key: sy_100019_name
+    ja: "\u7D42\u308F\u308A\u306A\u304D\u6BBA\u622E\u885D\u52D5"
+    en: Endless Slaughter Impulse
+  - key: sy_100020_name
+    ja: "\u5747\u8861\u3092\u58CA\u3059\u8005"
+    en: The One Who Breaks the Balance
+  - key: sy_100021_name
+    ja: "\u7D42\u7109\u3092\u62D2\u7D76\u3059\u308B\u7406"
+    en: The Law That Denies Oblivion
+  - key: sy_100022_name
+    ja: "\u4E16\u754C\u6CD5\u5247\u3078\u306E\u53CD\u9006"
+    en: Rebel Against the Laws of the World
+  - key: sy_100023_name
+    ja: "\u52DD\u5229\u4EE5\u5916\u3092\u5FD8\u308C\u305F\u5B58\u5728"
+    en: An Existence That Forgot Everything but Victory
+  - key: sy_100024_name
+    ja: "\u6DF1\u5C64\u305D\u306E\u3082\u306E"
+    en: The Deep Itself

@@ -1,0 +1,468 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d5f4ceba70e9141a1a2fde487e51c4, type: 3}
+  m_Name: SoubiTextDictionary
+  m_EditorClassIdentifier: 
+  entries:
+  - key: s_1_name
+    ja: "\u53CC\u559C\u306E\u30B9\u30E9\u30A4\u30E0\u30EA\u30F3\u30B0"
+    en: Twin-Blessed Slime Ring
+  - key: s_2_name
+    ja: "\u30D5\u30A1\u30A4\u30E4\u30FC\u30BD\u30FC\u30C9"
+    en: Fire Sword
+  - key: s_3_name
+    ja: "\u7FE0\u970A\u306E\u82BD\u6756"
+    en: Emerald Spirit Sprout Staff
+  - key: s_4_name
+    ja: "\u7344\u708E\u72FC\u306E\u5B88\u76FE"
+    en: Inferno Wolf Guardian Shield
+  - key: s_5_name
+    ja: "\u6C37\u5486\u84BC\u5203"
+    en: Frost Roar Azure Blade
+  - key: s_6_name
+    ja: "\u4E03\u5F69\u96EB\u306E\u8056\u4F69"
+    en: Rainbow Droplet Sacred Amulet
+  - key: s_7_name
+    ja: "\u673D\u6728\u306E\u68D8\u68CD"
+    en: Rotwood Thorn Club
+  - key: s_8_name
+    ja: "\u7345\u5B50\u9AB8\u306E\u4EA1\u76FE"
+    en: Lion Remains Death Shield
+  - key: s_9_name
+    ja: "\u7FE0\u9AB8\u306E\u546A\u4F69"
+    en: Emerald Skull Cursed Pendant
+  - key: s_10_name
+    ja: "\u51A5\u89D2\u9A0E\u58EB\u306E\u9ED2\u93A7"
+    en: Dark-Horn Knight Black Armor
+  - key: s_11_name
+    ja: "\u84BC\u6C37\u6676\u306E\u5E7D\u5F13"
+    en: Azure Ice Crystal Phantom Bow
+  - key: s_12_name
+    ja: "\u9AB8\u738B\u306E\u834A\u51A0"
+    en: Bone King Thorn Crown
+  - key: s_13_name
+    ja: "\u7247\u773C\u9B54\u306E\u706F\u7C60\u5E2F"
+    en: One-Eyed Demon Lantern Belt
+  - key: s_14_name
+    ja: "\u871C\u87BA\u65CB\u306E\u7C98\u6756"
+    en: Honey Spiral Slime Staff
+  - key: s_15_name
+    ja: "\u5E7D\u767D\u306E\u4EA1\u970A\u5916\u5957"
+    en: Pale Wraith Cloak
+  - key: s_16_name
+    ja: "\u7D05\u6708\u9B54\u5203\u306E\u5927\u938C"
+    en: Crimson Moon Demon Scythe
+  - key: s_17_name
+    ja: "\u7149\u7344\u6838\u306E\u546A\u9396"
+    en: Purgatory Core Cursed Chain
+  - key: s_18_name
+    ja: "\u8759\u7FFC\u306E\u6DF1\u6DF5\u706F\u706B"
+    en: Batwing Abyss Lantern
+  - key: s_19_name
+    ja: "\u7363\u738B\u306E\u88C2\u722A"
+    en: Beast King Rending Claw
+  - key: s_20_name
+    ja: "\u9280\u72FC\u5C06\u306E\u84BC\u6BDB\u93A7"
+    en: Silver Wolf General Fur Armor
+  - key: s_21_name
+    ja: "\u708E\u7ADC\u5203\u306E\u6226\u938C"
+    en: Flame Dragon War Scythe
+  - key: s_22_name
+    ja: "\u71BE\u6838\u306E\u7ADC\u546A\u4F69"
+    en: Blazing Core Dragon Curse Pendant
+  - key: s_23_name
+    ja: "\u7114\u51A0\u7ADC\u306E\u7126\u738B\u515C"
+    en: Flame-Crowned Dragon Ashen Helm
+  - key: s_24_name
+    ja: "\u7149\u7344\u6B69\u5175\u306E\u9B54\u811A\u7532"
+    en: Inferno Infantry Demon Greaves
+  - key: s_25_name
+    ja: "\u6BD2\u9727\u9AB8\u306E\u546A\u5DFB"
+    en: Poison Mist Skull Cursed Scroll
+  - key: s_26_name
+    ja: "\u7FE0\u7344\u30B9\u30E9\u30A4\u30E0\u306E\u9B54\u74F6"
+    en: Emerald Inferno Slime Magic Flask
+  - key: s_27_name
+    ja: "\u8056\u84BC\u5341\u5B57\u306E\u5B88\u76FE"
+    en: Sacred Azure Cross Guard Shield
+  - key: s_28_name
+    ja: "\u9396\u9AB8\u5C01\u3058\u306E\u7981\u66F8"
+    en: Chained Skull Sealing Forbidden Tome
+  - key: s_29_name
+    ja: "\u6DF1\u6D77\u970A\u5149\u306E\u8B77\u7B26"
+    en: Deep Sea Spirit Glow Talisman
+  - key: s_30_name
+    ja: "\u8840\u9AB8\u55B0\u3089\u3044\u306E\u546A\u5263"
+    en: Blood-Skull Devourer Cursed Sword
+  - key: s_31_name
+    ja: "\u9AB8\u738B\u306E\u7834\u6EC5\u68CD"
+    en: Bone King Doom Staff
+  - key: s_32_name
+    ja: "\u9EC4\u91D1\u86C7\u738B\u306E\u7259\u8F2A"
+    en: Golden Serpent King Fang Ring
+  - key: s_33_name
+    ja: "\u6F06\u9ED2\u7363\u306E\u5F71\u722A"
+    en: Black Beast Shadow Claw
+  - key: s_34_name
+    ja: "\u51A5\u72FC\u306E\u9396\u811A"
+    en: Nether Wolf Chain Boots
+  - key: s_35_name
+    ja: "\u53CC\u86C7\u708E\u738B\u306E\u9B54\u6756"
+    en: Twin Serpent Flame King Staff
+  - key: s_36_name
+    ja: "\u7D05\u6838\u7ADC\u5370\u306E\u546A\u4F69"
+    en: Crimson Core Dragon Seal Pendant
+  - key: s_37_name
+    ja: "\u661F\u8A60\u307F\u306E\u84BC\u6708\u5E3D"
+    en: Star Seer Azure Moon Cap
+  - key: s_38_name
+    ja: "\u7981\u546A\u89E3\u653E\u306E\u9B54\u5C0E\u66F8"
+    en: Forbidden Curse Release Grimoire
+  - key: s_39_name
+    ja: "\u7114\u93A7\u7363\u306E\u722A\u624B\u7532"
+    en: Flame Armor Beast Claw Gauntlets
+  - key: s_40_name
+    ja: "\u696D\u706B\u706F\u306E\u7126\u6756"
+    en: Hellfire Lantern Scorch Staff
+  - key: s_41_name
+    ja: "\u6C37\u6676\u970A\u5203\u306E\u9B54\u69CD"
+    en: Ice Crystal Spirit Blade Spear
+  - key: s_42_name
+    ja: "\u7D2B\u5B9D\u7FFC\u738B\u306E\u8056\u74B0"
+    en: Violet Jewel Wing King Holy Ring
+  - key: s_43_name
+    ja: "\u71BE\u7089\u5DE8\u5175\u306E\u707C\u93A7"
+    en: Blazing Furnace Giant Scorch Armor
+  - key: s_44_name
+    ja: "\u7D05\u84EE\u738B\u306E\u7114\u5263"
+    en: Crimson Lotus King Flame Sword
+  - key: s_45_name
+    ja: "\u6C37\u7114\u6676\u306E\u9B54\u6756"
+    en: Iceflame Crystal Magic Staff
+  - key: s_46_name
+    ja: "\u708E\u9B54\u738B\u306E\u89D2\u76FE"
+    en: Flame Demon King Horn Shield
+  - key: s_47_name
+    ja: "\u7D05\u84EE\u6838\u306E\u546A\u9396\u4F69"
+    en: Crimson Lotus Core Curse Chain Pendant
+  - key: s_48_name
+    ja: "\u9EC4\u91D1\u6676\u7363\u306E\u811A\u7532"
+    en: Golden Crystal Beast Greaves
+  - key: s_49_name
+    ja: "\u71BE\u7089\u5DE8\u5175\u306E\u707C\u9244\u93A7"
+    en: Blazing Furnace Giant Iron Armor
+  - key: s_50_name
+    ja: "\u9ED2\u7159\u77F3\u306E\u77ED\u5263"
+    en: Black Smoke Stone Dagger
+  - key: s_51_name
+    ja: "\u91D1\u58C1\u5B88\u8B77\u306E\u7D50\u754C\u76FE"
+    en: Golden Wall Guardian Barrier Shield
+  - key: s_52_name
+    ja: "\u5C01\u5370\u57CE\u6838\u306E\u9244\u515C"
+    en: Sealed Citadel Core Iron Helm
+  - key: s_53_name
+    ja: "\u971C\u6E26\u6676\u738B\u306E\u9B54\u6756"
+    en: Frost Vortex Crystal King Staff
+  - key: s_54_name
+    ja: "\u7114\u738B\u523B\u5370\u306E\u708E\u5E2F"
+    en: Flame King Engraved Fire Belt
+  - key: s_55_name
+    ja: "\u7114\u7ADC\u738B\u306E\u7126\u51A0\u515C"
+    en: Flame Dragon King Ash Crown Helm
+  - key: s_56_name
+    ja: "\u5DE8\u5CA9\u7815\u304D\u306E\u9244\u69CC"
+    en: Giant Rock Crusher Iron Hammer
+  - key: s_57_name
+    ja: "\u708E\u7FFC\u5B9D\u73E0\u306E\u8056\u4F69"
+    en: Flame Wing Orb Sacred Pendant
+  - key: s_58_name
+    ja: "\u9AB8\u9AA8\u6226\u58EB\u306E\u62F3\u7532"
+    en: Skeleton Warrior Fist Guards
+  - key: s_59_name
+    ja: "\u8840\u9AB8\u72E9\u4EBA\u306E\u6BDB\u76AE\u8170\u5E03"
+    en: Blood-Skull Hunter Fur Waistcloth
+  - key: s_60_name
+    ja: "\u6C37\u708E\u5203\u306E\u971C\u5263"
+    en: Iceflame Blade Frost Sword
+  - key: s_61_name
+    ja: "\u6697\u9ED2\u5E7B\u5F71\u306E\u9B54\u5E3D"
+    en: Dark Phantom Mage Hat
+  - key: s_62_name
+    ja: "\u8056\u5341\u5B57\u306E\u88C1\u939A"
+    en: Sacred Cross Judgment Hammer
+  - key: s_63_name
+    ja: "\u84BC\u6676\u5B88\u8B77\u306E\u91CD\u76FE"
+    en: Azure Crystal Guardian Heavy Shield
+  - key: s_64_name
+    ja: "\u7DD1\u92FC\u7832\u7ADC\u306E\u9B54\u5C0E\u9283"
+    en: Green Steel Cannon Dragon Magic Gun
+  - key: s_65_name
+    ja: "\u8056\u91D1\u5341\u5B57\u306E\u8B77\u76FE"
+    en: Sacred Golden Cross Shield
+  - key: s_66_name
+    ja: "\u71BE\u708E\u7363\u738B\u306E\u811A\u7532"
+    en: Blazing Flame Beast King Greaves
+  - key: s_67_name
+    ja: "\u9EC4\u91D1\u706B\u86C7\u306E\u546A\u74B0"
+    en: Golden Fire Serpent Cursed Ring
+  - key: s_68_name
+    ja: "\u7D05\u84EE\u7ADC\u738B\u306E\u5486\u54EE\u515C"
+    en: Crimson Lotus Dragon King Roar Helm
+  - key: s_69_name
+    ja: "\u696D\u706B\u87BA\u65CB\u306E\u9B54\u69CD"
+    en: Hellfire Spiral Magic Spear
+  - key: s_70_name
+    ja: "\u7114\u93A7\u7ADC\u306E\u7126\u76FE"
+    en: Flame Armor Dragon Scorch Shield
+  - key: s_71_name
+    ja: "\u708E\u9C57\u7363\u306E\u88C2\u722A"
+    en: Flame Scale Beast Rending Claw
+  - key: s_72_name
+    ja: "\u708E\u706F\u306E\u5100\u6756"
+    en: Fire Lantern Ritual Staff
+  - key: s_73_name
+    ja: "\u6DF1\u6D77\u63A2\u691C\u30B9\u30E9\u30A4\u30E0\u30B4\u30FC\u30B0\u30EB"
+    en: Deep Sea Explorer Slime Goggles
+  - key: s_74_name
+    ja: "\u6F6E\u73E0\u59EB\u306E\u8C9D\u8B77\u7B26"
+    en: Tide Pearl Princess Shell Charm
+  - key: s_75_name
+    ja: "\u6DF1\u6D77\u9BAB\u7259\u306E\u77ED\u5263"
+    en: Deep Sea Shark Fang Dagger
+  - key: s_76_name
+    ja: "\u84BC\u6D77\u738B\u306E\u6012\u76FE"
+    en: Azure Sea King Rage Shield
+  - key: s_77_name
+    ja: "\u6D77\u86C7\u9A0E\u58EB\u306E\u6CE2\u811A\u7532"
+    en: Sea Serpent Knight Wave Greaves
+  - key: s_78_name
+    ja: "\u4E09\u53C9\u84BC\u6F6E\u306E\u69CD"
+    en: Trident of Azure Tide Spear
+  - key: s_79_name
+    ja: "\u523A\u732A\u738B\u306E\u6226\u76FE"
+    en: Spiked Boar King War Shield
+  - key: s_80_name
+    ja: "\u7FE0\u6A39\u7CBE\u306E\u7D50\u754C\u811A"
+    en: Emerald Tree Spirit Barrier Boots
+  - key: s_81_name
+    ja: "\u9AA8\u68EE\u9053\u5316\u306E\u546A\u5076"
+    en: Bone Forest Jester Cursed Doll
+  - key: s_82_name
+    ja: "\u84BC\u5D50\u72FC\u738B\u306E\u970A\u515C"
+    en: Azure Storm Wolf King Spirit Helm
+  - key: s_83_name
+    ja: "\u7FE0\u708E\u9AB8\u738B\u306E\u546A\u6756"
+    en: Emerald Flame Skull King Curse Staff
+  - key: s_84_name
+    ja: "\u84BC\u6676\u53CC\u5203\u306E\u6226\u65A7"
+    en: Azure Crystal Twin Blade War Axe
+  - key: s_85_name
+    ja: "\u731B\u6BD2\u8338\u738B\u306E\u9B54\u515C"
+    en: Venom Mushroom King Magic Helm
+  - key: s_86_name
+    ja: "\u9EC4\u91D1\u661F\u5C51\u306E\u8056\u58FA"
+    en: Golden Stardust Sacred Urn
+  - key: s_87_name
+    ja: "\u5F69\u738B\u306E\u30E1\u30C0\u30EB\u5B9D\u6756"
+    en: Prismatic King Medal Treasure Staff
+  - key: s_88_name
+    ja: "\u7D05\u84EE\u738B\u306E\u708E\u5263"
+    en: Crimson Lotus King Flame Sword
+  - key: s_89_name
+    ja: "\u91D1\u8CA8\u738B\u30B9\u30E9\u30A4\u30E0\u306E\u8CA1\u5B9D\u51A0"
+    en: Gold Coin King Slime Treasure Crown
+  - key: s_90_name
+    ja: "\u84BC\u9AB8\u9A0E\u58EB\u306E\u51A5\u811A"
+    en: Azure Skull Knight Nether Greaves
+  - key: s_91_name
+    ja: "\u7FE0\u6BD2\u5203\u306E\u9B54\u66F2\u5200"
+    en: Emerald Venom Blade Magic Saber
+  - key: s_92_name
+    ja: "\u7D2B\u9ED2\u7ADC\u738B\u306E\u9B54\u515C"
+    en: Violet Black Dragon King Magic Helm
+  - key: s_93_name
+    ja: "\u7FE0\u708E\u7ADC\u722A\u306E\u6226\u624B\u7532"
+    en: Emerald Flame Dragon Claw Gauntlets
+  - key: s_94_name
+    ja: "\u91D1\u7363\u738B\u306E\u707C\u4F69"
+    en: Golden Beast King Blazing Pendant
+  - key: s_95_name
+    ja: "\u7114\u9B54\u7ADC\u738B\u306E\u7126\u51A0"
+    en: Flame Demon Dragon King Ash Crown
+  - key: s_96_name
+    ja: "\u51A5\u9AB8\u9A0E\u58EB\u306E\u5F71\u811A"
+    en: Nether Skull Knight Shadow Greaves
+  - key: s_97_name
+    ja: "\u7149\u7344\u7815\u304D\u306E\u7126\u9244\u69CC"
+    en: Inferno Crusher Scorch Iron Hammer
+  - key: s_98_name
+    ja: "\u71BE\u6838\u9B54\u7363\u306E\u6226\u93A7"
+    en: Blazing Core Demon Beast War Armor
+  - key: s_99_name
+    ja: "\u7D05\u708E\u7089\u5FC3\u306E\u5DE8\u69CC"
+    en: Crimson Flame Core Giant Hammer
+  - key: s_100_name
+    ja: "\u84BC\u96F7\u62F3\u738B\u306E\u9B54\u624B\u7532"
+    en: Azure Thunder Fist King Gauntlets
+  - key: s_101_name
+    ja: "\u7114\u9B54\u5C06\u306E\u707C\u515C"
+    en: Flame Demon General Scorch Helm
+  - key: s_102_name
+    ja: "\u84BC\u5149\u9A0E\u58EB\u306E\u8056\u811A"
+    en: Azure Light Knight Sacred Greaves
+  - key: s_103_name
+    ja: "\u65C5\u4EBA\u306E\u77ED\u5263\u3068\u9769\u56A2"
+    en: "Traveler\u2019s Dagger and Leather Pouch"
+  - key: s_104_name
+    ja: "\u9244\u58C1\u5175\u306E\u6226\u76FE"
+    en: Iron Wall Soldier War Shield
+  - key: s_105_name
+    ja: "\u9ED2\u89D2\u6226\u58EB\u306E\u515C"
+    en: Black-Horn Warrior Helm
+  - key: s_106_name
+    ja: "\u8840\u5203\u51E6\u5211\u306E\u6226\u65A7"
+    en: Blood Blade Executioner War Axe
+  - key: s_107_name
+    ja: "\u9ED2\u9244\u9A0E\u58EB\u306E\u6226\u93A7"
+    en: Black Iron Knight War Armor
+  - key: s_108_name
+    ja: "\u7D05\u5B9D\u7363\u5370\u306E\u546A\u4F69"
+    en: Crimson Jewel Beast Seal Pendant
+  - key: s_109_name
+    ja: "\u9EC4\u91D1\u706F\u706B\u306E\u53E4\u30E9\u30F3\u30BF\u30F3"
+    en: Golden Flame Ancient Lantern
+  - key: s_110_name
+    ja: "\u8718\u86DB\u738B\u306E\u7D50\u754C\u76FE"
+    en: Spider King Barrier Shield
+  - key: s_111_name
+    ja: "\u5751\u9053\u63A2\u691C\u306E\u706F\u5E3D"
+    en: Mine Explorer Lamp Hood
+  - key: s_112_name
+    ja: "\u8338\u68EE\u5B88\u308A\u306E\u7DD1\u76FE"
+    en: Mushroom Forest Guardian Green Shield
+  - key: s_113_name
+    ja: "\u67AF\u6728\u9B54\u5C0E\u306E\u679D\u6756"
+    en: Withered Tree Mage Branch Staff
+  - key: s_114_name
+    ja: "\u7114\u5F71\u738B\u306E\u51A5\u93A7"
+    en: Flame Shadow King Nether Armor
+  - key: s_115_name
+    ja: "\u82E5\u82BD\u7CBE\u306E\u68EE\u8B77\u76FE"
+    en: Young Sprout Spirit Forest Guard Shield
+  - key: s_116_name
+    ja: "\u82B1\u7CBE\u59EB\u306E\u82BD\u6756"
+    en: Flower Spirit Princess Sprout Staff
+  - key: s_117_name
+    ja: "\u6A39\u754C\u5B88\u8B77\u306E\u68EE\u93A7"
+    en: Tree Realm Guardian Forest Armor
+  - key: s_118_name
+    ja: "\u6A39\u970A\u4EEE\u9762\u306E\u6DF1\u9762"
+    en: Tree Spirit Mask Deep Visage
+  - key: s_119_name
+    ja: "\u82B1\u82BD\u5263\u306E\u7FE0\u5203"
+    en: Flower Bud Sword Emerald Edge
+  - key: s_120_name
+    ja: "\u5996\u82B1\u55B0\u3089\u3044\u306E\u9B54\u938C"
+    en: Demonic Flower Devourer Magic Scythe
+  - key: s_121_name
+    ja: "\u9ED2\u7FFC\u7D05\u773C\u306E\u77ED\u5263"
+    en: Black Wing Crimson Eye Dagger
+  - key: s_122_name
+    ja: "\u84BC\u9C57\u7D50\u754C\u306E\u8B77\u76FE"
+    en: Azure Scale Barrier Guard Shield
+  - key: s_123_name
+    ja: "\u9AB8\u9AA8\u72E9\u4EBA\u306E\u6226\u938C"
+    en: Skeleton Hunter War Scythe
+  - key: s_124_name
+    ja: "\u7FBD\u8449\u7CBE\u306E\u7FE0\u8863"
+    en: Featherleaf Spirit Emerald Garb
+  - key: s_125_name
+    ja: "\u96F7\u7FFC\u73E0\u306E\u9B54\u6756"
+    en: Thunder Wing Orb Magic Staff
+  - key: s_126_name
+    ja: "\u5929\u7FFC\u84BC\u73E0\u306E\u8056\u6756"
+    en: Heaven Wing Azure Orb Sacred Staff
+  - key: s_127_name
+    ja: "\u71BE\u967D\u5B9D\u73E0\u306E\u738B\u74B0"
+    en: Blazing Sun Orb King Ring
+  - key: s_128_name
+    ja: "\u9ED2\u7D05\u546A\u82B1\u306E\u9B54\u6756"
+    en: Black Crimson Curse Flower Staff
+  - key: s_129_name
+    ja: "\u9ED2\u66DC\u9A0E\u58EB\u306E\u6226\u93A7"
+    en: Obsidian Knight War Armor
+  - key: s_130_name
+    ja: "\u7114\u86C7\u306E\u708E\u69CD"
+    en: Flame Serpent Fire Spear
+  - key: s_131_name
+    ja: "\u7D2B\u6028\u5F71\u738B\u306E\u51A5\u93A7"
+    en: Violet Grudge Shadow King Nether Armor
+  - key: s_132_name
+    ja: "\u84BC\u96F7\u661F\u76FE\u306E\u7D50\u754C"
+    en: Azure Thunder Star Shield Barrier
+  - key: s_133_name
+    ja: "\u7FE0\u6BD2\u970A\u5203\u306E\u9B54\u5263"
+    en: Emerald Venom Spirit Blade Magic Sword
+  - key: s_134_name
+    ja: "\u6DF1\u7DD1\u51A5\u738B\u306E\u9B54\u5C0E\u8863"
+    en: Deep Green Nether King Mage Robe
+  - key: s_135_name
+    ja: "\u7D2B\u7ADC\u9B54\u738B\u306E\u5486\u54EE\u515C"
+    en: Violet Dragon Demon King Roar Helm
+  - key: s_136_name
+    ja: "\u7149\u7344\u7363\u722A\u306E\u6226\u624B\u7532"
+    en: Inferno Beast Claw Gauntlets
+  - key: s_137_name
+    ja: "\u7D2B\u7114\u9B54\u7363\u306E\u51A5\u811A"
+    en: Violet Flame Demon Beast Nether Greaves
+  - key: s_138_name
+    ja: "\u84BC\u96F7\u53CC\u7ADC\u306E\u5486\u54EE\u515C"
+    en: Azure Thunder Twin Dragon Roar Helm
+  - key: s_139_name
+    ja: "\u696D\u706B\u55B0\u3089\u3044\u306E\u9B54\u53E3"
+    en: Hellfire Devourer Demon Maw
+  - key: s_140_name
+    ja: "\u6C37\u59EB\u970A\u69CD\u306E\u8056\u6756"
+    en: Frost Princess Spirit Lance Sacred Staff
+  - key: s_141_name
+    ja: "\u7114\u9B54\u738B\u306E\u7126\u89D2\u515C"
+    en: Flame Demon King Ash Horn Helm
+  - key: s_142_name
+    ja: "\u7FE0\u9AB8\u546A\u6A39\u306E\u9B54\u6756"
+    en: Emerald Skull Curse Tree Magic Staff
+  - key: s_143_name
+    ja: "\u6C37\u6676\u8987\u738B\u306E\u6226\u93A7"
+    en: Ice Crystal Overlord War Armor
+  - key: s_144_name
+    ja: "\u7FE0\u96F7\u7363\u738B\u306E\u9B54\u515C"
+    en: Emerald Thunder Beast King Magic Helm
+  - key: s_145_name
+    ja: "\u6BD2\u7ADC\u9B54\u7363\u306E\u88C2\u984E\u76FE"
+    en: Venom Dragon Demon Beast Jaw Shield
+  - key: s_146_name
+    ja: "\u84BC\u96F7\u970A\u73E0\u306E\u9B54\u6756"
+    en: Azure Thunder Spirit Orb Magic Staff
+  - key: s_147_name
+    ja: "\u9AB8\u738B\u7D2B\u6676\u306E\u546A\u76FE"
+    en: Bone King Violet Crystal Curse Shield
+  - key: s_148_name
+    ja: "\u7114\u9396\u5203\u306E\u51E6\u5211\u97AD"
+    en: Flame Chain Blade Execution Whip
+  - key: s_149_name
+    ja: "\u6BD2\u9727\u706F\u306E\u7363\u811A"
+    en: Poison Mist Lantern Beast Greaves
+  - key: s_150_name
+    ja: "\u51A5\u7ADC\u9A0E\u58EB\u306E\u9B54\u811A\u7532"
+    en: Nether Dragon Knight Demon Greaves
+  - key: s_151_name
+    ja: "\u30A8\u30EC\u30E1\u30F3\u30BF\u30EB\u30FB\u30C9\u30DF\u30CB\u30AA\u30F3"
+    en: Elemental Dominion

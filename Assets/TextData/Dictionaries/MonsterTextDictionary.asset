@@ -1,0 +1,468 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d5f4ceba70e9141a1a2fde487e51c4, type: 3}
+  m_Name: MonsterTextDictionary
+  m_EditorClassIdentifier: 
+  entries:
+  - key: m_1_name
+    ja: "\u30D6\u30EB\u30FC\u30B9\u30E9\u30A4\u30E0"
+    en: Blue Slime
+  - key: m_2_name
+    ja: "\u30EC\u30C3\u30C9\u30B9\u30E9\u30A4\u30E0"
+    en: Red Slime
+  - key: m_3_name
+    ja: "\u30B0\u30EA\u30FC\u30F3\u30B9\u30E9\u30A4\u30E0"
+    en: Green Slime
+  - key: m_4_name
+    ja: "\u30EC\u30C3\u30C9\u30DC\u30A2"
+    en: Red Boar
+  - key: m_5_name
+    ja: "\u30D6\u30EB\u30FC\u30DC\u30A2"
+    en: Blue Boar
+  - key: m_6_name
+    ja: "\u30B9\u30E9\u30A4\u30E0\u30D5\u30A9\u30FC\u30B9"
+    en: Slime Force
+  - key: m_7_name
+    ja: "\u30B4\u30D6\u30EA\u30F3"
+    en: Goblin
+  - key: m_8_name
+    ja: "\u30B4\u30D6\u30EA\u30F3\u30A6\u30A9\u30FC\u30EA\u30A2\u30FC"
+    en: Goblin Warrior
+  - key: m_9_name
+    ja: "\u30B4\u30D6\u30EA\u30F3\u30E1\u30A4\u30B8"
+    en: Goblin Mage
+  - key: m_10_name
+    ja: "\u30DC\u30D6\u30B4\u30D6\u30EA\u30F3"
+    en: Hobgoblin
+  - key: m_11_name
+    ja: "\u30DE\u30C6\u30EA\u30A2\u30B9\u30E9\u30A4\u30E0"
+    en: Material Slime
+  - key: m_12_name
+    ja: "\u30B4\u30D6\u30EA\u30F3\u30AD\u30F3\u30B0"
+    en: Goblin King
+  - key: m_13_name
+    ja: "\u30EB\u30FC\u30A4\u30F3\u30BA\u30B9\u30E9\u30C3\u30B0"
+    en: Ruins Slug
+  - key: m_14_name
+    ja: "\u30E9\u30A4\u30C6\u30A3\u30F3\u30B0\u30B9\u30E9\u30C3\u30B0"
+    en: Lightning Slug
+  - key: m_15_name
+    ja: "\u5E7D\u970A"
+    en: Ghost
+  - key: m_16_name
+    ja: "\u6028\u5FF5"
+    en: Vengeful Spirit
+  - key: m_17_name
+    ja: "\u30C9\u30E9\u30B4\u30F3\u30BE\u30F3\u30D3"
+    en: Dragon Zombie
+  - key: m_18_name
+    ja: "\u30A8\u30AF\u30EA\u30B9\u30FB\u30AB\u30FC\u30B9"
+    en: Eclis Curse
+  - key: m_19_name
+    ja: "\u30B3\u30DC\u30EB\u30C8"
+    en: Kobold
+  - key: m_20_name
+    ja: "\u30A6\u30EB\u30D5"
+    en: Wolf
+  - key: m_21_name
+    ja: "\u30D6\u30E9\u30C3\u30C9\u30A6\u30EB\u30D5"
+    en: Blood Wolf
+  - key: m_22_name
+    ja: "\u4EBA\u72FC"
+    en: Werewolf
+  - key: m_23_name
+    ja: "\u30E9\u30B0\u30CA\u30FB\u30F4\u30A9\u30EB\u30B0"
+    en: Ragna Varg
+  - key: m_24_name
+    ja: "\u30F4\u30A9\u30EB\u30B0\u30FB\u30B9\u30AB\u30FC"
+    en: Varg Scar
+  - key: m_25_name
+    ja: "\u30C9\u30EC\u30C3\u30C9\u30CF\u30F3\u30BF\u30FC"
+    en: Dread Hunter
+  - key: m_26_name
+    ja: "\u30A2\u30B7\u30C3\u30C9\u30B9\u30E9\u30A4\u30E0"
+    en: Acid Slime
+  - key: m_27_name
+    ja: "\u6D6E\u904A\u7532\u5191"
+    en: Floating Armor
+  - key: m_28_name
+    ja: "\u30B0\u30E9\u30FC\u30F4\u30CA\u30A4\u30C8"
+    en: Grave Knight
+  - key: m_29_name
+    ja: "\u30CD\u30AF\u30ED\u30A6\u30A3\u30B9\u30D7"
+    en: Necro Wisp
+  - key: m_30_name
+    ja: "\u30DC\u30FC\u30F3\u30A2\u30D0\u30C9\u30F3"
+    en: Bone Abaddon
+  - key: m_31_name
+    ja: "\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Skeleton
+  - key: m_32_name
+    ja: "\u30B5\u30F3\u30C9\u30EF\u30FC\u30E0"
+    en: Sand Worm
+  - key: m_33_name
+    ja: "\u30D6\u30E9\u30C3\u30AF\u30B5\u30F3\u30C9\u30EF\u30FC\u30E0"
+    en: Black Sand Worm
+  - key: m_34_name
+    ja: "\u30D6\u30E9\u30C3\u30AF\u30B3\u30DC\u30EB\u30C8"
+    en: Black Kobold
+  - key: m_35_name
+    ja: "\u30F4\u30A9\u30EB\u30C9\u30FC\u30E0"
+    en: Voldome
+  - key: m_36_name
+    ja: "\u30E9\u30F4\u30A1\u30B9\u30B3\u30FC\u30EB"
+    en: Lava Scourge
+  - key: m_37_name
+    ja: "\u9B54\u6CD5\u4F7F\u3044"
+    en: Wizard
+  - key: m_38_name
+    ja: "\u9B54\u5973"
+    en: Witch
+  - key: m_39_name
+    ja: "\u30AB\u30FC\u30E9\uFF06\u30F4\u30A3\u30AF\u30C8\u30EA\u30A2"
+    en: Kara & Victoria
+  - key: m_40_name
+    ja: "\u30BB\u30EA\u30A6\u30B9\u30FB\u30A2\u30FC\u30AF\u30EC\u30A4\u30F3"
+    en: Sirius Arcline
+  - key: m_41_name
+    ja: "\u30DE\u30B0\u30CA\u30FB\u30A2\u30EB\u30BB\u30EA\u30AA\u30F3"
+    en: Magna Arcelion
+  - key: m_42_name
+    ja: "\u30A2\u30EB\u30AB\u30FB\u30DE\u30AE\u30A6\u30B9"
+    en: Arca Magius
+  - key: m_43_name
+    ja: "\u30B4\u30FC\u30EC\u30E0\u30CA\u30A4\u30C8"
+    en: Golem Knight
+  - key: m_44_name
+    ja: "\u6EB6\u5CA9\u9B54\u4EBA"
+    en: Lava Fiend
+  - key: m_45_name
+    ja: "\u84BC\u6EB6\u5CA9\u9B54\u4EBA"
+    en: Azure Lava Fiend
+  - key: m_46_name
+    ja: "\u9B54\u4EBA\u306E\u571F\u5076"
+    en: Clay Idol Demon
+  - key: m_47_name
+    ja: "\u30B0\u30E9\u30F4\u30A3\u30A2\u30BA\u30FC\u30EB"
+    en: Gravia Azure
+  - key: m_48_name
+    ja: "\u30F4\u30A9\u30EB\u30B6\u30ED\u30C3\u30AF"
+    en: Volzarock
+  - key: m_49_name
+    ja: "\u30B4\u30FC\u30EC\u30E0\u30AC\u30FC\u30C7\u30A3\u30A2\u30F3"
+    en: Golem Guardian
+  - key: m_50_name
+    ja: "\u30B7\u30EB\u30D0\u30FC\u30B4\u30FC\u30EC\u30E0"
+    en: Silver Golem
+  - key: m_51_name
+    ja: "\u30B4\u30FC\u30EB\u30C9\u30B4\u30FC\u30EC\u30E0"
+    en: Gold Golem
+  - key: m_52_name
+    ja: "\u30B7\u30EB\u30D0\u30FC\u30B9\u30E9\u30A4\u30E0"
+    en: Silver Slime
+  - key: m_53_name
+    ja: "\u30A2\u30B9\u30C8\u30E9\u30FB\u30B3\u30ED\u30C3\u30B5\u30B9"
+    en: Astra Colossus
+  - key: m_54_name
+    ja: "\u30B0\u30E9\u30F4\u30A7\u30EB\u30CE\u30B9"
+    en: Gravernos
+  - key: m_55_name
+    ja: "\u30D5\u30A1\u30A4\u30E4\u30EA\u30B6\u30FC\u30C9"
+    en: Fire Lizard
+  - key: m_56_name
+    ja: "\u30B5\u30A4\u30AF\u30ED\u30D7\u30B9"
+    en: Cyclops
+  - key: m_57_name
+    ja: "\u30BD\u30EB\u30C9\u30EA\u30E0\u30FB\u30A2\u30A4\u30A2\u30F3\u30CF\u30FC\u30C8"
+    en: Soldrim Ironheart
+  - key: m_58_name
+    ja: "\u30F4\u30A1\u30EB\u30B5\u30A4\u30AF\u30ED\u30D7\u30B9"
+    en: Val Cyclops
+  - key: m_59_name
+    ja: "\u30B0\u30E9\u30A6\u30F3\u30C9\u30BF\u30A4\u30BF\u30F3"
+    en: Ground Titan
+  - key: m_60_name
+    ja: "\u714C\u7344\u9A0E\u30C7\u30E5\u30B6\u30EA\u30AA\u30F3"
+    en: Radiant Inferno Knight Duzalion
+  - key: m_61_name
+    ja: "\u30B4\u30FC\u30EC\u30E0\u30E1\u30FC\u30AB\u30FC"
+    en: Golem Maker
+  - key: m_62_name
+    ja: "\u30EA\u30F4\u30A3\u30A2\u30FB\u30CF\u30FC\u30C8\u30E9\u30A4\u30F3"
+    en: Livia Heartline
+  - key: m_63_name
+    ja: "\u30A2\u30AF\u30A2\u30FB\u30EC\u30AE\u30E5\u30EC\u30A4\u30BF\u30FC"
+    en: Aqua Regulator
+  - key: m_64_name
+    ja: "\u30D5\u30A9\u30EC\u30B9\u30C8\u30FB\u30AC\u30F3\u30CA\u30FC"
+    en: Forest Gunner
+  - key: m_65_name
+    ja: "\u30EC\u30B8\u30B9\u30C8\u30FB\u30B4\u30EC\u30A4\u30AA\u30F3"
+    en: Resist Goleion
+  - key: m_66_name
+    ja: "\u30A4\u30F3\u30D5\u30A7\u30EB\u30CE\u30FB\u30AE\u30A2"
+    en: Inferno Gear
+  - key: m_67_name
+    ja: "\u30B5\u30E9\u30DE\u30F3\u30C0\u30FC"
+    en: Salamander
+  - key: m_68_name
+    ja: "\u8D64\u7ADC"
+    en: Red Dragon
+  - key: m_69_name
+    ja: "\u30A8\u30F3\u30B7\u30A7\u30F3\u30C8\u30FB\u30EC\u30C3\u30C9"
+    en: Ancient Red Dragon
+  - key: m_70_name
+    ja: "\u30F4\u30A1\u30EB\u30A4\u30B0\u30CB\u30B9"
+    en: Val Ignis
+  - key: m_71_name
+    ja: "\u30D8\u30EB\u30B0\u30E9\u30C3\u30C9"
+    en: Hellglad
+  - key: m_72_name
+    ja: "\u30B0\u30E9\u30F3\u30FB\u30B9\u30E9\u30A4\u30AA\u30B9"
+    en: Gran Slaios
+  - key: m_73_name
+    ja: "\u30B9\u30A4\u30DE\u30FC\u30B4\u30D6\u30EA\u30F3"
+    en: Swimmer Goblin
+  - key: m_74_name
+    ja: "\u6F15\u624B\u30B4\u30D6\u30EA\u30F3"
+    en: Rower Goblin
+  - key: m_75_name
+    ja: "\u30E1\u30AC\u30ED\u30C9\u30F3"
+    en: Megalodon
+  - key: m_76_name
+    ja: "\u30D6\u30EB\u30AA\u30E1\u30AC"
+    en: Blue Omega
+  - key: m_77_name
+    ja: "\u30CD\u30D7\u30C1\u30FB\u30A2\u30D6\u30EB"
+    en: Nepti Abrul
+  - key: m_78_name
+    ja: "\u30A2\u30D3\u30B5\u30EB\u30FB\u30CD\u30D7\u30C8\u30A5\u30B9"
+    en: Abyssal Neptos
+  - key: m_79_name
+    ja: "\u72E9\u731F\u30B4\u30D6\u30EA\u30F3"
+    en: Hunter Goblin
+  - key: m_80_name
+    ja: "\u30D5\u30A7\u30A2\u30EA\u30FC"
+    en: Fairy
+  - key: m_81_name
+    ja: "\u9577\u8001\u30B4\u30D6\u30EA\u30F3"
+    en: Elder Goblin
+  - key: m_82_name
+    ja: "\u30EA\u30B6\u30FB\u30F4\u30A1\u30EB\u30AF"
+    en: Riza Valk
+  - key: m_83_name
+    ja: "\u30DC\u30EB\u30FB\u30B0\u30EB\u30CA"
+    en: Bol Gurna
+  - key: m_84_name
+    ja: "\u30AC\u30EB\u30FB\u30D5\u30A7\u30F3\u30EA\u30AA"
+    en: Gal Fenrio
+  - key: m_85_name
+    ja: "\u4EBA\u98DF\u3044\u30AD\u30CE\u30B3"
+    en: Man-Eating Mushroom
+  - key: m_86_name
+    ja: "\u30B4\u30FC\u30EB\u30C9\u30B9\u30E9\u30A4\u30E0"
+    en: Gold Slime
+  - key: m_87_name
+    ja: "\u30B9\u30E9\u30A4\u30E0\u30AD\u30F3\u30B0"
+    en: Slime King
+  - key: m_88_name
+    ja: "\u30DE\u30B0\u30FB\u30B9\u30E9\u30A4\u30E0"
+    en: Mag Slime
+  - key: m_89_name
+    ja: "\u30AD\u30F3\u30B0\u30FB\u30B0\u30EA\u30C3\u30C8"
+    en: King Grit
+  - key: m_90_name
+    ja: "\u30EB\u30AF\u30B9\u30FB\u30B8\u30A7\u30EA\u30FC"
+    en: Lux Jelly
+  - key: m_91_name
+    ja: "\u30AD\u30E9\u30FC\u30DE\u30F3\u30C6\u30A3\u30B9"
+    en: Killer Mantis
+  - key: m_92_name
+    ja: "\u30B9\u30BF\u30B0\u30D3\u30FC\u30C8\u30EB"
+    en: Stag Beetle
+  - key: m_93_name
+    ja: "\u30AD\u30E9\u30FC\u30BB\u30F3\u30C1\u30D4\u30FC\u30C9"
+    en: Killer Centipede
+  - key: m_94_name
+    ja: "\u30F4\u30A7\u30B9\u30FB\u30AB\u30EA\u30D0\u30FC"
+    en: Ves Calibur
+  - key: m_95_name
+    ja: "\u30A4\u30F3\u30D5\u30A7\u30EB\u30FB\u30D3\u30FC\u30C8\u30EB"
+    en: Infer Beetle
+  - key: m_96_name
+    ja: "\u30EB\u30DF\u30CA\u30FB\u30DF\u30E9\u30FC\u30B8\u30E5"
+    en: Lumina Mirage
+  - key: m_97_name
+    ja: "\u30E9\u30B9\u30C8\u30B3\u30A2"
+    en: Last Core
+  - key: m_98_name
+    ja: "\u30BF\u30FC\u30DF\u30CA\u30B9\u30FB\u30AE\u30A2\u30ED\u30FC\u30C9"
+    en: Terminus Gearlord
+  - key: m_99_name
+    ja: "\u30A4\u30F3\u30D5\u30A7\u30EB\u30CA\u30EB\u30FB\u30AA\u30FC\u30D0\u30FC\u30C9\u30E9\u30A4\u30D6"
+    en: Infernal Overdrive
+  - key: m_100_name
+    ja: "\u30D6\u30EB\u30FC\u30FB\u30F4\u30A9\u30EB\u30C6\u30AF\u30B9"
+    en: Blue Vortex
+  - key: m_101_name
+    ja: "\u30DE\u30B0\u30CA\u30FB\u30AE\u30A2\u30B4\u30FC\u30EC\u30E0"
+    en: Magna Gear Golem
+  - key: m_102_name
+    ja: "\u30A2\u30FC\u30AF\u30FB\u30BB\u30E9\u30D5\u30A3\u30AA\u30F3"
+    en: Arc Seraphion
+  - key: m_103_name
+    ja: "\u30E9\u30B0\u30B9"
+    en: Rags
+  - key: m_104_name
+    ja: "\u30D0\u30EB\u30C9"
+    en: Bald
+  - key: m_105_name
+    ja: "\u30D0\u30EB\u30B6\u30C3\u30AF"
+    en: Balzac
+  - key: m_106_name
+    ja: "\u30B4\u30EB\u30C0\u30F3"
+    en: Gordan
+  - key: m_107_name
+    ja: "\u30AB\u30FC\u30F3\u30F4\u30A1\u30EB"
+    en: Karnval
+  - key: m_108_name
+    ja: "\u30B0\u30EA\u30E2\u30EB\u30C0\u30F3"
+    en: Grimordan
+  - key: m_109_name
+    ja: "\u30E9\u30A4\u30C8\u30EF\u30FC\u30E0"
+    en: Light Worm
+  - key: m_110_name
+    ja: "\u30B1\u30A4\u30D6\u30B9\u30D1\u30A4\u30C0\u30FC"
+    en: Cave Spider
+  - key: m_111_name
+    ja: "\u4EA1\u970A\u9271\u592B"
+    en: Spectral Miner
+  - key: m_112_name
+    ja: "\u30DE\u30A4\u30B3\u30C9\u30EC\u30A4\u30AF"
+    en: Myco Drake
+  - key: m_113_name
+    ja: "\u30A2\u30FC\u30B9\u30C9\u30E9\u30B4\u30F3"
+    en: Earth Dragon
+  - key: m_114_name
+    ja: "\u30A2\u30D3\u30B9\u30C9\u30E9\u30B4\u30F3"
+    en: Abyss Dragon
+  - key: m_115_name
+    ja: "\u30D5\u30A3\u30ED\u30FC\u30CA"
+    en: Filona
+  - key: m_116_name
+    ja: "\u30AD\u30E5\u30FC\u31FE\u30EA\u30B9"
+    en: Curielis
+  - key: m_117_name
+    ja: "\u30B3\u30E9\u30F3\u30C1\u30E5\u30E9"
+    en: Corantula
+  - key: m_118_name
+    ja: "\u30C0\u30EB\u30F3\u30C9\u30A5"
+    en: Dalundu
+  - key: m_119_name
+    ja: "\u30AC\u30EB\u30D6\u30ED\u30C3\u30B5"
+    en: Galbrossa
+  - key: m_120_name
+    ja: "\u30C9\u30EC\u30A4\u30F3\u30BF\u30B9"
+    en: Dreintas
+  - key: m_121_name
+    ja: "\u30B9\u30AB\u30A4\u30EC\u30A4\u30F4\u30F3"
+    en: Sky Raven
+  - key: m_122_name
+    ja: "\u30AC\u30EC\u30A6\u30A3\u30F3\u30B0\u30DB\u30FC\u30AF"
+    en: Gale-Wing Hawk
+  - key: m_123_name
+    ja: "\u30D5\u30A7\u30B6\u30FC\u30C9\u30F4\u30A1\u30EB\u30C1\u30E3\u30FC"
+    en: Feathered Vulture
+  - key: m_124_name
+    ja: "\u30CF\u30FC\u30D4\u30FC"
+    en: Harpy
+  - key: m_125_name
+    ja: "\u30B9\u30C8\u30FC\u30E0\u30B3\u30F3\u30C9\u30EB"
+    en: Storm Condor
+  - key: m_126_name
+    ja: "\u30A2\u30EB\u30FB\u30F4\u30A9\u30EC\u30AA\u30B9"
+    en: Al Voreos
+  - key: m_127_name
+    ja: "\u9B54\u5C0E\u8987\u9B3C\u30B4\u30EB\u30F4\u30A1\u30B9"
+    en: Demonic Overlord Gorvas
+  - key: m_128_name
+    ja: "\u30DE\u30AD\u30CA\u30EC\u30AF\u30B9"
+    en: Machina Rex
+  - key: m_129_name
+    ja: "\u30F4\u30A7\u30EB\u30B6\u30FC\u30AF"
+    en: Velzark
+  - key: m_130_name
+    ja: "\u707C\u5CA9\u738B\u30B0\u30EC\u30A2\u30E9\u30B0"
+    en: Scorchstone King Glearag
+  - key: m_131_name
+    ja: "\u30A2\u30F4\u30A3\u30C9\u30A5\u30B9\u30FB\u30DE\u30B0\u30DE\u2015\u30EB"
+    en: Avidus Magmarl
+  - key: m_132_name
+    ja: "\u96F7\u7259\u738B\u30F4\u30A1\u30EB\u30C9\u30A5\u30FC\u30F3"
+    en: Thunderfang King Valdurn
+  - key: m_133_name
+    ja: "\u30CD\u30B0\u30ED\u30B9\u30D1\u30A4\u30C0\u30FC"
+    en: Negros Spider
+  - key: m_134_name
+    ja: "\u30EA\u30C3\u30C1\u30FB\u30E2\u30EB\u30C7\u30A3\u30AC\u30F3"
+    en: Lich Mordigan
+  - key: m_135_name
+    ja: "\u30CD\u30AF\u30ED\u30FB\u30C9\u30E9\u30B0\u30CB\u30EB"
+    en: Necro Dragnir
+  - key: m_136_name
+    ja: "\u30F4\u30A1\u30EB\u30FB\u30C7\u30A3\u30A2\u30D6\u30ED"
+    en: Val Diablo
+  - key: m_137_name
+    ja: "\u30D6\u30E9\u30C3\u30C9\u30FB\u30DF\u30CE\u30BF\u30A6\u30ED\u30B9"
+    en: Blood Minotaurus
+  - key: m_138_name
+    ja: "\u30A2\u30BA\u30E9\u30FB\u30D2\u30E5\u30C9\u30E9"
+    en: Azura Hydra
+  - key: m_139_name
+    ja: "\u30DE\u30B0\u30FB\u30F4\u30A9\u30EB\u30E0"
+    en: Mag Wyrm
+  - key: m_140_name
+    ja: "\u30D5\u30ED\u30B9\u30C6\u30A3\u30A2\u30FB\u30EC\u30AF\u30A4\u30A8\u30E0"
+    en: Frostia Requiem
+  - key: m_141_name
+    ja: "\u30A4\u30F3\u30D5\u30A7\u30EB\u30CE\u30FB\u30D0\u30EB\u30AC\u30B9"
+    en: Inferno Vargas
+  - key: m_142_name
+    ja: "\u30CD\u30D5\u30A7\u30EB\u30FB\u30A2\u30F3\u30E0\u30FC\u30C8"
+    en: Nefer Ammut
+  - key: m_143_name
+    ja: "\u30F4\u30A1\u30EB\u30FB\u30CE\u30AF\u30C6\u30A3\u30B9"
+    en: Val Noctis
+  - key: m_144_name
+    ja: "\u30E2\u30EB\u30FB\u30AB\u30F4\u30A1\u30EA\u30A8"
+    en: Mol Cavaliere
+  - key: m_145_name
+    ja: "\u30B0\u30EA\u30FC\u30F3\u30FB\u30AB\u30BF\u30B9\u30C8\u30E9"
+    en: Green Catastora
+  - key: m_146_name
+    ja: "\u30BF\u30E9\u30C3\u30B5\u30FB\u30DF\u30EB\u30C7\u30A3\u30A2"
+    en: Thalassa Mildia
+  - key: m_147_name
+    ja: "\u30B9\u30AB\u30EB\u30ED\u30FC\u30C9"
+    en: Skull Lord
+  - key: m_148_name
+    ja: "\u30A2\u30B7\u30E5\u30BF\u30ED\u30B9\u30FB\u30EA\u30EA\u30A2"
+    en: Ashtaroth Lilia
+  - key: m_149_name
+    ja: "\u30D6\u30C3\u30C1\u30E3\u30FC\u30FB\u30B4\u30EB\u30E0"
+    en: Butcher Golm
+  - key: m_150_name
+    ja: "\u30F4\u30A9\u30A4\u30C9\u30FB\u30D0\u30EB\u30B6\u30FC\u30AF"
+    en: Void Balzark
+  - key: m_151_name
+    ja: "\u30A2\u30EB\u30AB\u30CA\uFF1D\u30C9\u30E9\u30B0\u30CA\u30FC\u30EB"
+    en: Arcana = Dragnall

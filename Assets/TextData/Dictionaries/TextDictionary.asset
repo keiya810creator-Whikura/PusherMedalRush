@@ -1,0 +1,460 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d5f4ceba70e9141a1a2fde487e51c4, type: 3}
+  m_Name: TextDictionary
+  m_EditorClassIdentifier: 
+  entries:
+  - key: ui_mainmenu_1
+    ja: "\u5192\u967A\u306B\u51FA\u308B"
+    en: Start Adventure
+  - key: ui_mainmenu_1_1
+    ja: "\u5192\u967A\u3059\u308B"
+    en: Adventure
+  - key: ui_mainmenu_1_10
+    ja: "\u7D42\u4E86:{0}"
+    en: 'End: {0}'
+  - key: ui_mainmenu_1_11
+    ja: "\u9650\u754C\u307E\u3067"
+    en: To the Limit
+  - key: ui_mainmenu_1_12
+    ja: "\u300A\u6069\u6075\u306F\u3059\u3067\u306B\u6388\u3051\u3089\u308C\u3066\u3044\u307E\u3059\u300B\u81EA\u52D5\u5468\u56DE\u4E2D\u306F\u7D99\u7D9A\u9069\u7528"
+    en: Benefit Already Granted (Active During Auto-Run)
+  - key: ui_mainmenu_1_13
+    ja: "\u7D42\u4E86\uFF1A\u9650\u754C\u307E\u3067"
+    en: 'End: Until the Limit'
+  - key: ui_mainmenu_1_2
+    ja: "\u5E83\u544A\u3092\u898B\u3066\u81EA\u52D5\u5468\u56DE\u3059\u308B"
+    en: Watch an Ad to Auto-Run
+  - key: ui_mainmenu_1_3
+    ja: "\u300A\u5E83\u544A\u524A\u9664\u306E\u6069\u6075\u300B\\n\u30C9\u30ED\u30C3\u30D7\u73872\u500D\u306F\u5E38\u6642\u767A\u52D5\u4E2D"
+    en: '[Remove Ads Benefit]\n2x Drop Rate is Always Active'
+  - key: ui_mainmenu_1_4
+    ja: "\u5E83\u544A\u3092\u898B\u3066\\n\u88C5\u5099\u3001\u79F0\u53F7\u30C9\u30ED\u30C3\u30D7\u73872\u500D\u3002\u30B4\u30FC\u30EB\u30C9\u30C9\u30ED\u30C3\u30D7\u91CF2\u500D"
+    en: Watch an Ad to Double Equipment/Title Drop Rates and Gold Gain
+  - key: ui_mainmenu_1_5
+    ja: "\u88C5\u5099\u30C9\u30ED\u30C3\u30D7\u7387 {0:F2}%"
+    en: Equipment Drop Rate {0:F2}%
+  - key: ui_mainmenu_1_6
+    ja: " / \u79F0\u53F7\u30C9\u30ED\u30C3\u30D7\u7387 {0:F2}%"
+    en: / Title Drop Rate {0:F2}%
+  - key: ui_mainmenu_1_7
+    ja: "\u30B4\u30FC\u30EB\u30C9\u30C9\u30ED\u30C3\u30D7\u91CF {0:F2}%"
+    en: Gold Drop Amount {0:F2}%
+  - key: ui_mainmenu_1_8
+    ja: 0{0}{1}\n{2}
+    en: '{0}{1}\n{2}'
+  - key: ui_mainmenu_1_9
+    ja: "\u958B\u59CB:{0}"
+    en: 'Start: {0}'
+  - key: ui_mainmenu_2
+    ja: "\u6226\u95D8\u8A2D\u5B9A"
+    en: Battle Settings
+  - key: ui_mainmenu_2_1
+    ja: "\u81EA\u52D5\u5206\u89E3"
+    en: Auto Disassemble
+  - key: ui_mainmenu_2_10
+    ja: "\u30B2\u30FC\u30E0\u901F\u5EA6\u500D\u7387"
+    en: Game Speed Multiplier
+  - key: ui_mainmenu_2_2
+    ja: "\u30CE\u30FC\u30DE\u30EB\u88C5\u5099"
+    en: Normal Equipment
+  - key: ui_mainmenu_2_3
+    ja: "\u30EC\u30A2\u88C5\u5099"
+    en: Rare Equipment
+  - key: ui_mainmenu_2_4
+    ja: "\u30B9\u30FC\u30D1\u30FC\u30EC\u30A2\u88C5\u5099"
+    en: Super Rare Equipment
+  - key: ui_mainmenu_2_5
+    ja: "\u30A8\u30D4\u30C3\u30AF\u30EC\u30A2\u88C5\u5099"
+    en: Epic Rare Equipment
+  - key: ui_mainmenu_2_6
+    ja: "\u30EC\u30B8\u30A7\u30F3\u30C0\u30EA\u30FC\u30EC\u30A2\u88C5\u5099"
+    en: Legendary Rare Equipment
+  - key: ui_mainmenu_2_7
+    ja: "\u30B4\u30C3\u30C9\u30EC\u30A2\u88C5\u5099"
+    en: God Rare Equipment
+  - key: ui_mainmenu_2_8
+    ja: "\u56DE\u53CE\u30A6\u30A7\u30FC\u30D6\u6642\u9593{0}\u79D2"
+    en: 'Recovery Wave Time: {0}s'
+  - key: ui_mainmenu_2_9
+    ja: "\u30D9\u30C3\u30C8\u500D\u7387{0}\u500D:\u4E0E\u30C0\u30E1\u30FC\u30B8\u30FB\u6D88\u8CBB\u30E1\u30C0\u30EB{0}\u500D"
+    en: 'Bet Multiplier x{0}: Damage & Medal Cost x{0}'
+  - key: ui_mainmenu_3
+    ja: "\u30B7\u30B9\u30C6\u30E0\u8A2D\u5B9A"
+    en: System Settings
+  - key: ui_mainmenu_3_1
+    ja: "\u97F3\u91CF\u8A2D\u5B9A"
+    en: Volume Settings
+  - key: ui_mainmenu_4
+    ja: "\u30E1\u30A4\u30F3\u30E1\u30CB\u30E5\u30FC"
+    en: Main Menu
+  - key: ui_mainmenu_5
+    ja: "\u30B9\u30C6\u30FC\u30BF\u30B9"
+    en: Status
+  - key: ui_mainmenu_5_1
+    ja: "\u30E1\u30C0\u30EB\u91CF"
+    en: Medals
+  - key: ui_mainmenu_5_10
+    ja: "\u653B\u6483\u529B5\u500D\u30E1\u30C0\u30EB\u51FA\u73FE\u7387"
+    en: 5x Attack Medal Spawn Rate
+  - key: ui_mainmenu_5_11
+    ja: "\u653B\u6483\u529B10\u500D\u30E1\u30C0\u30EB\u51FA\u73FE\u7387"
+    en: 10x Attack Medal Spawn Rate
+  - key: ui_mainmenu_5_12
+    ja: "\u30B4\u30FC\u30EB\u30C9\u30C9\u30ED\u30C3\u30D7\u91CF\u500D\u7387"
+    en: Gold Drop Multiplier
+  - key: ui_mainmenu_5_13
+    ja: "\u88C5\u5099\u30C9\u30ED\u30C3\u30D7\u500D\u7387"
+    en: Equipment Drop Multiplier
+  - key: ui_mainmenu_5_14
+    ja: "\u79F0\u53F7\u30C9\u30ED\u30C3\u30D7\u500D\u7387"
+    en: Title Drop Multiplier
+  - key: ui_mainmenu_5_2
+    ja: "\u653B\u6483\u529B"
+    en: Attack Power
+  - key: ui_mainmenu_5_3
+    ja: "\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u7387"
+    en: Critical Rate
+  - key: ui_mainmenu_5_4
+    ja: "\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: Critical Damage Multiplier
+  - key: ui_mainmenu_5_5
+    ja: "\u540C\u6642\u767A\u5C04\u6570"
+    en: Simultaneous Shots
+  - key: ui_mainmenu_5_6
+    ja: "\u56DE\u53CEWave\u79D2"
+    en: Recovery Wave Seconds
+  - key: ui_mainmenu_5_7
+    ja: "\u56DE\u53CEWave\u6642\u30E1\u30C0\u30EB\u4FA1\u5024"
+    en: Medal Value During Recovery Wave
+  - key: ui_mainmenu_5_8
+    ja: "\u30E1\u30C0\u30EB\u6D88\u8CBB0\u78BA\u7387"
+    en: Zero Medal Cost Chance
+  - key: ui_mainmenu_5_9
+    ja: "\u653B\u6483\u529B2\u500D\u30E1\u30C0\u30EB\u51FA\u73FE\u7387"
+    en: 2x Attack Medal Spawn Rate
+  - key: ui_mainmenu_6
+    ja: "\u88C5\u5099"
+    en: Equipment
+  - key: ui_mainmenu_6_1
+    ja: "\u30EC\u30A2\u30EA\u30C6\u30A3"
+    en: Rarity
+  - key: ui_mainmenu_6_10
+    ja: "\u56DE\u53CEWave\u30E1\u30C0\u30EB\u4FA1\u5024"
+    en: Recovery Wave Medal Value
+  - key: ui_mainmenu_6_11
+    ja: "\u30E1\u30C0\u30EB\u6D88\u8CBB0\u78BA\u7387"
+    en: Zero Medal Cost Chance
+  - key: ui_mainmenu_6_12
+    ja: "\u653B\u64832\u500D\u30E1\u30C0\u30EB\u51FA\u73FE\u7387"
+    en: 2x Attack Medal Spawn Rate
+  - key: ui_mainmenu_6_13
+    ja: "\u653B\u64835\u500D\u30E1\u30C0\u30EB\u51FA\u73FE\u7387"
+    en: 5x Attack Medal Spawn Rate
+  - key: ui_mainmenu_6_14
+    ja: "\u653B\u648310\u500D\u30E1\u30C0\u30EB\u51FA\u73FE\u7387"
+    en: 10x Attack Medal Spawn Rate
+  - key: ui_mainmenu_6_15
+    ja: "\u30B4\u30FC\u30EB\u30C9\u30C9\u30ED\u30C3\u30D7\u91CF"
+    en: Gold Drop Amount
+  - key: ui_mainmenu_6_16
+    ja: "\u88C5\u5099\u30C9\u30ED\u30C3\u30D7\u500D\u7387"
+    en: Equipment Drop Multiplier
+  - key: ui_mainmenu_6_17
+    ja: "\u79F0\u53F7\u30C9\u30ED\u30C3\u30D7\u500D\u7387"
+    en: Title Drop Multiplier
+  - key: ui_mainmenu_6_18
+    ja: "\u30D5\u30A3\u30EB\u30BF\u30FC"
+    en: Filter
+  - key: ui_mainmenu_6_19
+    ja: "\u30CE\u30FC\u30DE\u30EB\u88C5\u5099"
+    en: Normal Equipment
+  - key: ui_mainmenu_6_2
+    ja: "\u653B\u6483\u529B"
+    en: Attack
+  - key: ui_mainmenu_6_20
+    ja: "\u30EC\u30A2\u88C5\u5099"
+    en: Rare Equipment
+  - key: ui_mainmenu_6_21
+    ja: "\u30B9\u30FC\u30D1\u30FC\u30EC\u30A2\u88C5\u5099"
+    en: Super Rare Equipment
+  - key: ui_mainmenu_6_22
+    ja: "\u30A8\u30D4\u30C3\u30AF\u30EC\u30A2\u88C5\u5099"
+    en: Epic Rare Equipment
+  - key: ui_mainmenu_6_23
+    ja: "\u30EC\u30B8\u30A7\u30F3\u30C0\u30EA\u30FC\u30EC\u30A2\u88C5\u5099"
+    en: Legendary Rare Equipment
+  - key: ui_mainmenu_6_24
+    ja: "\u30B4\u30C3\u30C9\u30EC\u30A2\u88C5\u5099"
+    en: God Rare Equipment
+  - key: ui_mainmenu_6_25
+    ja: "\u300A\u30CE\u30FC\u30DE\u30EB\u79F0\u53F7\u300B"
+    en: "\u300ANormal Title\u300B"
+  - key: ui_mainmenu_6_26
+    ja: "\u300A\u30EC\u30A2\u79F0\u53F7\u300B"
+    en: "\u300ARare Title\u300B"
+  - key: ui_mainmenu_6_27
+    ja: "\u300A\u30B9\u30FC\u30D1\u30FC\u30EC\u30A2\u79F0\u53F7\u300B"
+    en: "\u300ASuper Rare Title\u300B"
+  - key: ui_mainmenu_6_28
+    ja: "\u300A\u30A8\u30D4\u30C3\u30AF\u30EC\u30A2\u79F0\u53F7\u300B"
+    en: "\u300AEpic Title\u300B"
+  - key: ui_mainmenu_6_29
+    ja: "\u300A\u30EC\u30B8\u30A7\u30F3\u30C0\u30EA\u30FC\u30EC\u30A2\u79F0\u53F7\u300B"
+    en: "\u300ALegendary Title\u300B"
+  - key: ui_mainmenu_6_3
+    ja: "\u653B\u6483\u529B\u500D\u7387"
+    en: Attack Multiplier
+  - key: ui_mainmenu_6_30
+    ja: "\u300A\u30B4\u30C3\u30C9\u30EC\u30A2\u79F0\u53F7\u300B"
+    en: "\u300AGod Rare Title\u300B"
+  - key: ui_mainmenu_6_31
+    ja: "\u79F0\u53F7\u6709\u308A"
+    en: With Title
+  - key: ui_mainmenu_6_32
+    ja: "\u79F0\u53F7\u7121\u3057"
+    en: No Title
+  - key: ui_mainmenu_6_33
+    ja: "\u304A\u6C17\u306B\u5165\u308A"
+    en: Favorite
+  - key: ui_mainmenu_6_34
+    ja: "\u6C17\u306B\u5165\u3089\u306A\u3044"
+    en: Not Favorite
+  - key: ui_mainmenu_6_35
+    ja: "\u5168\u9078\u629E"
+    en: Select All
+  - key: ui_mainmenu_6_36
+    ja: "\u5206\u89E3\u30E2\u30FC\u30C9"
+    en: Disassemble Mode
+  - key: ui_mainmenu_6_37
+    ja: "\u5206\u89E3\u30E2\u30FC\u30C9\u89E3\u9664"
+    en: Exit Disassemble Mode
+  - key: ui_mainmenu_6_38
+    ja: "\u5168\u9078\u629E"
+    en: Select All
+  - key: ui_mainmenu_6_39
+    ja: "\u5206\u89E3"
+    en: Disassemble
+  - key: ui_mainmenu_6_4
+    ja: "\u6700\u5927\u30E1\u30C0\u30EB"
+    en: Max Medals
+  - key: ui_mainmenu_6_40
+    ja: "\u5206\u89E3\u3057\u307E\u3059\u304B\uFF1F"
+    en: Disassemble this item?
+  - key: ui_mainmenu_6_41
+    ja: "\u88C5\u5099\xD7{0}"
+    en: Equipment x{0}
+  - key: ui_mainmenu_6_42
+    ja: "\u8FD4\u5374\u3055\u308C\u308B\u79F0\u53F7"
+    en: Returned Titles
+  - key: ui_mainmenu_6_43
+    ja: "\u8FD4\u5374\u3055\u308C\u308B\u79F0\u53F7\u306F\u3042\u308A\u307E\u305B\u3093"
+    en: No Titles Will Be Returned
+  - key: ui_mainmenu_6_44
+    ja: "\u30AD\u30E3\u30F3\u30BB\u30EB"
+    en: Cancel
+  - key: ui_mainmenu_6_45
+    ja: "\u5206\u89E3\u3059\u308B"
+    en: Disassemble
+  - key: ui_mainmenu_6_46
+    ja: "\u88C5\u5099\u3059\u308B"
+    en: Equip
+  - key: ui_mainmenu_6_47
+    ja: "\u5916\u3059"
+    en: Unequip
+  - key: ui_mainmenu_6_48
+    ja: "\u304A\u6C17\u306B\u5165\u308A\u767B\u9332"
+    en: Add to Favorites
+  - key: ui_mainmenu_6_49
+    ja: "\u304A\u6C17\u306B\u5165\u308A\u89E3\u9664"
+    en: Remove from Favorites
+  - key: ui_mainmenu_6_5
+    ja: "\u6700\u5927\u30E1\u30C0\u30EB\u500D\u7387"
+    en: Max Medals Multiplier
+  - key: ui_mainmenu_6_50
+    ja: "\u79F0\u53F7\u4ED8\u4E0E"
+    en: Attach Title
+  - key: ui_mainmenu_6_51
+    ja: "\u4ED8\u4E0E\u3059\u308B"
+    en: Attach
+  - key: ui_mainmenu_6_6
+    ja: "\u540C\u6642\u767A\u5C04\u6570"
+    en: Simultaneous Shots
+  - key: ui_mainmenu_6_7
+    ja: "\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u7387"
+    en: Critical Rate
+  - key: ui_mainmenu_6_8
+    ja: "\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u500D\u7387"
+    en: Critical Multiplier
+  - key: ui_mainmenu_6_9
+    ja: "\u56DE\u53CEWave\u79D2"
+    en: Recovery Wave Seconds
+  - key: ui_mainmenu_6_52
+    ja: "\u5168\u89E3\u9664"
+    en: UnequipAll
+  - key: ui_mainmenu_7
+    ja: "\u30B7\u30E7\u30C3\u30D7"
+    en: Shop
+  - key: ui_mainmenu_7_1
+    ja: "\u30B9\u30BF\u30FC\u30BF\u30FC\u30BB\u30C3\u30C8"
+    en: Starter Pack
+  - key: ui_mainmenu_7_10
+    ja: "\u5009\u5EAB\u5BB9\u91CF {0}/{1}"
+    en: Storage Capacity {0}/{1}
+  - key: ui_mainmenu_7_11
+    ja: "\u8CFC\u5165\u3059\u308B"
+    en: Buy
+  - key: ui_mainmenu_7_12
+    ja: "\u8CFC\u5165\u6E08\u307F"
+    en: Purchased
+  - key: ui_mainmenu_7_13
+    ja: "\u8CFC\u5165\u4E0D\u53EF"
+    en: Unavailable
+  - key: ui_mainmenu_7_14
+    ja: "\u8CFC\u5165\u5FA9\u5143"
+    en: Restore Purchases
+  - key: ui_mainmenu_7_2
+    ja: "\u5E83\u544A\u524A\u9664\u30FB3\u500D\u901F\u89E3\u653E\u30FB\u79F0\u53F7\u30C9\u30ED\u30C3\u30D7\u500D\u73871.5\u500D\\n\u306E\u304A\u5F97\u306A\u30BB\u30C3\u30C8\u3067\u3059\u3002"
+    en: A great value bundle:\nRemove Ads + 3x Speed + Title Drop x1.5
+  - key: ui_mainmenu_7_3
+    ja: "\u5E83\u544A\u524A\u9664"
+    en: Remove Ads
+  - key: ui_mainmenu_7_4
+    ja: "\u5E83\u544A\u306A\u3057\u3067\u81EA\u52D5\u5468\u56DE\u3068\u30C9\u30ED\u30C3\u30D7\u7387\u30A2\u30C3\u30D7\u304C\u5229\u7528\u3067\u304D\u307E\u3059\u3002"
+    en: Auto-run and Drop Rate Boost without Ads
+  - key: ui_mainmenu_7_5
+    ja: "\uFF13\u500D\u901F\u89E3\u653E"
+    en: Unlock 3x Speed
+  - key: ui_mainmenu_7_6
+    ja: "\u6226\u95D8\u901F\u5EA6\uFF13\u500D\u304C\u89E3\u653E\u3055\u308C\u307E\u3059\u3002"
+    en: Unlocks 3x Battle Speed
+  - key: ui_mainmenu_7_7
+    ja: "\u79F0\u53F7\u30C9\u30ED\u30C3\u30D7\u73871.5\u500D"
+    en: Title Drop Rate x1.5
+  - key: ui_mainmenu_7_8
+    ja: "\u79F0\u53F7\u306E\u30C9\u30ED\u30C3\u30D7\u500D\u7387\u304C1.5\u500D\u306B\u306A\u308A\u307E\u3059\u3002"
+    en: Increases Title Drop Rate by 1.5x
+  - key: ui_mainmenu_7_9
+    ja: "\u5009\u5EAB\u62E1\u5F35 +100"
+    en: Storage Expansion +100
+  - key: ui_mainmenu_8
+    ja: "\u305D\u306E\u4ED6"
+    en: Other
+  - key: ui_mainmenu_8_1
+    ja: "\u30E2\u30F3\u30B9\u30BF\u30FC\u56F3\u9451"
+    en: Monster Dex
+  - key: ui_mainmenu_8_2
+    ja: "\u88C5\u5099\u56F3\u9451"
+    en: Equipment Dex
+  - key: ui_mainmenu_8_3
+    ja: "\u79F0\u53F7\u56F3\u9451"
+    en: Title Dex
+  - key: ui_mainmenu_8_4
+    ja: "\u51FA\u73FE\u30B9\u30C6\u30FC\u30B8\uFF1A{0}"
+    en: Appears In Stage:{0}
+  - key: ui_mainmenu_8_5
+    ja: "\u51FA\u73FE\u7387:{0}"
+    en: Spawn Rate:{0}
+  - key: ui_mainmenu_8_6
+    ja: "\u30C9\u30ED\u30C3\u30D7\u88C5\u5099"
+    en: Dropped Equipment
+  - key: ui_mainmenu_8_7
+    ja: "\u30C9\u30ED\u30C3\u30D7\u79F0\u53F7"
+    en: Dropped Titles
+  - key: ui_mainmenu_8_8
+    ja: "\u56F3\u9451\u9054\u6210\u7387\uFF1A{0:F2}%\\n\u30E2\u30F3\u30B9\u30BF\u30FC\uFF1A{1:F2}%\u88C5\u5099\uFF1A{2:F2}%
+      \u79F0\u53F7\uFF1A{3:F2}%"
+    en: 'Dex Completion: {0:F2}%\nMonsters: {1:F2}%\nEquipment: {2:F2}% Titles: {3:F2}%'
+  - key: ui_resultmenu_1
+    ja: "\u5192\u967A\u304B\u3089\u306E\u5E30\u9084"
+    en: Return from Adventure
+  - key: ui_resultmenu_2
+    ja: "\u5230\u9054Wave\uFF1A{0}"
+    en: 'Reached Wave: {0}'
+  - key: ui_resultmenu_3
+    ja: "\u7372\u5F97\u30B4\u30FC\u30EB\u30C9\uFF1A{0}"
+    en: 'Gold Earned: {0}'
+  - key: ui_resultmenu_4
+    ja: "\u7372\u5F97\u88C5\u5099"
+    en: Equipment Obtained
+  - key: ui_resultmenu_5
+    ja: "\u7372\u5F97\u79F0\u53F7"
+    en: Titles Obtained
+  - key: ui_resultmenu_6
+    ja: "\u623B\u308B"
+    en: Back
+  - key: ui_resultmenu_7
+    ja: "\u518D\u6311\u6226"
+    en: Retry
+  - key: ui_sentou_1
+    ja: "\u4E0E\u30C0\u30E1\u30FC\u30B8\u76EE\u5B89\uFF1A\u7D04{0}"
+    en: 'Estimated Damage: {0}'
+  - key: ui_sentou_10
+    ja: "\u203B\u7701\u96FB\u529B\u30E2\u30FC\u30C9\u306F\u753B\u9762\u6697\u8EE2\u5F8C\u3001\uFF13\u56DE\u30BF\u30C3\u30D7\u3067\u89E3\u9664\u3067\u304D\u307E\u3059\u3002"
+    en: Power Saving Mode can be disabled\nby tapping 3 times after the screen dims.
+  - key: ui_sentou_11
+    ja: "\u56DE\u53CE\u30A6\u30A7\u30FC\u30D6\u7D42\u4E86\u307E\u3067\uFF1A{0}\u79D2"
+    en: 'Until Recovery Wave Ends: {0}s'
+  - key: ui_sentou_2
+    ja: "\u6B8B\u308A\u5F3E\u6570\uFF1A{0}"
+    en: 'Shots Remaining: {0}'
+  - key: ui_sentou_3
+    ja: "\u64A4\u9000\u53EF\u80FD\u307E\u3067\uFF1A{0}\u79D2"
+    en: Retreat Available In:{0}second
+  - key: ui_sentou_4
+    ja: "\u6B8B\u308A\u5F3E\u6570\uFF1A\u221E"
+    en: "Shots Remaining: \u221E"
+  - key: ui_sentou_5
+    ja: "\u30DD\u30FC\u30BA"
+    en: Pause
+  - key: ui_sentou_6
+    ja: "\u64A4\u9000\u3057\u307E\u3059\u304B\uFF1F"
+    en: Retreat?
+  - key: ui_sentou_7
+    ja: "\u30C9\u30ED\u30C3\u30D7\u3057\u305F\u88C5\u5099\u3068\u79F0\u53F7\u3001\\n\u30B4\u30FC\u30EB\u30C9\u306F\u7372\u5F97\u3067\u304D\u307E\u3059\u3002"
+    en: '"You will keep all dropped equipment'
+  - key: ui_sentou_8
+    ja: "\u64A4\u9000\u3059\u308B"
+    en: Retreat
+  - key: ui_sentou_9
+    ja: "\u7701\u96FB\u529B\u30E2\u30FC\u30C9"
+    en: Power Saving Mode
+  - key: ui_sort_none
+    ja: "\u306A\u3057"
+    en: None
+  - key: ui_sort_rarity
+    ja: "\u30EC\u30A2\u30EA\u30C6\u30A3"
+    en: Rarity
+  - key: ui_title_1
+    ja: "\u8A00\u8A9E\u9078\u629E"
+    en: Language Settings
+  - key: ui_title_2
+    ja: "\u304A\u554F\u5408\u305B"
+    en: Support
+  - key: ui_toast_1
+    ja: "{0}\u304C\u8FD4\u5374\u3055\u308C\u305F\uFF01\uFF01"
+    en: '{0} has been returned!!'
+  - key: ui_toast_2
+    ja: "\u56DE\u53CE\u30A6\u30A7\u30FC\u30D6\u958B\u59CB\uFF01\uFF01\\n\u30E1\u30C0\u30EB\u6253\u3061\u653E\u984C\uFF01\uFF01"
+    en: Recovery Wave Started!! \nFire Medals Freely!!
+  - key: ui_toast_3
+    ja: "\u6D88\u8CBB\u30E1\u30C0\u30EB\u304C\uFF11\u5897\u3048\u305F\uFF01\uFF01"
+    en: Medal Cost Increased by 1!!
+  - key: ui_toast_4
+    ja: "\u88C5\u5099\u304C\u3044\u3063\u3071\u3044\u3067\u3059\uFF01\u5206\u89E3\u3057\u3066\u304F\u3060\u3055\u3044\uFF01"
+    en: Inventory Full! Please disassemble equipment!
+  - key: ui_toast_5
+    ja: "\u8CFC\u5165\u3092\u5FA9\u5143\u3057\u307E\u3057\u305F\uFF01"
+    en: Purchases Restored!
+  - key: ui_toast_6
+    ja: "\u6DF1\u5C64\u79F0\u53F7\u3092\u767A\u898B\u3057\u305F\uFF01\uFF01"
+    en: Abyss Title Found!!

@@ -1,0 +1,152 @@
+﻿ネームキー,名前(日本語),名前(英語)
+m_1_name,ブルースライム,Blue Slime
+m_2_name,レッドスライム,Red Slime
+m_3_name,グリーンスライム,Green Slime
+m_4_name,レッドボア,Red Boar
+m_5_name,ブルーボア,Blue Boar
+m_6_name,スライムフォース,Slime Force
+m_7_name,ゴブリン,Goblin
+m_8_name,ゴブリンウォーリアー,Goblin Warrior
+m_9_name,ゴブリンメイジ,Goblin Mage
+m_10_name,ボブゴブリン,Hobgoblin
+m_11_name,マテリアスライム,Material Slime
+m_12_name,ゴブリンキング,Goblin King
+m_13_name,ルーインズスラッグ,Ruins Slug
+m_14_name,ライティングスラッグ,Lightning Slug
+m_15_name,幽霊,Ghost
+m_16_name,怨念,Vengeful Spirit
+m_17_name,ドラゴンゾンビ,Dragon Zombie
+m_18_name,エクリス・カース,Eclis Curse
+m_19_name,コボルト,Kobold
+m_20_name,ウルフ,Wolf
+m_21_name,ブラッドウルフ,Blood Wolf
+m_22_name,人狼,Werewolf
+m_23_name,ラグナ・ヴォルグ,Ragna Varg
+m_24_name,ヴォルグ・スカー,Varg Scar
+m_25_name,ドレッドハンター,Dread Hunter
+m_26_name,アシッドスライム,Acid Slime
+m_27_name,浮遊甲冑,Floating Armor
+m_28_name,グラーヴナイト,Grave Knight
+m_29_name,ネクロウィスプ,Necro Wisp
+m_30_name,ボーンアバドン,Bone Abaddon
+m_31_name,スケルトン,Skeleton
+m_32_name,サンドワーム,Sand Worm
+m_33_name,ブラックサンドワーム,Black Sand Worm
+m_34_name,ブラックコボルト,Black Kobold
+m_35_name,ヴォルドーム,Voldome
+m_36_name,ラヴァスコール,Lava Scourge
+m_37_name,魔法使い,Wizard
+m_38_name,魔女,Witch
+m_39_name,カーラ＆ヴィクトリア,Kara & Victoria
+m_40_name,セリウス・アークレイン,Sirius Arcline
+m_41_name,マグナ・アルセリオン,Magna Arcelion
+m_42_name,アルカ・マギウス,Arca Magius
+m_43_name,ゴーレムナイト,Golem Knight
+m_44_name,溶岩魔人,Lava Fiend
+m_45_name,蒼溶岩魔人,Azure Lava Fiend
+m_46_name,魔人の土偶,Clay Idol Demon
+m_47_name,グラヴィアズール,Gravia Azure
+m_48_name,ヴォルザロック,Volzarock
+m_49_name,ゴーレムガーディアン,Golem Guardian
+m_50_name,シルバーゴーレム,Silver Golem
+m_51_name,ゴールドゴーレム,Gold Golem
+m_52_name,シルバースライム,Silver Slime
+m_53_name,アストラ・コロッサス,Astra Colossus
+m_54_name,グラヴェルノス,Gravernos
+m_55_name,ファイヤリザード,Fire Lizard
+m_56_name,サイクロプス,Cyclops
+m_57_name,ソルドリム・アイアンハート,Soldrim Ironheart
+m_58_name,ヴァルサイクロプス,Val Cyclops
+m_59_name,グラウンドタイタン,Ground Titan
+m_60_name,煌獄騎デュザリオン,Radiant Inferno Knight Duzalion
+m_61_name,ゴーレムメーカー,Golem Maker
+m_62_name,リヴィア・ハートライン,Livia Heartline
+m_63_name,アクア・レギュレイター,Aqua Regulator
+m_64_name,フォレスト・ガンナー,Forest Gunner
+m_65_name,レジスト・ゴレイオン,Resist Goleion
+m_66_name,インフェルノ・ギア,Inferno Gear
+m_67_name,サラマンダー,Salamander
+m_68_name,赤竜,Red Dragon
+m_69_name,エンシェント・レッド,Ancient Red Dragon
+m_70_name,ヴァルイグニス,Val Ignis
+m_71_name,ヘルグラッド,Hellglad
+m_72_name,グラン・スライオス,Gran Slaios
+m_73_name,スイマーゴブリン,Swimmer Goblin
+m_74_name,漕手ゴブリン,Rower Goblin
+m_75_name,メガロドン,Megalodon
+m_76_name,ブルオメガ,Blue Omega
+m_77_name,ネプチ・アブル,Nepti Abrul
+m_78_name,アビサル・ネプトゥス,Abyssal Neptos
+m_79_name,狩猟ゴブリン,Hunter Goblin
+m_80_name,フェアリー,Fairy
+m_81_name,長老ゴブリン,Elder Goblin
+m_82_name,リザ・ヴァルク,Riza Valk
+m_83_name,ボル・グルナ,Bol Gurna
+m_84_name,ガル・フェンリオ,Gal Fenrio
+m_85_name,人食いキノコ,Man-Eating Mushroom
+m_86_name,ゴールドスライム,Gold Slime
+m_87_name,スライムキング,Slime King
+m_88_name,マグ・スライム,Mag Slime
+m_89_name,キング・グリット,King Grit
+m_90_name,ルクス・ジェリー,Lux Jelly
+m_91_name,キラーマンティス,Killer Mantis
+m_92_name,スタグビートル,Stag Beetle
+m_93_name,キラーセンチピード,Killer Centipede
+m_94_name,ヴェス・カリバー,Ves Calibur
+m_95_name,インフェル・ビートル,Infer Beetle
+m_96_name,ルミナ・ミラージュ,Lumina Mirage
+m_97_name,ラストコア,Last Core
+m_98_name,ターミナス・ギアロード,Terminus Gearlord
+m_99_name,インフェルナル・オーバードライブ,Infernal Overdrive
+m_100_name,ブルー・ヴォルテクス,Blue Vortex
+m_101_name,マグナ・ギアゴーレム,Magna Gear Golem
+m_102_name,アーク・セラフィオン,Arc Seraphion
+m_103_name,ラグス,Rags
+m_104_name,バルド,Bald
+m_105_name,バルザック,Balzac
+m_106_name,ゴルダン,Gordan
+m_107_name,カーンヴァル,Karnval
+m_108_name,グリモルダン,Grimordan
+m_109_name,ライトワーム,Light Worm
+m_110_name,ケイブスパイダー,Cave Spider
+m_111_name,亡霊鉱夫,Spectral Miner
+m_112_name,マイコドレイク,Myco Drake
+m_113_name,アースドラゴン,Earth Dragon
+m_114_name,アビスドラゴン,Abyss Dragon
+m_115_name,フィローナ,Filona
+m_116_name,キューㇾリス,Curielis
+m_117_name,コランチュラ,Corantula
+m_118_name,ダルンドゥ,Dalundu
+m_119_name,ガルブロッサ,Galbrossa
+m_120_name,ドレインタス,Dreintas
+m_121_name,スカイレイヴン,Sky Raven
+m_122_name,ガレウィングホーク,Gale-Wing Hawk
+m_123_name,フェザードヴァルチャー,Feathered Vulture
+m_124_name,ハーピー,Harpy
+m_125_name,ストームコンドル,Storm Condor
+m_126_name,アル・ヴォレオス,Al Voreos
+m_127_name,魔導覇鬼ゴルヴァス,Demonic Overlord Gorvas
+m_128_name,マキナレクス,Machina Rex
+m_129_name,ヴェルザーク,Velzark
+m_130_name,灼岩王グレアラグ,Scorchstone King Glearag
+m_131_name,アヴィドゥス・マグマ―ル,Avidus Magmarl
+m_132_name,雷牙王ヴァルドゥーン,Thunderfang King Valdurn
+m_133_name,ネグロスパイダー,Negros Spider
+m_134_name,リッチ・モルディガン,Lich Mordigan
+m_135_name,ネクロ・ドラグニル,Necro Dragnir
+m_136_name,ヴァル・ディアブロ,Val Diablo
+m_137_name,ブラッド・ミノタウロス,Blood Minotaurus
+m_138_name,アズラ・ヒュドラ,Azura Hydra
+m_139_name,マグ・ヴォルム,Mag Wyrm
+m_140_name,フロスティア・レクイエム,Frostia Requiem
+m_141_name,インフェルノ・バルガス,Inferno Vargas
+m_142_name,ネフェル・アンムート,Nefer Ammut
+m_143_name,ヴァル・ノクティス,Val Noctis
+m_144_name,モル・カヴァリエ,Mol Cavaliere
+m_145_name,グリーン・カタストラ,Green Catastora
+m_146_name,タラッサ・ミルディア,Thalassa Mildia
+m_147_name,スカルロード,Skull Lord
+m_148_name,アシュタロス・リリア,Ashtaroth Lilia
+m_149_name,ブッチャー・ゴルム,Butcher Golm
+m_150_name,ヴォイド・バルザーク,Void Balzark
+m_151_name,アルカナ＝ドラグナール,Arcana = Dragnall

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f00f49a0d2dbf4bad6fe11e9dd5d19, type: 3}
+  m_Name: Skill_15
+  m_EditorClassIdentifier: 
+  skillId: 15
+  nameKey: skill_15_name
+  descriptionKey: Skill_15_des
+  triggerType: 4
+  waveInterval: 0
+  timeInterval: 0
+  actionType: 2
+  percentValue: 0
+  flatValue: 0
+  probability: 0.01
+  activeSkill: {fileID: 11400000, guid: ad7c8418e8ee4384e9e85635b3e84ed8, type: 2}
+  specialMedalPrefab: {fileID: 8993808988398658555, guid: 4ef6426657d62984f9fd96dba3fd4e3a, type: 3}
