@@ -1,0 +1,22 @@
+# =========================
+# Unity auto-generated
+# =========================
+Library/
+Temp/
+Obj/
+Logs/
+UserSettings/
+
+# =========================
+# IDE / Editor
+# =========================
+.vs/
+*.csproj
+*.sln
+.vsconfig
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
