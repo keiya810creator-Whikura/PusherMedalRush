@@ -21,6 +21,6 @@ MonoBehaviour:
   actionType: 2
   percentValue: 0
   flatValue: 0
-  probability: 0.005
+  probability: 0.01
   activeSkill: {fileID: 11400000, guid: c543994ef3d6348439353ef88ea24c29, type: 2}
   specialMedalPrefab: {fileID: 8993808988398658555, guid: 108744f7d2323c24e90a9206a7bc119c, type: 3}

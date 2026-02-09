@@ -133,7 +133,8 @@ public class LightningController : MonoBehaviour
             damage,
             enemy.transform.position,
             false,
-            true
+            true,
+                0
         );
     }
 

@@ -171,7 +171,7 @@ public class SkillManager : MonoBehaviour
         {
             case SkillActionType.AddStatus:
                 ApplyStatusBonus(skill);
-                SkillToastManager.Instance.ShowSkillToast(TextManager.Instance.GetSkill(skill.nameKey), 0.5f, () => true);
+                SkillToastManager.Instance.ShowSkillToast(TextManager.Instance.GetSkill(skill.nameKey), 0.3f, () => true);
                 break;
 
             case SkillActionType.FireSpecialMedal:
@@ -205,7 +205,7 @@ public class SkillManager : MonoBehaviour
             {
                 extra += skill.flatValue;
                 AudioManager.Instance.PlaySE(AudioManager.Instance.skillHatudou);
-                SkillToastManager.Instance.ShowSkillToast(TextManager.Instance.GetSkill(skill.nameKey), 0.5f, () => true);
+                SkillToastManager.Instance.ShowSkillToast(TextManager.Instance.GetSkill(skill.nameKey), 0.3f, () => true);
             }
         }
 
@@ -225,7 +225,7 @@ public class SkillManager : MonoBehaviour
             {
                 extra += skill.flatValue;
                 AudioManager.Instance.PlaySE(AudioManager.Instance.skillHatudou);
-                SkillToastManager.Instance.ShowSkillToast(TextManager.Instance.GetSkill(skill.nameKey), 0.5f, () => true);
+                SkillToastManager.Instance.ShowSkillToast(TextManager.Instance.GetSkill(skill.nameKey), 0.3f, () => true);
             }
         }
 

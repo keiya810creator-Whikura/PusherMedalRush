@@ -89,7 +89,9 @@ public class SkillDataCsvImporter
             "敵撃破時" => SkillTriggerType.OnEnemyDefeated,
             "発射時" => SkillTriggerType.OnMedalShot,
             "獲得口" => SkillTriggerType.OnMedalCollected,
-            "Wave開始" => SkillTriggerType.OnWaveStart,
+            "Wave開始時" => SkillTriggerType.OnWaveStart,
+            "〇Waveごと" => SkillTriggerType.EveryXWave,
+            "〇秒ごとに発動" =>SkillTriggerType.Interval,
             _ => SkillTriggerType.Passive
         };
     }

@@ -17,13 +17,19 @@ public class DamageTextManager : MonoBehaviour
     }
 
     // ★ isCritical を受け取る
-    public void Spawn(long damage, Vector3 worldPos, bool isCritical, bool isSkillHit)
+    public void Spawn(
+    long damage,
+    Vector3 worldPos,
+    bool isCritical,
+    bool isSkillHit,
+    int medalMultiplier
+)
     {
         DamageText text = Instantiate(damageTextPrefab, worldCanvas.transform);
 
         Vector3 screenPos = Camera.main.WorldToScreenPoint(worldPos);
 
-        // ✅スキル情報も渡す
-        text.Set(damage, screenPos, isCritical, isSkillHit);
+        text.Set(damage, screenPos, isCritical, isSkillHit, medalMultiplier);
     }
+
 }

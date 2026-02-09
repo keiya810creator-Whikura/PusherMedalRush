@@ -32,6 +32,8 @@ public class MainMenuController : MonoBehaviour
 
         if (TutorialManager.Instance.CanShow(TutorialID.MainMenu))
             mainMenuTutorialPanel.SetActive(true);
+
+        AdBuffManager.Instance.ClearRewardBuff();
     }
     public void RefreshRewardBoostButton()
     {// ✅広告削除課金済なら常時ON表示
@@ -197,7 +199,11 @@ public class MainMenuController : MonoBehaviour
 
     public void OpenMeinMenu()
     {
-        AdventureSession.IsAutoRun = false;
+        if (AdventureSession.IsAutoRun == true)
+        {
+            AdventureSession.IsAutoRun = false;
+            AdBuffManager.Instance.ClearRewardBuff();
+        }
 
         // ✅一旦バフ解除
         ApplyRemoveAdsPermanentBoost();
@@ -221,8 +227,12 @@ public class MainMenuController : MonoBehaviour
 
     public void OpenStatusMenuPanel()
     {
-        AdventureSession.IsAutoRun = false;
-        ApplyRemoveAdsPermanentBoost(); resultPanel.SetActive(false);
+        if (AdventureSession.IsAutoRun == true)
+        {
+            AdventureSession.IsAutoRun = false;
+            AdBuffManager.Instance.ClearRewardBuff();
+        }
+            ApplyRemoveAdsPermanentBoost(); resultPanel.SetActive(false);
         meinMenuPanel.SetActive(false);
         statusMenuPanel.SetActive(true);
         soubiMenuPanel.SetActive(false);
@@ -236,7 +246,11 @@ public class MainMenuController : MonoBehaviour
     }
     public void OpenSoubiMenuPanel()
     {
-        AdventureSession.IsAutoRun = false;
+        if (AdventureSession.IsAutoRun == true)
+        {
+            AdventureSession.IsAutoRun = false;
+            AdBuffManager.Instance.ClearRewardBuff();
+        }
         ApplyRemoveAdsPermanentBoost(); resultPanel.SetActive(false);
         meinMenuPanel.SetActive(false);
         statusMenuPanel.SetActive(false);
@@ -252,7 +266,11 @@ public class MainMenuController : MonoBehaviour
     }
     public void OpenSonotaPanel()
     {
-        AdventureSession.IsAutoRun = false;
+        if (AdventureSession.IsAutoRun == true)
+        {
+            AdventureSession.IsAutoRun = false;
+            AdBuffManager.Instance.ClearRewardBuff();
+        }
         ApplyRemoveAdsPermanentBoost(); resultPanel.SetActive(false);
         meinMenuPanel.SetActive(false);
         statusMenuPanel.SetActive(false);
@@ -266,7 +284,11 @@ public class MainMenuController : MonoBehaviour
     }
     public void OpenSHOPPanel()
     {
-        AdventureSession.IsAutoRun = false;
+        if (AdventureSession.IsAutoRun == true)
+        {
+            AdventureSession.IsAutoRun = false;
+            AdBuffManager.Instance.ClearRewardBuff();
+        }
         ApplyRemoveAdsPermanentBoost(); resultPanel.SetActive(false);
         meinMenuPanel.SetActive(false);
         statusMenuPanel.SetActive(false);
@@ -281,7 +303,11 @@ public class MainMenuController : MonoBehaviour
     }
     public void OnClickBackToMenu()
     {
-        AdventureSession.IsAutoRun = false;
+        if (AdventureSession.IsAutoRun == true)
+        {
+            AdventureSession.IsAutoRun = false;
+            AdBuffManager.Instance.ClearRewardBuff();
+        }
 
         // ✅課金恩恵を考慮して再適用
         ApplyRemoveAdsPermanentBoost();
@@ -292,7 +318,7 @@ public class MainMenuController : MonoBehaviour
 
     private void ApplyRemoveAdsPermanentBoost()
     {
-        AdBuffManager.Instance.Clear();
+       //AdBuffManager.Instance.ClearRewardBuff();
 
         if (PurchaseState.HasRemoveAds)
         {

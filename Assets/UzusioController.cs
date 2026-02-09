@@ -89,7 +89,8 @@ public class UzusioController : MonoBehaviour
             Mathf.CeilToInt(BattleManager.Instance.Status.Attack*2.8f),
             enemy.transform.position,
             false,
-            true   // ✅スキル扱い（金文字）
+            true,
+                0  // ✅スキル扱い（金文字）
         );
 
         // ✅必要ならSEもここで鳴らせる

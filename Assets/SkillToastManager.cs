@@ -11,6 +11,9 @@ public class SkillToastManager : MonoBehaviour
 
     private Queue<SkillToastRequest> queue = new();
     private bool showing = false;
+    [SerializeField] private int maxSimultaneous = 3;
+
+    private List<SkillToastUIController> activeToasts = new();
 
     void Awake()
     {
@@ -39,11 +42,51 @@ public class SkillToastManager : MonoBehaviour
     // =========================
     public void ShowSkillToast(string msg, float minTime, System.Func<bool> closeCondition)
     {
-        queue.Enqueue(new SkillToastRequest(msg, minTime, closeCondition));
-
-        if (!showing)
-            StartCoroutine(ProcessQueue());
+        StartCoroutine(ShowToastRoutine(msg, minTime, closeCondition));
     }
+    IEnumerator ShowToastRoutine(string msg, float minTime, System.Func<bool> closeCondition)
+    {
+        // ✅上限超えたら一番古いのを閉じる
+        if (activeToasts.Count >= maxSimultaneous)
+        {
+            var oldest = activeToasts[0];
+            activeToasts.RemoveAt(0);
+            oldest.AllowClose();
+            yield return oldest.CloseRoutine();
+        }
+
+        SkillToastUIController toast =
+            Instantiate(toastPrefab, toastParent);
+
+        activeToasts.Add(toast);
+        UpdateToastPositions();
+
+        toast.Show(msg);
+
+        yield return new WaitForSeconds(minTime);
+
+        while (closeCondition != null && !closeCondition())
+            yield return null;
+
+        toast.AllowClose();
+        yield return toast.CloseRoutine();
+
+        activeToasts.Remove(toast);
+        UpdateToastPositions();
+    }
+    private void UpdateToastPositions()
+    {
+        float yOffset = 60f;
+
+        for (int i = 0; i < activeToasts.Count; i++)
+        {
+            RectTransform rt = activeToasts[i].GetComponent<RectTransform>();
+            if (rt == null) continue;
+
+            rt.anchoredPosition = new Vector2(0, -i * yOffset);
+        }
+    }
+
 
     // =========================
     // ✅処理

@@ -93,7 +93,8 @@ public class EarthKueikuController : MonoBehaviour
             damage,
             enemy.transform.position,
             false,
-            true   // ✅スキル扱い（金文字）
+            true,
+                0  // ✅スキル扱い（金文字）
         );
 
         // ✅ヒットSE（毎回鳴ると騒がしいなら調整可）

@@ -37,7 +37,14 @@ public class AttackHit : MonoBehaviour
 
         long damage = Mathf.Max(1, Mathf.RoundToInt(damageFloat));
 
-        enemy.TakeDamage(damage, transform.position, isCritical,false);
+        enemy.TakeDamage(
+    damage,
+    transform.position,
+    isCritical,
+    false,
+    medalMultiplier   // ★追加
+);
+
 
         Instantiate(hitSparkPrefab, transform.position, Quaternion.identity);
 

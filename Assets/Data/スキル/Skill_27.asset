@@ -15,7 +15,7 @@ MonoBehaviour:
   skillId: 27
   nameKey: skill_27_name
   descriptionKey: Skill_27_des
-  triggerType: 0
+  triggerType: 2
   waveInterval: 3
   timeInterval: 0
   actionType: 0

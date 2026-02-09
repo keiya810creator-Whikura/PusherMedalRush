@@ -42,7 +42,13 @@ public class Enemy : MonoBehaviour
     }
 
 
-    public void TakeDamage(long damage, Vector3 hitPoint, bool isCritical, bool isSkillHit)
+    public void TakeDamage(
+    long damage,
+    Vector3 hitPoint,
+    bool isCritical,
+    bool isSkillHit,
+    int medalMultiplier
+)
     {
         if (isDead) return;
 
@@ -50,10 +56,16 @@ public class Enemy : MonoBehaviour
         if (currentHP < 0)
             currentHP = 0;
 
-        // ✅ダメージテキスト生成（スキル判定追加）
+        // ✅ダメージテキスト生成（倍率付き）
         if (DamageTextManager.Instance != null)
         {
-            DamageTextManager.Instance.Spawn(damage, hitPoint, isCritical, isSkillHit);
+            DamageTextManager.Instance.Spawn(
+                damage,
+                hitPoint,
+                isCritical,
+                isSkillHit,
+                medalMultiplier
+            );
         }
 
         UpdateHPBar();
@@ -61,6 +73,7 @@ public class Enemy : MonoBehaviour
         if (currentHP == 0)
             Die();
     }
+
 
 
     void UpdateHPBar()
@@ -131,7 +144,7 @@ public class Enemy : MonoBehaviour
 
                     if (AutoDisassembleSetting.EnableRarity[soubi.rarity])
                     {
-                        Debug.Log("分解済み");
+                        //Debug.Log("分解済み");
                         // AddSoubiしない（対価なし）
                         return;
                     }

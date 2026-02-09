@@ -101,7 +101,8 @@ public class MeteoController : MonoBehaviour
                 BattleManager.Instance.Status.Attack*3,
                 enemy.transform.position,
                 false,
-                true
+                true,
+                0
             );
         }
 

@@ -61,7 +61,8 @@ public class WindCutterProjectile : MonoBehaviour
             Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 15.5f),
             other.transform.position,
             false,
-            true
+            true,
+                0
         );
     }
 }

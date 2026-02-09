@@ -11,6 +11,11 @@ public class BattleManager : MonoBehaviour
 
     void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
         Instance = this;
 
         // ✅まず通常ステで確定
@@ -21,6 +26,8 @@ public class BattleManager : MonoBehaviour
 
         // ✅Wave開始スキル発動でStatusを変化させる
         SkillManager.Instance.TriggerWaveStart(1);
+
+        Debug.Log($"🔥 BattleManager Awake : {GetInstanceID()}");
     }
     public void AddAttackRate(float rate)
     {

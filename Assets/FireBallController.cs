@@ -69,7 +69,8 @@ public class FireBallController : MonoBehaviour
             Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 5.5f),
             transform.position,
             false,
-            true
+            true,
+                0
         );
 
         // ✅命中SE

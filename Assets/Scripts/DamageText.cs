@@ -10,33 +10,52 @@ public class DamageText : MonoBehaviour
     [SerializeField] private float moveUpDistance = 60f;
     [SerializeField] private float duration = 0.6f;
 
-    public void Set(long damage, Vector3 screenPos, bool isCritical, bool isSkillHit)
+    public void Set(
+    long damage,
+    Vector3 screenPos,
+    bool isCritical,
+    bool isSkillHit,
+    int medalMultiplier
+)
     {
         transform.position = screenPos;
 
-        // ✅スキルダメージは金色（最優先）
+        text.text = $"{damage:N0}";
+        text.fontSize = 36; // ★基準サイズを毎回リセット（重要）
+
+        // ✅スキルダメージ（金・最優先）
         if (isSkillHit)
         {
-            text.text = $"{damage:N0}";
-            text.color = new Color(1f, 0.85f, 0.2f); // 金色
+            text.color = new Color(1f, 0.85f, 0.2f);
             text.fontSize *= 1.3f;
         }
-        // ✅クリティカルは赤
+        // ✅クリティカル
         else if (isCritical)
         {
-            text.text = $"{damage:N0}!!";
+            text.text += "!!";
             text.color = Color.red;
             text.fontSize *= 1.2f;
         }
-        // ✅通常
+        // ✅メダル倍率による色分け
         else
         {
-            text.text = $"{damage:N0}";
-            text.color = Color.white;
+            text.color = GetMultiplierColor(medalMultiplier);
         }
 
         StartCoroutine(MoveUpAndFade());
     }
+
+    private Color GetMultiplierColor(int multiplier)
+    {
+        return multiplier switch
+        {
+            >= 10 => Color.red,                     // ×10
+            >= 5 => new Color(0.3f, 0.6f, 1f),     // ×5（青）
+            >= 2 => new Color(0.3f, 1f, 0.3f),     // ×2（緑）
+            _ => Color.white
+        };
+    }
+
 
     IEnumerator MoveUpAndFade()
     {

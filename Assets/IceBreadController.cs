@@ -26,7 +26,8 @@ public class IceBreadController : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             AudioManager.Instance.PlaySE(AudioManager.Instance.skillHit);
-            collision.GetComponent<Enemy>().TakeDamage(Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 3.25f), collision.transform.position, false, true);
+            collision.GetComponent<Enemy>().TakeDamage(Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 3.25f), collision.transform.position, false, true,
+                0);
         }
     }
 }

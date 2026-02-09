@@ -17,7 +17,10 @@ public class MedalTextUI : MonoBehaviour
         // 初期表示（シーン入った瞬間用）
         UpdateText(MoneyManager.instance.Medal);
     }
-
+    private void Start()
+    {
+        UpdateText(BattleManager.Instance.Status.MaxMedal);
+    }
     void OnDisable()
     {
         MoneyManager.instance.OnMedalChanged -= UpdateText;

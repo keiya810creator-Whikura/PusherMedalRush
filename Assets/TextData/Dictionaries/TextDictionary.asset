@@ -374,6 +374,9 @@ MonoBehaviour:
     ja: "\u56F3\u9451\u9054\u6210\u7387\uFF1A{0:F2}%\\n\u30E2\u30F3\u30B9\u30BF\u30FC\uFF1A{1:F2}%\u88C5\u5099\uFF1A{2:F2}%
       \u79F0\u53F7\uFF1A{3:F2}%"
     en: 'Dex Completion: {0:F2}%\nMonsters: {1:F2}%\nEquipment: {2:F2}% Titles: {3:F2}%'
+  - key: ui_mainmenu_8_9
+    ja: "\uFF1F\uFF1F\uFF1F"
+    en: "\uFF1F\uFF1F\uFF1F"
   - key: ui_resultmenu_1
     ja: "\u5192\u967A\u304B\u3089\u306E\u5E30\u9084"
     en: Return from Adventure
@@ -458,3 +461,6 @@ MonoBehaviour:
   - key: ui_toast_6
     ja: "\u6DF1\u5C64\u79F0\u53F7\u3092\u767A\u898B\u3057\u305F\uFF01\uFF01"
     en: Abyss Title Found!!
+  - key: ui_toast_ad_loading
+    ja: "\u5E83\u544A\u30ED\u30FC\u30C9\u4E2D\u3067\u3059"
+    en: Ad Loading

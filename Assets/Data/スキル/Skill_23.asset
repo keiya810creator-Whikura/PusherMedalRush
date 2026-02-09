@@ -15,12 +15,12 @@ MonoBehaviour:
   skillId: 23
   nameKey: skill_23_name
   descriptionKey: Skill_23_des
-  triggerType: 0
+  triggerType: 6
   waveInterval: 0
   timeInterval: 1
   actionType: 1
   percentValue: 0
-  flatValue: 0
+  flatValue: 1
   probability: 0.2
   activeSkill: {fileID: 0}
   specialMedalPrefab: {fileID: 0}

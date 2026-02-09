@@ -65,7 +65,8 @@ public class SouenController : MonoBehaviour
             BattleManager.Instance.Status.Attack * 15,
             collision.transform.position,
             false,
-            true
+            true,
+                0
         );
 
         Destroy(gameObject);

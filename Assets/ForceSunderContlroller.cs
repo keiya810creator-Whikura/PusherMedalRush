@@ -4,7 +4,6 @@ public class ForceSunderContlroller : MonoBehaviour
 {
     [Header("Move Settings")]
     [SerializeField] private float speed = 15f;
-    [SerializeField] private float lifeTime = 2f;
 
     private Vector3 targetPos;
     private GameObject targetEnemy;
@@ -12,9 +11,6 @@ public class ForceSunderContlroller : MonoBehaviour
 
     void Start()
     {
-        // ✅寿命で消える
-        Destroy(gameObject, lifeTime);
-
         // ✅敵が出現するまで待機開始
         StartCoroutine(WaitForEnemy());
     }
@@ -53,7 +49,8 @@ public class ForceSunderContlroller : MonoBehaviour
     void OnHit()
     {
         // ✅ここに攻撃処理追加可能
-        targetEnemy.GetComponent<Enemy>().TakeDamage(BattleManager.Instance.Status.Attack*10, transform.position, false, true);
+        targetEnemy.GetComponent<Enemy>().TakeDamage(BattleManager.Instance.Status.Attack*10, transform.position, false, true,
+                0);
         AudioManager.Instance.PlaySE(AudioManager.Instance.skillHit);
 
         Destroy(gameObject);

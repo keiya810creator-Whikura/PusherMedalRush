@@ -20,7 +20,7 @@ MonoBehaviour:
   timeInterval: 0
   actionType: 1
   percentValue: 0
-  flatValue: 10
+  flatValue: 3
   probability: 0.1
   activeSkill: {fileID: 0}
   specialMedalPrefab: {fileID: 0}

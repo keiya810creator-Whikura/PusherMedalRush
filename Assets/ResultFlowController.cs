@@ -93,7 +93,7 @@ public class ResultFlowController : MonoBehaviour
         {
             // 秒数を切り上げ表示（5,4,3,2,1）
             int display = Mathf.CeilToInt(timer);
-            countdownText.text = TextManager.Instance.GetUI("ui_sentou_8");
+            countdownText.text = string.Format(TextManager.Instance.GetUI("ui_sentou_3"), display);
 
             timer -= Time.deltaTime*WaveManager.Instance.CurrentGameSpeed;
 

@@ -23,7 +23,7 @@ public class TitleTextButtonZukan : MonoBehaviour
     }
     public void SetSecret()
     {
-        titleText.text = "ÅHÅHÅH";
+        titleText.text = TextManager.Instance.GetUI("ui_mainmenu_8_9");
         titleText.color = Color.black;
         button.interactable = false;
     }

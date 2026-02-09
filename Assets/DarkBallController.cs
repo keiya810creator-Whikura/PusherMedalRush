@@ -14,9 +14,6 @@ public class DarkBallController : MonoBehaviour
     [SerializeField] private float wobbleStrength = 0.4f;
     [SerializeField] private float wobbleSpeed = 6f;
 
-    [Header("Lifetime")]
-    [SerializeField] private float lifeTime = 5f;
-
     private GameObject targetEnemy;
 
     // ✅実際に使う速度（毎回ランダム確定）
@@ -27,7 +24,6 @@ public class DarkBallController : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, lifeTime);
         AudioManager.Instance.PlaySE(AudioManager.Instance.darkBall);
         // ✅速度をランダム確定
         finalSpeed = Random.Range(
@@ -97,7 +93,8 @@ public class DarkBallController : MonoBehaviour
                 Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 5.3f),
                 transform.position,
                 false,
-                true
+                true,
+                0
             );
 
             AudioManager.Instance.PlaySE(AudioManager.Instance.skillHit);

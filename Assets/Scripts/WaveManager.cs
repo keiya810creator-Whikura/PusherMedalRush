@@ -40,7 +40,7 @@ public class WaveManager : MonoBehaviour
     // =========================
     private const int EndlessStartWave = 1001;
     private const float EndlessHpMultiplier = 1.001f; // HP × 1.001 (毎Wave)
-    private const long EndlessGoldReward = 1000;       // Gold 固定
+    private const long EndlessGoldReward = 500;       // Gold 固定
 
     [SerializeField] private BackgroundController backgroundController;
     void Awake()
@@ -74,7 +74,7 @@ public class WaveManager : MonoBehaviour
             return EndlessGoldReward;
         }
 
-        long baseGold = 1 + CurrentWave;
+        long baseGold = Mathf.CeilToInt(CurrentWave/2);
 
         if (IsBossWave())
         {
