@@ -32,7 +32,8 @@ public class SortUIController : MonoBehaviour
 
         orderButton.onClick.RemoveAllListeners();
         orderButton.onClick.AddListener(OnClickToggleOrder);
-    }
+
+   }
 
     private void BuildDropdownOptions()
     {
@@ -122,7 +123,7 @@ public class SortUIController : MonoBehaviour
         sortDropdown.RefreshShownValue();
 
         orderButtonText.text =
-            grid.currentSortOrder == SortOrder.Descending ? "Å•" : "Å£";
+            grid.currentSortOrder == SortOrder.Descending ? TextManager.Instance.GetUI("ui_mainmenu_6_53") : TextManager.Instance.GetUI("ui_mainmenu_6_54");
     }
 
     // DropdownëIëïœçX
