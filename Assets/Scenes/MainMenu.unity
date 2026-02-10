@@ -46719,7 +46719,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u25BC"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80799c45f95bb2e439b45d88b20383be, type: 2}
   m_sharedMaterial: {fileID: -2759732569142378399, guid: 80799c45f95bb2e439b45d88b20383be, type: 2}
