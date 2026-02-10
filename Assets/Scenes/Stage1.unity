@@ -8393,7 +8393,6 @@ GameObject:
   - component: {fileID: 509451792}
   - component: {fileID: 509451795}
   - component: {fileID: 509451794}
-  - component: {fileID: 509451793}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8420,19 +8419,6 @@ RectTransform:
   m_AnchoredPosition: {x: 33.113, y: 0}
   m_SizeDelta: {x: -66.225, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &509451793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509451791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6ef8ab70054484ab899f149e6e5729, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  medalText: {fileID: 509451794}
 --- !u!114 &509451794
 MonoBehaviour:
   m_ObjectHideFlags: 0
