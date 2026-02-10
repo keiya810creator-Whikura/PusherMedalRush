@@ -35,8 +35,9 @@ public class WaveRangeSliderUI : MonoBehaviour
         maxClearedWave = Mathf.Max(1, GameProgressManager.Instance.HighestClearedWave);
 
         startWaveSlider.minValue = 1;
-        startWaveSlider.maxValue = maxClearedWave;
+        startWaveSlider.maxValue = Mathf.Max(1, maxClearedWave - 10);
         startWaveSlider.wholeNumbers = true;
+
 
         endWaveSlider.minValue = 1;
         endWaveSlider.maxValue = maxClearedWave + 1;

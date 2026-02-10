@@ -35,7 +35,7 @@ public class MonsterDetailPanel : MonoBehaviour
             TextManager.Instance.GetUI("ui_mainmenu_8_4"), data.syutugennStage);
         waveText.text = $"Wave : {data.minWave} ～ {data.maxWave}";
         rateText.text = string.Format(
-            TextManager.Instance.GetUI("ui_mainmenu_8_5"), data.syutugennritu);
+            TextManager.Instance.GetUI("ui_mainmenu_8_5"), data.syutugennritu)+"%";
 
         bossBadge.SetActive(data.isBoss);
 

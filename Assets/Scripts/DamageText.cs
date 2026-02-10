@@ -33,7 +33,7 @@ public class DamageText : MonoBehaviour
         else if (isCritical)
         {
             text.text += "!!";
-            text.color = Color.red;
+            text.color = Color.orange;
             text.fontSize *= 1.2f;
         }
         // ✅メダル倍率による色分け

@@ -115,6 +115,15 @@ public class MainMenuController : MonoBehaviour
 }
     public void OnClickAutoRun()
     {
+        // ✅ まず倉庫チェック（最優先）
+        if (InventoryManager.Instance.TotalCount >= InventoryManager.Instance.MaxStorage)
+        {
+            ToastManager.Instance.ShowToast(
+                string.Format(TextManager.Instance.GetUI("ui_toast_4"))
+            );
+            return;
+        }
+
         // ✅広告削除済なら即開始
         if (PurchaseState.HasRemoveAds)
         {
@@ -133,12 +142,12 @@ public class MainMenuController : MonoBehaviour
         }
         else
         {
-            // 読み込み中など
             ToastManager.Instance.ShowToast(
                 string.Format(TextManager.Instance.GetUI("ui_toast_ad_loading"))
             );
         }
     }
+
 
     private void StartAutoRunDirect()
     {
@@ -223,6 +232,7 @@ public class MainMenuController : MonoBehaviour
         // ✅ボタンと表示更新
         RefreshRewardBoostButton();
         RefreshFinalDropText();
+        InventoryManager.Instance.isDismantleMode = false;
     }
 
     public void OpenStatusMenuPanel()
