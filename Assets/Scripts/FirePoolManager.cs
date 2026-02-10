@@ -31,7 +31,7 @@ public class FirePoolManager : MonoBehaviour
         CreatePool(fire5x, count5x, pool5x, FireType.X5);
         CreatePool(fire10x, count10x, pool10x, FireType.X10);
 
-        Debug.Log("✅ Fire Pool Initialized");
+        //Debug.Log("✅ Fire Pool Initialized");
     }
 
     private void CreatePool(GameObject prefab, int count, Queue<GameObject> pool, FireType type)

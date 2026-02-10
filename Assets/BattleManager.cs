@@ -27,7 +27,7 @@ public class BattleManager : MonoBehaviour
         // ✅Wave開始スキル発動でStatusを変化させる
         SkillManager.Instance.TriggerWaveStart(1);
 
-        Debug.Log($"🔥 BattleManager Awake : {GetInstanceID()}");
+        //Debug.Log($"🔥 BattleManager Awake : {GetInstanceID()}");
     }
     public void AddAttackRate(float rate)
     {

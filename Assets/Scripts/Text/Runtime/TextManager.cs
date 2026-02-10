@@ -65,13 +65,13 @@ public class TextManager : MonoBehaviour
         if (PlayerPrefs.HasKey(LANG_SAVE_KEY))
         {
             currentLanguage = (SystemLanguage)PlayerPrefs.GetInt(LANG_SAVE_KEY);
-            Debug.Log($"✅ Language Loaded: {currentLanguage}");
+            //Debug.Log($"✅ Language Loaded: {currentLanguage}");
         }
         else
         {
             // 初回はOS言語
             currentLanguage = Application.systemLanguage;
-            Debug.Log($"🌍 Default Language: {currentLanguage}");
+            //Debug.Log($"🌍 Default Language: {currentLanguage}");
         }
     }
 
