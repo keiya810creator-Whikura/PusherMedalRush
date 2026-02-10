@@ -5162,6 +5162,7 @@ GameObject:
   - component: {fileID: 335077608}
   - component: {fileID: 335077610}
   - component: {fileID: 335077609}
+  - component: {fileID: 335077611}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5287,6 +5288,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335077607}
   m_CullTransparentMesh: 1
+--- !u!114 &335077611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335077607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a69957d8c88b204eac49aec03a53c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dictionaryType: 0
+  key: ui_tutorial_3
 --- !u!4 &335945378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5448255274662671575, guid: dafa36903864d9d429540d1504400c13, type: 3}
@@ -9145,6 +9160,7 @@ GameObject:
   - component: {fileID: 560858539}
   - component: {fileID: 560858541}
   - component: {fileID: 560858540}
+  - component: {fileID: 560858542}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9270,6 +9286,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560858538}
   m_CullTransparentMesh: 1
+--- !u!114 &560858542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560858538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a69957d8c88b204eac49aec03a53c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dictionaryType: 0
+  key: ui_tutorial_2
 --- !u!1 &561951991
 GameObject:
   m_ObjectHideFlags: 0
@@ -12935,7 +12965,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u7701\u96FB\u529B\n\u30E2\u30FC\u30C9"
+  m_text: "\u7701\u96FB\u529B\u30E2\u30FC\u30C9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80799c45f95bb2e439b45d88b20383be, type: 2}
   m_sharedMaterial: {fileID: -2759732569142378399, guid: 80799c45f95bb2e439b45d88b20383be, type: 2}
@@ -12962,12 +12992,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.5
+  m_fontSize: 31.6
   m_fontSizeBase: 24.03
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 31.6
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -29662,12 +29692,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.15
+  m_fontSize: 31.6
   m_fontSizeBase: 24.03
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 31.6
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512

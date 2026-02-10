@@ -112,7 +112,7 @@ public class TitleSortUIController : MonoBehaviour
         sortDropdown.RefreshShownValue();
 
         orderButtonText.text =
-            panel.currentSortOrder == SortOrder.Descending ? "▼" : "▲";
+            panel.currentSortOrder == SortOrder.Descending ? TextManager.Instance.GetUI("ui_mainmenu_6_53") : TextManager.Instance.GetUI("ui_mainmenu_6_54");
     }
 
     // ✅Dropdown変更
@@ -140,7 +140,7 @@ public class TitleSortUIController : MonoBehaviour
                 : SortOrder.Descending;
 
         orderButtonText.text =
-            panel.currentSortOrder == SortOrder.Descending ? "▼" : "▲";
+            panel.currentSortOrder == SortOrder.Descending ? TextManager.Instance.GetUI("ui_mainmenu_6_53") : TextManager.Instance.GetUI("ui_mainmenu_6_54");
 
         panel.RefreshList();
     }

@@ -27,7 +27,7 @@ public class WaveUI : MonoBehaviour
     void UpdateWaveText(int wave)
     {
         waveText.text =
-            LocalizationManager.Instance.GetText("wave", wave);
+            "Wave;" + wave;
     }
 
     void UpdateRecoveryTime(float time)

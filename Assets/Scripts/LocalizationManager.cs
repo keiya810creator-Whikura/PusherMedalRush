@@ -12,17 +12,6 @@ public class LocalizationManager : MonoBehaviour
 
     [SerializeField] private LanguageType currentLanguage = LanguageType.Japanese;
 
-    private Dictionary<string, string> japaneseTexts = new Dictionary<string, string>()
-    {
-        { "wave", "WAVE {0}" },
-        { "recovery", "‰ñŽûƒ^ƒCƒ€ {0}" }
-    };
-
-    private Dictionary<string, string> englishTexts = new Dictionary<string, string>()
-    {
-        { "wave", "WAVE {0}" },
-        { "recovery", "RECOVERY {0}" }
-    };
 
     void Awake()
     {
@@ -32,24 +21,22 @@ public class LocalizationManager : MonoBehaviour
             return;
         }
         Instance = this;
-        //DontDestroyOnLoad(gameObject);
-    }
 
-    public string GetText(string key, params object[] args)
-    {
-        string baseText = key;
-
-        Dictionary<string, string> table =
-            currentLanguage == LanguageType.Japanese
-            ? japaneseTexts
-            : englishTexts;
-
-        if (table.TryGetValue(key, out baseText))
+        if (!PlayerPrefs.HasKey("Language"))
         {
-            return string.Format(baseText, args);
-        }
+            var sysLang = Application.systemLanguage;
 
-        return key;
+            if (sysLang == SystemLanguage.Japanese)
+                SetLanguage(LanguageType.Japanese);
+            else
+                SetLanguage(LanguageType.English);
+
+            PlayerPrefs.SetInt("Language", (int)currentLanguage);
+        }
+        else
+        {
+            currentLanguage = (LanguageType)PlayerPrefs.GetInt("Language");
+        }
     }
 
     public void SetLanguage(LanguageType language)

@@ -147,7 +147,7 @@ public class SortUIController : MonoBehaviour
                 : SortOrder.Descending;
 
         orderButtonText.text =
-            grid.currentSortOrder == SortOrder.Descending ? "Å•" : "Å£";
+            grid.currentSortOrder == SortOrder.Descending ? TextManager.Instance.GetUI("ui_mainmenu_6_53") : TextManager.Instance.GetUI("ui_mainmenu_6_54");
 
         grid.Refresh();
     }

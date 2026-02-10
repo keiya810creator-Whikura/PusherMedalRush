@@ -26,6 +26,7 @@ public class TutorialManager : MonoBehaviour
         }
         Instance = this;
         //DontDestroyOnLoad(gameObject);
+        //ResetAllTutorials();
     }
 
     public bool CanShow(TutorialID id)
@@ -38,5 +39,14 @@ public class TutorialManager : MonoBehaviour
         PlayerPrefs.SetInt($"Tutorial_{id}", 1);
         PlayerPrefs.Save();
     }
+    public void ResetAllTutorials()
+    {
+        foreach (TutorialID id in System.Enum.GetValues(typeof(TutorialID)))
+        {
+            PlayerPrefs.DeleteKey($"Tutorial_{id}");
+        }
+        PlayerPrefs.Save();
+    }
+
 }
 

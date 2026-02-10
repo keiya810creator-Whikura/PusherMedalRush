@@ -73,8 +73,8 @@ public class DisassembleToolbar : MonoBehaviour
     {
         bool isMode = InventoryManager.Instance.isDismantleMode;
         toggleText.text = isMode
-            ? TextManager.Instance.GetUI("ui_mainmenu_6_36")
-    : TextManager.Instance.GetUI("ui_mainmenu_6_37");
+            ? TextManager.Instance.GetUI("ui_mainmenu_6_37")
+    : TextManager.Instance.GetUI("ui_mainmenu_6_36");
 
 
         int count = InventoryManager.Instance.soubiList

@@ -26,5 +26,5 @@ MonoBehaviour:
   minWave: 481
   maxWave: 519
   syutugennritu: 25
-  syutugennStage: 
+  syutugennStage: Stage1
   isBoss: 0
