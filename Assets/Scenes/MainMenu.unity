@@ -12990,12 +12990,12 @@ GameObject:
   - component: {fileID: 465046901}
   - component: {fileID: 465046902}
   m_Layer: 5
-  m_Name: EquipmentDetailPanelZukan
+  m_Name: 'EquipmentDetailPanelZukan[true]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &465046901
 RectTransform:
   m_ObjectHideFlags: 0
