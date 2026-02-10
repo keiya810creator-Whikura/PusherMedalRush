@@ -10,7 +10,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
     private IStoreController controller;
     private IExtensionProvider extensions;
 
-    public const string PRODUCT_REMOVE_ADS = "remove_ads";
+    public const string PRODUCT_REMOVE_ADS = "remove_ads_medalrush";
     public const string PRODUCT_SPEED3X = "speed_3x";
     public const string PRODUCT_TITLE_BOOST = "title_boost";
     public const string PRODUCT_BUNDLE_PACK = "bundle_pack";
