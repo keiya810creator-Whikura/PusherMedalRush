@@ -49,7 +49,7 @@ public class ForceSunderContlroller : MonoBehaviour
     void OnHit()
     {
         // ✅ここに攻撃処理追加可能
-        targetEnemy.GetComponent<Enemy>().TakeDamage(BattleManager.Instance.Status.Attack*10, transform.position, false, true,
+        targetEnemy.GetComponent<Enemy>().TakeDamage(BattleManager.Instance.Status.Attack*10 * BetManager.Instance.CurrentBet, transform.position, false, true,
                 0);
         AudioManager.Instance.PlaySE(AudioManager.Instance.skillHit);
 

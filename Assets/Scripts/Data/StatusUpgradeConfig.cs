@@ -110,7 +110,7 @@ public static class StatusUpgradeConfig
                 baseCost = 300; rate = 1.0118f; break;
 
             case PlayerStatusDatabase.StatusType.RecoveryWaveMedalValue:
-                baseCost = 10000;rate = 1.208f; break;
+                baseCost = 30000;rate = 1.28f; break;
 
             case PlayerStatusDatabase.StatusType.RecoveryWaveExtendSeconds:
                 baseCost = 5; rate = 1.309f; break;

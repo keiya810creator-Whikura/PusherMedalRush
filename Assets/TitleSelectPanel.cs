@@ -184,6 +184,59 @@ public class TitleSelectPanel : MonoBehaviour
             EquippedSlotsPanel.Instance.Refresh();
         gameObject.SetActive(false);
     }
+    // ===============================
+    // ✅称号剥奪（返却のみ）
+    // ===============================
+    public void RemoveAttachedTitle()
+    {
+        if (targetSoubi == null)
+            return;
+
+        if (targetSoubi.attachedTitles == null ||
+            targetSoubi.attachedTitles.Count == 0)
+            return;
+
+        var oldTitle = targetSoubi.attachedTitles[0];
+
+        // ============================
+        // 装備から削除
+        // ============================
+        targetSoubi.attachedTitles.Clear();
+
+        // ============================
+        // インベントリへ返却
+        // ============================
+        InventoryManager.Instance.AddSyougou(oldTitle, 1);
+
+        // ============================
+        // トースト表示
+        // ============================
+        ToastManager.Instance.ShowToast(
+            string.Format(
+                TextManager.Instance.GetUI("ui_toast_1"),
+                "《" + TextManager.Instance.GetTitle(oldTitle.nameKey) + "》"
+            )
+        );
+
+        // ============================
+        // UI更新
+        // ============================
+        InventoryManager.Instance.NotifyEquipmentChanged();
+        EquipmentGridView.Instance.RefreshVisibleSlotUI();
+
+        if (ResultPanel.IsOpen)
+            EquipmentDetailPanel.Instance.ShowResult(targetSoubi);
+        else
+            EquipmentDetailPanel.Instance.Show(targetSoubi);
+
+        if (EquippedSlotsPanel.Instance != null)
+            EquippedSlotsPanel.Instance.Refresh();
+
+        AudioManager.Instance.PlaySE(AudioManager.Instance.syougouHuyoSE);
+
+        gameObject.SetActive(false);
+
+    }
 
 
     public void Close()

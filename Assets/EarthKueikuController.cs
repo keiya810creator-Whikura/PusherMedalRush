@@ -87,7 +87,7 @@ public class EarthKueikuController : MonoBehaviour
         if (enemy == null) return;
 
         // ✅ダメージ量＝攻撃力100%
-        long damage = Mathf.CeilToInt(BattleManager.Instance.Status.Attack*1.7f);
+        long damage = Mathf.CeilToInt(BattleManager.Instance.Status.Attack*1.7f * BetManager.Instance.CurrentBet);
 
         enemy.TakeDamage(
             damage,

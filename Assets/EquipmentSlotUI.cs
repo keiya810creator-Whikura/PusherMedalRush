@@ -43,6 +43,7 @@ public class EquipmentSlotUI : MonoBehaviour
     // ===============================
     public void Set(SoubiInstance data, Action<SoubiInstance> onClick)
     {
+        
         instance = data;
         this.onClick = onClick;
 
@@ -176,6 +177,9 @@ public class EquipmentSlotUI : MonoBehaviour
         // 通常（インベントリ）
         EquipmentDetailPanel.Instance.Show(instance);
         AudioManager.Instance.PlaySE(AudioManager.Instance.clickSE);
+
+        if (TitleSelectPanel.Instance.gameObject.activeSelf)
+            TitleSelectPanel.Instance.gameObject.SetActive(false);
     }
 
 
