@@ -18,7 +18,7 @@ public class TitleSortUIController : MonoBehaviour
     // ✅表示キー対応表（辞書で管理）
     private Dictionary<TitleSortType, string> sortKeyMap = new()
     {
-        { TitleSortType.None, "ui_sort_none" },
+        { TitleSortType.Rarity, "ui_sort_rarity" },
 
         { TitleSortType.AttackAdd, "ui_mainmenu_6_2" },
         { TitleSortType.AttackRate, "ui_mainmenu_6_3" },
@@ -43,7 +43,7 @@ public class TitleSortUIController : MonoBehaviour
         { TitleSortType.EquipmentDrop, "ui_mainmenu_6_16" },
         { TitleSortType.TitleDrop, "ui_mainmenu_6_17" },
 
-        { TitleSortType.Rarity, "ui_sort_rarity" }
+        { TitleSortType.None, "None" }
     };
 
     private void Awake()
@@ -113,6 +113,7 @@ public class TitleSortUIController : MonoBehaviour
 
         orderButtonText.text =
             panel.currentSortOrder == SortOrder.Descending ? TextManager.Instance.GetUI("ui_mainmenu_6_53") : TextManager.Instance.GetUI("ui_mainmenu_6_54");
+
     }
 
     // ✅Dropdown変更

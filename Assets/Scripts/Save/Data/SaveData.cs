@@ -38,6 +38,9 @@ public class SaveData
     public List<string> obtainedEquipments = new();
     public List<string> obtainedTitles = new();
 
+    // 撤退タイム（秒）
+    public int tettaiTime = 0;
+
     //ベット倍率
     public int currentBet = 1;
 

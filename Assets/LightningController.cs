@@ -30,7 +30,7 @@ public class LightningController : MonoBehaviour
         StartCoroutine(TargetLoop());
 
         // ✅発射SE
-        AudioManager.Instance.PlaySE(AudioManager.Instance.lightning);
+        AudioManager.Instance.PlaySE(AudioManager.Instance.forsesunder);
     }
 
     void Update()

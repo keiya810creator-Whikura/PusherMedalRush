@@ -67,9 +67,19 @@ public class ResultFlowController : MonoBehaviour
             ResultManager.Instance.currentResult.clearedWave =
                 WaveManager.Instance.CurrentWave;
 
-            countdownCoroutine =
-                StartCoroutine(ResultCountdownRoutine());
+            if (AdventureSession.IsAutoRun)
+            {
+                // ✅自動周回：撤退タイム待ち
+                countdownCoroutine =
+                    StartCoroutine(ResultCountdownRoutine());
+            }
+            else
+            {
+                // ✅通常周回：即撤退ボタン
+                TettaiButton.SetActive(true);
+            }
         }
+
     }
 
 
@@ -84,34 +94,36 @@ public class ResultFlowController : MonoBehaviour
     // =========================
     IEnumerator ResultCountdownRoutine()
     {
-        float timer = countdownSeconds;
+        int limitSeconds = AdventureSession.TettaiTime;
 
-        // 表示ON
+        // 撤退タイム0以下なら即終了
+        if (limitSeconds <= 0)
+        {
+            GoToResult();
+            yield break;
+        }
+
+        float timer = limitSeconds;
+
         countdownText.gameObject.SetActive(true);
 
         while (timer > 0f)
         {
-            // 秒数を切り上げ表示（5,4,3,2,1）
             int display = Mathf.CeilToInt(timer);
-            countdownText.text = string.Format(TextManager.Instance.GetUI("ui_sentou_3"), display);
+            countdownText.text =
+                string.Format(
+                    TextManager.Instance.GetUI("ui_sentou_3"),
+                    display
+                );
 
-            timer -= Time.deltaTime*WaveManager.Instance.CurrentGameSpeed;
-
+            timer -= Time.deltaTime * WaveManager.Instance.CurrentGameSpeed;
             yield return null;
         }
 
-        // 表示OFF（念のため）
-        countdownText.text = "";
-
-        // ★ 分岐せず、必ず Result へ
-        if (AdventureSession.IsAutoRun)
-        {
-            GoToResult();
-        }
-        else
-            TettaiButton.SetActive(true);
-            //GoToResult();
+        countdownText.gameObject.SetActive(false);
+        GoToResult();
     }
+
 
 
 
@@ -125,6 +137,7 @@ public class ResultFlowController : MonoBehaviour
             return;
 
         triggered = false;
+
         TettaiButton.SetActive(false);
 
         if (countdownCoroutine != null)
@@ -133,9 +146,9 @@ public class ResultFlowController : MonoBehaviour
             countdownCoroutine = null;
         }
 
-        // 表示リセット
         countdownText.gameObject.SetActive(false);
     }
+
     // ★ リトライボタンもここを呼ぶようにする
     public void OnClickRetry()
     {

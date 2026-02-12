@@ -16,6 +16,7 @@ public class TitleSelectPanel : MonoBehaviour
 
     private SoubiInstance targetSoubi;
     private TitleSelectMode currentMode;
+    private bool isFirstOpen = true;
 
     public enum TitleSelectMode
     {
@@ -46,10 +47,18 @@ public class TitleSelectPanel : MonoBehaviour
         targetSoubi = soubi;
         currentMode = mode;
 
-        gameObject.SetActive(true);
+        // ✅初回オープン時のみレアリティ順にする
+        if (isFirstOpen)
+        {
+            currentSortType = TitleSortType.Rarity;
+            currentSortOrder = SortOrder.Descending; // レア高→低（おすすめ）
+            isFirstOpen = false;
+        }
 
+        gameObject.SetActive(true);
         RefreshList();
     }
+
 
     // ===============================
     // 一覧更新（ソート反映）

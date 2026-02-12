@@ -9,5 +9,7 @@
     public static float GameSpeed = 1f;   // ✅倍速保持
 
     public static int CurrentWave = 1;    // ✅進行保持
+
+    public static int TettaiTime;//今回追加
 }
 

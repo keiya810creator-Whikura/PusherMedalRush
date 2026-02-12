@@ -27,6 +27,8 @@ public enum EquipmentSortType
     GoldDropRate,
     EquipDropRate,
     TitleDropRate,
+
+    damy,
 }
 public enum SortOrder
 {

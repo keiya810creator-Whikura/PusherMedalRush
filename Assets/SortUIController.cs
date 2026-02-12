@@ -108,6 +108,9 @@ public class SortUIController : MonoBehaviour
             EquipmentSortType.TitleDropRate => string.Format(
         TextManager.Instance.GetUI("ui_mainmenu_6_17")
     ),
+            EquipmentSortType.damy => string.Format(
+                TextManager.Instance.GetUI("ui_mainmenu_6_17")
+            ),
 
             _ => type.ToString()
         };

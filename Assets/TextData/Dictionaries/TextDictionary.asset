@@ -55,6 +55,12 @@ MonoBehaviour:
   - key: ui_mainmenu_1_9
     ja: "\u958B\u59CB:{0}"
     en: 'Start: {0}'
+  - key: ui_mainmenu_1_14
+    ja: "\u81EA\u52D5\u5468\u56DE\u6642 \u81EA\u52D5\u64A4\u9000\u6642\u9593"
+    en: Auto-Run Retreat Timer
+  - key: ui_mainmenu_1_15
+    ja: "{0}\u79D2"
+    en: '{0}second'
   - key: ui_mainmenu_2
     ja: "\u6226\u95D8\u8A2D\u5B9A"
     en: Battle Settings
@@ -293,6 +299,9 @@ MonoBehaviour:
     ja: "\u25BC"
     en: "\u25BC"
   - key: ui_mainmenu_6_54
+    ja: "\u25B2"
+    en: "\u25B2"
+  - key: ui_mainmenu_6_55
     ja: "\u79F0\u53F7\u5265\u596A"
     en: Remove Title
   - key: ui_mainmenu_6_6
@@ -417,8 +426,8 @@ MonoBehaviour:
     ja: "\u6B8B\u308A\u5F3E\u6570\uFF1A{0}"
     en: 'Shots Remaining: {0}'
   - key: ui_sentou_3
-    ja: "\u64A4\u9000\u53EF\u80FD\u307E\u3067\uFF1A{0}\u79D2"
-    en: Retreat Available In:{0}second
+    ja: "\u64A4\u9000\u307E\u3067\uFF1A{0}\u79D2"
+    en: Until Retreat :{0}second
   - key: ui_sentou_4
     ja: "\u6B8B\u308A\u5F3E\u6570\uFF1A\u221E"
     en: "Shots Remaining: \u221E"
