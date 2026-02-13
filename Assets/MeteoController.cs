@@ -98,7 +98,7 @@ public class MeteoController : MonoBehaviour
 
             // ✅ダメージ処理（スキル扱い）
             enemy.TakeDamage(
-                BattleManager.Instance.Status.Attack*3 * BetManager.Instance.CurrentBet,
+                Mathf.CeilToInt(BattleManager.Instance.Status.Attack*3 * BetManager.Instance.CurrentBet * BattleManager.Instance.Status.CriticalDamageRate),
                 enemy.transform.position,
                 false,
                 true,

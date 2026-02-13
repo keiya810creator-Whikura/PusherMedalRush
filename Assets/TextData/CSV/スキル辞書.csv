@@ -2,7 +2,7 @@
 skill_1_name,討伐報酬：3メダル,Bounty Reward: 3 Medals
 Skill_1_des,敵を撃破時、10％の確率でメダルが3枚排出される。,When an enemy is defeated there is a 10% chance to spawn 3 medals.
 skill_2_name,フォースサンダーメダル,Force Thunder Medal
-Skill_2_des,メダル発射時、1％の確率でフォースサンダーメダルが発射される。\nこのメダルを獲得するとフォースサンダーが発動する。\n威力1000％,When firing a medal there is a 1% chance to fire a Force Thunder Medal. Collecting this medal activates Force Thunder. Power: 1000%.
+Skill_2_des,メダル発射時、1％の確率でフォースサンダーメダルが発射される。\nこのメダルを獲得するとフォースサンダーが発動する。\n威力1000％×クリティカルダメージ倍率,When firing a medal there is a 1% chance to fire a Force Thunder Medal. Collecting this medal activates Force Thunder. Power: 1000% × Critical Damage Multiplier.
 skill_3_name,最弱種族王の威厳,Dignity of the Weakest Tribe King
 Skill_3_des,敵を撃破時、30％の確率で装備のドロップ判定が2回行われる。,When an enemy is defeated there is a 30% chance that the equipment drop check occurs twice.
 skill_4_name,深淵灯火の導き,Guidance of the Abyssal Flame
@@ -10,27 +10,27 @@ Skill_4_des,敵を撃破時、30％の確率で称号のドロップ判定が2�
 skill_5_name,討伐報酬：5メダル,Bounty Reward: 5 Medals
 Skill_5_des,敵を撃破時、10％の確率でメダルが5枚排出される。,When an enemy is defeated there is a 10% chance to spawn 5 medals.
 skill_6_name,ファイヤーボールメダル,Fireball Medal
-Skill_6_des,メダル発射時、1％の確率でファイヤーボールメダルが発射される。\nこのメダルを獲得するとファイヤーボールが発動する。\n威力550％,When firing a medal there is a 1% chance to fire a Fireball Medal. Collecting this medal activates Fireball. Power: 550%.
+Skill_6_des,メダル発射時、1％の確率でファイヤーボールメダルが発射される。\nこのメダルを獲得するとファイヤーボールが発動する。\n威力550％×クリティカルダメージ倍率,When firing a medal there is a 1% chance to fire a Fireball Medal. Collecting this medal activates Fireball. Power: 550% × Critical Damage Multiplier.
 skill_7_name,血骸喰らいの呪い,Curse of the Blood-Bone Devourer
 Skill_7_des,敵を撃破時、15％の確率で攻撃力が1％上昇する,When an enemy is defeated there is a 15% chance to increase Attack Power by 1%.
 skill_8_name,討伐報酬：8メダル,Bounty Reward: 8 Medals
 Skill_8_des,敵を撃破時、10％の確率でメダルが8枚排出される。,When an enemy is defeated there is a 10% chance to spawn 8 medals.
 skill_9_name,メテオメダル,Meteor Medal
-Skill_9_des,メダル発射時、1％の確率でメテオメダルが発射される。\nこのメダルを獲得するとメテオが発動する。\n威力300％,When firing a medal there is a 1% chance to fire a Meteor Medal. Collecting this medal activates Meteor. Power: 300%.
+Skill_9_des,メダル発射時、1％の確率でメテオメダルが発射される。\nこのメダルを獲得するとメテオが発動する。\n威力300％×クリティカルダメージ倍率,When firing a medal there is a 1% chance to fire a Meteor Medal. Collecting this medal activates Meteor. Power: 300% × Critical Damage Multiplier.
 skill_10_name,アイスブレードメダル,Ice Blade Medal
-Skill_10_des,メダル発射時、1％の確率でアイスブレードメダルが発射される。\nこのメダルを獲得するとアイスブレードが発動する。\n威力325％,When firing a medal there is a 1% chance to fire an Ice Blade Medal. Collecting this medal activates Ice Blade. Power: 325%.
+Skill_10_des,メダル発射時、1％の確率でアイスブレードメダルが発射される。\nこのメダルを獲得するとアイスブレードが発動する。\n威力325％×クリティカルダメージ倍率,When firing a medal there is a 1% chance to fire an Ice Blade Medal. Collecting this medal activates Ice Blade. Power: 325% × Critical Damage Multiplier.
 skill_11_name,討伐報酬：10メダル,Bounty Reward: 10 Medals
 Skill_11_des,敵を撃破時、10％の確率でメダルが10枚排出される。,When an enemy is defeated there is a 10% chance to spawn 10 medals.
 skill_12_name,黄金晶獣の報酬,Reward of the Golden Crystal Beast
 Skill_12_des,メダル発射時、1％の確率で宝箱が発射される。\n宝箱を獲得すると50メダル排出される。,When firing a medal there is a 1% chance to launch a treasure chest. Collecting the chest spawns 50 medals.
 skill_13_name,渦潮メダル,Maelstrom Medal
-Skill_13_des,メダル発射時、1％の確率で渦潮メダルが発射される。\nこのメダルを獲得すると渦潮が発動する。\n威力280％,When firing a medal there is a 1% chance to fire a Maelstrom Medal. Collecting this medal activates Maelstrom. Power: 280%.
+Skill_13_des,メダル発射時、1％の確率で渦潮メダルが発射される。\nこのメダルを獲得すると渦潮が発動する。\n威力280％×クリティカルダメージ倍率,When firing a medal there is a 1% chance to fire a Maelstrom Medal. Collecting this medal activates Maelstrom. Power: 280% × Critical Damage Multiplier.
 skill_14_name,討伐報酬：12メダル,Bounty Reward: 12 Medals
 Skill_14_des,敵を撃破時、10％の確率でメダルが12枚排出される。,When an enemy is defeated there is a 10% chance to spawn 12 medals.
 skill_15_name,蒼炎メダル,Azure Flame Medal
-Skill_15_des,メダル発射時、1％の確率で蒼炎メダルが発射される。\nこのメダルを獲得すると蒼炎が発動する。\n威力1500％,When firing a medal there is a 1% chance to fire an Azure Flame Medal. Collecting this medal activates Azure Flame. Power: 1500%.
+Skill_15_des,メダル発射時、1％の確率で蒼炎メダルが発射される。\nこのメダルを獲得すると蒼炎が発動する。\n威力1500％×クリティカルダメージ倍率,When firing a medal there is a 1% chance to fire an Azure Flame Medal. Collecting this medal activates Azure Flame. Power: 1500% × Critical Damage Multiplier.
 skill_16_name,ウィンドカッターメダル,Wind Cutter Medal
-Skill_16_des,メダル発射時、1％の確率でウィンドカッターメダルが発射される。\nこのメダルを獲得するとウィンドカッターが発動する。\n威力1550％,When firing a medal there is a 1% chance to fire a Wind Cutter Medal. Collecting this medal activates Wind Cutter. Power: 1550%.
+Skill_16_des,メダル発射時、1％の確率でウィンドカッターメダルが発射される。\nこのメダルを獲得するとウィンドカッターが発動する。\n威力1550％×クリティカルダメージ倍率,When firing a medal there is a 1% chance to fire a Wind Cutter Medal. Collecting this medal activates Wind Cutter. Power: 1550% × Critical Damage Multiplier.
 skill_17_name,討伐報酬：15メダル,Bounty Reward: 15 Medals
 Skill_17_des,敵を撃破時、10％の確率でメダルが15枚排出される。,When an enemy is defeated there is a 10% chance to spawn 15 medals.
 skill_18_name,炎鱗獣の狩り,Hunt of the Flame-Scale Beast
@@ -40,7 +40,7 @@ Skill_19_des,敵を撃破時、10％の確率でメダルが17枚排出される
 skill_20_name,金貨王の選別,Selection of the Coin King
 Skill_20_des,敵を撃破時、40％の確率で称号のドロップ判定が2回行われる。,When an enemy is defeated there is a 40% chance that the title drop check occurs twice.
 skill_21_name,ダークボールメダル,Dark Ball Medal
-Skill_21_des,メダル発射時、1％の確率でダークボールメダルが発射される。\nこのメダルを獲得するとダークボールが発動する。\n威力530％,When firing a medal there is a 1% chance to fire a Dark Ball Medal. Collecting this medal activates Dark Ball. Power: 530%.
+Skill_21_des,メダル発射時、1％の確率でダークボールメダルが発射される。\nこのメダルを獲得するとダークボールが発動する。\n威力530％×クリティカルダメージ倍率,When firing a medal there is a 1% chance to fire a Dark Ball Medal. Collecting this medal activates Dark Ball. Power: 530% × Critical Damage Multiplier.
 skill_22_name,討伐報酬：20メダル,Bounty Reward: 20 Medals
 Skill_22_des,敵を撃破時、10％の確率でメダルが20枚排出される。,When an enemy is defeated there is a 10% chance to spawn 20 medals.
 skill_23_name,蒼光騎士の遺志,Will of the Azure Light Knight
@@ -50,13 +50,13 @@ Skill_24_des,敵を撃破時、20％の確率で装備のドロップ判定が3�
 skill_25_name,討伐報酬：22メダル,Bounty Reward: 22 Medals
 Skill_25_des,敵を撃破時、10％の確率でメダルが22枚排出される。,When an enemy is defeated there is a 10% chance to spawn 22 medals.
 skill_26_name,アースクエイクメダル,Earthquake Medal
-Skill_26_des,メダル発射時、1％の確率でアースクエイクメダルが発射される。\nこのメダルを獲得するとアースクエイクが発動する。\n威力170％,When firing a medal there is a 1% chance to fire an Earthquake Medal. Collecting this medal activates Earthquake. Power: 170%.
+Skill_26_des,メダル発射時、1％の確率でアースクエイクメダルが発射される。\nこのメダルを獲得するとアースクエイクが発動する。\n威力170％×クリティカルダメージ倍率,When firing a medal there is a 1% chance to fire an Earthquake Medal. Collecting this medal activates Earthquake. Power: 170% × Critical Damage Multiplier.
 skill_27_name,妖花喰いの恩恵,Blessing of the Flower Devourer
 Skill_27_des,3ウェーブ毎に、20％の確率で攻撃力が1.5％上昇する,Every 3 waves there is a 20% chance to increase Attack Power by 1.5%.
 skill_28_name,討伐報酬：25メダル,Bounty Reward: 25 Medals
 Skill_28_des,敵を撃破時、10％の確率でメダルが25枚排出される。,When an enemy is defeated there is a 10% chance to spawn 25 medals.
 skill_29_name,ライトニングメダル,Lightning Medal
-Skill_29_des,メダル発射時、1％の確率でライトニングメダルが発射される。\nこのメダルを獲得するとアースクエイクが発動する。\n威力100％,When firing a medal there is a 1% chance to fire a Lightning Medal. Collecting this medal activates Lightning. Power: 100%.
+Skill_29_des,メダル発射時、1％の確率でライトニングメダルが発射される。\nこのメダルを獲得するとアースクエイクが発動する。\n威力100％×クリティカルダメージ倍率,When firing a medal there is a 1% chance to fire a Lightning Medal. Collecting this medal activates Lightning. Power: 100% × Critical Damage Multiplier.
 skill_30_name,蒼雷星盾の加護,Blessing of the Azure Thunder Star Shield
 Skill_30_des,ウェーブ開始時、10％の確率でメダルが30枚排出される,At the start of a wave there is a 10% chance to spawn 30 medals.
 skill_31_name,討伐報酬：30メダル,Bounty Reward: 30 Medals

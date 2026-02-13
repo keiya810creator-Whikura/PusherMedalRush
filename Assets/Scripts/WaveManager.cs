@@ -171,7 +171,7 @@ public class WaveManager : MonoBehaviour
         return clearedWave >= AdventureSession.EndWave;
     }
 
-
+    private bool abyssin = false;
     void StartBattleWave()
     {
         if (EnemySpawner.Instance == null) return;
@@ -200,6 +200,12 @@ public class WaveManager : MonoBehaviour
         }
 
         EnemySpawner.Instance.SpawnEnemy(CurrentWave);
+
+        if (CurrentWave >= EndlessStartWave && abyssin == false)
+        {
+            ToastManager.Instance.ShowToast(TextManager.Instance.GetUI("ui_toast_7"));
+            abyssin = true;
+        }
     }
 
 

@@ -58,7 +58,7 @@ public class WindCutterProjectile : MonoBehaviour
         Debug.Log("🌪 WindCutter Hit!");
         AudioManager.Instance.PlaySE(AudioManager.Instance.skillHit);
         other.GetComponent<Enemy>().TakeDamage(
-            Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 15.5f * BetManager.Instance.CurrentBet),
+            Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 15.5f * BetManager.Instance.CurrentBet * BattleManager.Instance.Status.CriticalDamageRate),
             other.transform.position,
             false,
             true,

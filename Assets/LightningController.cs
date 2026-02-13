@@ -127,7 +127,7 @@ public class LightningController : MonoBehaviour
         Enemy enemy = enemyObj.GetComponent<Enemy>();
         if (enemy == null) return;
 
-        long damage = BattleManager.Instance.Status.Attack * BetManager.Instance.CurrentBet;
+        long damage = Mathf.CeilToInt(BattleManager.Instance.Status.Attack * BetManager.Instance.CurrentBet * BattleManager.Instance.Status.CriticalDamageRate);
 
         enemy.TakeDamage(
             damage,

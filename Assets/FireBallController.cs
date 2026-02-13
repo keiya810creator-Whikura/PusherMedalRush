@@ -66,7 +66,7 @@ public class FireBallController : MonoBehaviour
 
         // ✅ダメージ処理（スキル扱い）
         enemy.TakeDamage(
-            Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 5.5f * BetManager.Instance.CurrentBet),
+            Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 5.5f * BetManager.Instance.CurrentBet * BattleManager.Instance.Status.CriticalDamageRate),
             transform.position,
             false,
             true,

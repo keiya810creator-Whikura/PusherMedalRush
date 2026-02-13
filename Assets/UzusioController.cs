@@ -86,7 +86,7 @@ public class UzusioController : MonoBehaviour
         if (enemy == null) return;
 
         enemy.TakeDamage(
-            Mathf.CeilToInt(BattleManager.Instance.Status.Attack*2.8f * BetManager.Instance.CurrentBet),
+            Mathf.CeilToInt(BattleManager.Instance.Status.Attack*2.8f * BetManager.Instance.CurrentBet * BattleManager.Instance.Status.CriticalDamageRate),
             enemy.transform.position,
             false,
             true,

@@ -62,7 +62,7 @@ public class SouenController : MonoBehaviour
 
         // ✅ダメージ（スキル扱い）
         collision.GetComponent<Enemy>().TakeDamage(
-            BattleManager.Instance.Status.Attack * 15 * BetManager.Instance.CurrentBet,
+            Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 15 * BetManager.Instance.CurrentBet * BattleManager.Instance.Status.CriticalDamageRate),
             collision.transform.position,
             false,
             true,

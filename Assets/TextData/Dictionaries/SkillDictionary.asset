@@ -23,9 +23,10 @@ MonoBehaviour:
     ja: "\u30D5\u30A9\u30FC\u30B9\u30B5\u30F3\u30C0\u30FC\u30E1\u30C0\u30EB"
     en: Force Thunder Medal
   - key: Skill_2_des
-    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30D5\u30A9\u30FC\u30B9\u30B5\u30F3\u30C0\u30FC\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30D5\u30A9\u30FC\u30B9\u30B5\u30F3\u30C0\u30FC\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B1000\uFF05"
-    en: 'When firing a medal there is a 1% chance to fire a Force Thunder Medal.
-      Collecting this medal activates Force Thunder. Power: 1000%.'
+    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30D5\u30A9\u30FC\u30B9\u30B5\u30F3\u30C0\u30FC\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30D5\u30A9\u30FC\u30B9\u30B5\u30F3\u30C0\u30FC\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B1000\uFF05\xD7\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: "When firing a medal there is a 1% chance to fire a Force Thunder Medal.
+      Collecting this medal activates Force Thunder. Power: 1000% \xD7 Critical Damage
+      Multiplier."
   - key: skill_3_name
     ja: "\u6700\u5F31\u7A2E\u65CF\u738B\u306E\u5A01\u53B3"
     en: Dignity of the Weakest Tribe King
@@ -50,9 +51,9 @@ MonoBehaviour:
     ja: "\u30D5\u30A1\u30A4\u30E4\u30FC\u30DC\u30FC\u30EB\u30E1\u30C0\u30EB"
     en: Fireball Medal
   - key: Skill_6_des
-    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30D5\u30A1\u30A4\u30E4\u30FC\u30DC\u30FC\u30EB\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30D5\u30A1\u30A4\u30E4\u30FC\u30DC\u30FC\u30EB\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B550\uFF05"
-    en: 'When firing a medal there is a 1% chance to fire a Fireball Medal. Collecting
-      this medal activates Fireball. Power: 550%.'
+    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30D5\u30A1\u30A4\u30E4\u30FC\u30DC\u30FC\u30EB\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30D5\u30A1\u30A4\u30E4\u30FC\u30DC\u30FC\u30EB\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B550\uFF05\xD7\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: "When firing a medal there is a 1% chance to fire a Fireball Medal. Collecting
+      this medal activates Fireball. Power: 550% \xD7 Critical Damage Multiplier."
   - key: skill_7_name
     ja: "\u8840\u9AB8\u55B0\u3089\u3044\u306E\u546A\u3044"
     en: Curse of the Blood-Bone Devourer
@@ -70,16 +71,16 @@ MonoBehaviour:
     ja: "\u30E1\u30C6\u30AA\u30E1\u30C0\u30EB"
     en: Meteor Medal
   - key: Skill_9_des
-    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30E1\u30C6\u30AA\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30E1\u30C6\u30AA\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B300\uFF05"
-    en: 'When firing a medal there is a 1% chance to fire a Meteor Medal. Collecting
-      this medal activates Meteor. Power: 300%.'
+    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30E1\u30C6\u30AA\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30E1\u30C6\u30AA\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B300\uFF05\xD7\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: "When firing a medal there is a 1% chance to fire a Meteor Medal. Collecting
+      this medal activates Meteor. Power: 300% \xD7 Critical Damage Multiplier."
   - key: skill_10_name
     ja: "\u30A2\u30A4\u30B9\u30D6\u30EC\u30FC\u30C9\u30E1\u30C0\u30EB"
     en: Ice Blade Medal
   - key: Skill_10_des
-    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30A2\u30A4\u30B9\u30D6\u30EC\u30FC\u30C9\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30A2\u30A4\u30B9\u30D6\u30EC\u30FC\u30C9\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B325\uFF05"
-    en: 'When firing a medal there is a 1% chance to fire an Ice Blade Medal. Collecting
-      this medal activates Ice Blade. Power: 325%.'
+    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30A2\u30A4\u30B9\u30D6\u30EC\u30FC\u30C9\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30A2\u30A4\u30B9\u30D6\u30EC\u30FC\u30C9\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B325\uFF05\xD7\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: "When firing a medal there is a 1% chance to fire an Ice Blade Medal. Collecting
+      this medal activates Ice Blade. Power: 325% \xD7 Critical Damage Multiplier."
   - key: skill_11_name
     ja: "\u8A0E\u4F10\u5831\u916C\uFF1A10\u30E1\u30C0\u30EB"
     en: 'Bounty Reward: 10 Medals'
@@ -97,9 +98,9 @@ MonoBehaviour:
     ja: "\u6E26\u6F6E\u30E1\u30C0\u30EB"
     en: Maelstrom Medal
   - key: Skill_13_des
-    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u6E26\u6F6E\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u6E26\u6F6E\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B280\uFF05"
-    en: 'When firing a medal there is a 1% chance to fire a Maelstrom Medal. Collecting
-      this medal activates Maelstrom. Power: 280%.'
+    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u6E26\u6F6E\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u6E26\u6F6E\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B280\uFF05\xD7\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: "When firing a medal there is a 1% chance to fire a Maelstrom Medal. Collecting
+      this medal activates Maelstrom. Power: 280% \xD7 Critical Damage Multiplier."
   - key: skill_14_name
     ja: "\u8A0E\u4F10\u5831\u916C\uFF1A12\u30E1\u30C0\u30EB"
     en: 'Bounty Reward: 12 Medals'
@@ -110,16 +111,16 @@ MonoBehaviour:
     ja: "\u84BC\u708E\u30E1\u30C0\u30EB"
     en: Azure Flame Medal
   - key: Skill_15_des
-    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u84BC\u708E\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u84BC\u708E\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B1500\uFF05"
-    en: 'When firing a medal there is a 1% chance to fire an Azure Flame Medal. Collecting
-      this medal activates Azure Flame. Power: 1500%.'
+    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u84BC\u708E\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u84BC\u708E\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B1500\uFF05\xD7\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: "When firing a medal there is a 1% chance to fire an Azure Flame Medal. Collecting
+      this medal activates Azure Flame. Power: 1500% \xD7 Critical Damage Multiplier."
   - key: skill_16_name
     ja: "\u30A6\u30A3\u30F3\u30C9\u30AB\u30C3\u30BF\u30FC\u30E1\u30C0\u30EB"
     en: Wind Cutter Medal
   - key: Skill_16_des
-    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30A6\u30A3\u30F3\u30C9\u30AB\u30C3\u30BF\u30FC\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30A6\u30A3\u30F3\u30C9\u30AB\u30C3\u30BF\u30FC\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B1550\uFF05"
-    en: 'When firing a medal there is a 1% chance to fire a Wind Cutter Medal. Collecting
-      this medal activates Wind Cutter. Power: 1550%.'
+    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30A6\u30A3\u30F3\u30C9\u30AB\u30C3\u30BF\u30FC\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30A6\u30A3\u30F3\u30C9\u30AB\u30C3\u30BF\u30FC\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B1550\uFF05\xD7\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: "When firing a medal there is a 1% chance to fire a Wind Cutter Medal. Collecting
+      this medal activates Wind Cutter. Power: 1550% \xD7 Critical Damage Multiplier."
   - key: skill_17_name
     ja: "\u8A0E\u4F10\u5831\u916C\uFF1A15\u30E1\u30C0\u30EB"
     en: 'Bounty Reward: 15 Medals'
@@ -138,7 +139,7 @@ MonoBehaviour:
     en: 'Bounty Reward: 17 Medals'
   - key: Skill_19_des
     ja: "\u6575\u3092\u6483\u7834\u6642\u300110\uFF05\u306E\u78BA\u7387\u3067\u30E1\u30C0\u30EB\u304C17\u679A\u6392\u51FA\u3055\u308C\u308B\u3002"
-    en: When an enemy is defeated there is a 10% chance to spawn 17 medals.
+    en: When an enemy is defeated there is a 10% chance to spawn 15 medals.
   - key: skill_20_name
     ja: "\u91D1\u8CA8\u738B\u306E\u9078\u5225"
     en: Selection of the Coin King
@@ -150,9 +151,9 @@ MonoBehaviour:
     ja: "\u30C0\u30FC\u30AF\u30DC\u30FC\u30EB\u30E1\u30C0\u30EB"
     en: Dark Ball Medal
   - key: Skill_21_des
-    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30C0\u30FC\u30AF\u30DC\u30FC\u30EB\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30C0\u30FC\u30AF\u30DC\u30FC\u30EB\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B530\uFF05"
-    en: 'When firing a medal there is a 1% chance to fire a Dark Ball Medal. Collecting
-      this medal activates Dark Ball. Power: 530%.'
+    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30C0\u30FC\u30AF\u30DC\u30FC\u30EB\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30C0\u30FC\u30AF\u30DC\u30FC\u30EB\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B530\uFF05\xD7\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: "When firing a medal there is a 1% chance to fire a Dark Ball Medal. Collecting
+      this medal activates Dark Ball. Power: 530% \xD7 Critical Damage Multiplier."
   - key: skill_22_name
     ja: "\u8A0E\u4F10\u5831\u916C\uFF1A20\u30E1\u30C0\u30EB"
     en: 'Bounty Reward: 20 Medals'
@@ -182,9 +183,9 @@ MonoBehaviour:
     ja: "\u30A2\u30FC\u30B9\u30AF\u30A8\u30A4\u30AF\u30E1\u30C0\u30EB"
     en: Earthquake Medal
   - key: Skill_26_des
-    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30A2\u30FC\u30B9\u30AF\u30A8\u30A4\u30AF\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30A2\u30FC\u30B9\u30AF\u30A8\u30A4\u30AF\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B170\uFF05"
-    en: 'When firing a medal there is a 1% chance to fire an Earthquake Medal. Collecting
-      this medal activates Earthquake. Power: 170%.'
+    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30A2\u30FC\u30B9\u30AF\u30A8\u30A4\u30AF\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30A2\u30FC\u30B9\u30AF\u30A8\u30A4\u30AF\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B170\uFF05\xD7\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: "When firing a medal there is a 1% chance to fire an Earthquake Medal. Collecting
+      this medal activates Earthquake. Power: 170% \xD7 Critical Damage Multiplier."
   - key: skill_27_name
     ja: "\u5996\u82B1\u55B0\u3044\u306E\u6069\u6075"
     en: Blessing of the Flower Devourer
@@ -201,9 +202,9 @@ MonoBehaviour:
     ja: "\u30E9\u30A4\u30C8\u30CB\u30F3\u30B0\u30E1\u30C0\u30EB"
     en: Lightning Medal
   - key: Skill_29_des
-    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30E9\u30A4\u30C8\u30CB\u30F3\u30B0\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30A2\u30FC\u30B9\u30AF\u30A8\u30A4\u30AF\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B100\uFF05"
-    en: 'When firing a medal there is a 1% chance to fire a Lightning Medal. Collecting
-      this medal activates Lightning. Power: 100%.'
+    ja: "\u30E1\u30C0\u30EB\u767A\u5C04\u6642\u30011\uFF05\u306E\u78BA\u7387\u3067\u30E9\u30A4\u30C8\u30CB\u30F3\u30B0\u30E1\u30C0\u30EB\u304C\u767A\u5C04\u3055\u308C\u308B\u3002\\n\u3053\u306E\u30E1\u30C0\u30EB\u3092\u7372\u5F97\u3059\u308B\u3068\u30A2\u30FC\u30B9\u30AF\u30A8\u30A4\u30AF\u304C\u767A\u52D5\u3059\u308B\u3002\\n\u5A01\u529B100\uFF05\xD7\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u30C0\u30E1\u30FC\u30B8\u500D\u7387"
+    en: "When firing a medal there is a 1% chance to fire a Lightning Medal. Collecting
+      this medal activates Lightning. Power: 100% \xD7 Critical Damage Multiplier."
   - key: skill_30_name
     ja: "\u84BC\u96F7\u661F\u76FE\u306E\u52A0\u8B77"
     en: Blessing of the Azure Thunder Star Shield

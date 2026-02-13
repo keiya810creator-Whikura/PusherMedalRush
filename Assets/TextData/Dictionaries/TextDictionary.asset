@@ -476,6 +476,9 @@ MonoBehaviour:
   - key: ui_toast_6
     ja: "\u6DF1\u5C64\u79F0\u53F7\u3092\u767A\u898B\u3057\u305F\uFF01\uFF01"
     en: Abyss Title Found!!
+  - key: ui_toast_7
+    ja: "\u6DF1\u5C64\u306B\u7A81\u5165\u3057\u307E\u3057\u305F\uFF01\uFF01"
+    en: You have entered the Abyss!
   - key: ui_toast_ad_loading
     ja: "\u5E83\u544A\u30ED\u30FC\u30C9\u4E2D\u3067\u3059"
     en: Ad Loading
