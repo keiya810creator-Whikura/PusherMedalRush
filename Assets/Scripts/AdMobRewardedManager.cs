@@ -8,10 +8,10 @@ public class AdMobRewardedManager : MonoBehaviour
 
 #if UNITY_IOS
     // ✅まずはテスト広告ID（安全）
-    private const string REWARDED_AD_UNIT_ID = "ca-app-pub-3940256099942544/1712485313";
+    private const string REWARDED_AD_UNIT_ID = "ca-app-pub-6220135529861385/5264125182";
 #else
     // Androidも後で対応するならテストIDを入れる
-    private const string REWARDED_AD_UNIT_ID = "ca-app-pub-3940256099942544/5224354917";
+    private const string REWARDED_AD_UNIT_ID = "ca-app-pub-6220135529861385/3509858683";
 #endif
 
     private RewardedAd rewardedAd;

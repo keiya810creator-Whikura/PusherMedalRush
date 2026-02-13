@@ -19,8 +19,8 @@ MonoBehaviour:
   waveInterval: 0
   timeInterval: 0
   actionType: 0
-  percentValue: 0.01
+  percentValue: 0.003
   flatValue: 0
-  probability: 0.2
+  probability: 0.1
   activeSkill: {fileID: 0}
   specialMedalPrefab: {fileID: 0}

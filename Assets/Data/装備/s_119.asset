@@ -33,4 +33,5 @@ MonoBehaviour:
   equipmentDropAdd: 0
   titleDropAdd: 0
   skills:
+  - {fileID: 11400000, guid: 6448c9a748bcd0f4c89d53c93d4d7a8f, type: 2}
   - {fileID: 11400000, guid: c3750a92eba09d84f9f0c85e592e3917, type: 2}

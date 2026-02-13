@@ -19,7 +19,7 @@ MonoBehaviour:
   waveInterval: 3
   timeInterval: 0
   actionType: 0
-  percentValue: 0.015
+  percentValue: 0.0015
   flatValue: 0
   probability: 0.2
   activeSkill: {fileID: 0}

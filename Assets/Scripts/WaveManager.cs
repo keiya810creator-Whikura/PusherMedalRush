@@ -33,7 +33,7 @@ public class WaveManager : MonoBehaviour
     private bool isEndlessRun;
     private long currentEnemyHP = 5;
     private const int BossInterval = 40;
-    private const float BossMultiplier = 1.45f;
+    private const float BossMultiplier = 1.475f;
 
     // =========================
     // Wave501+ Endless Settings
@@ -153,7 +153,7 @@ public class WaveManager : MonoBehaviour
                 currentEnemyHP = (long)(currentEnemyHP * BossMultiplier);
             }
         }
-        if (CurrentWave % 40 == 1 && CurrentWave != 1)
+        if (CurrentWave % 40 == 1 && CurrentWave != 1&&CurrentWave<=1000)
         {
             ToastManager.Instance.ShowToast(string.Format(TextManager.Instance.GetUI("ui_toast_3")));
         }

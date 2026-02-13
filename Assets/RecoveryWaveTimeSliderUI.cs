@@ -14,7 +14,7 @@ public class RecoveryWaveTimeSliderUI : MonoBehaviour
     {
         maxValue = BattleStatusBuilder.Build().RecoveryWaveExtendSeconds;
 
-        slider.minValue = 1f;
+        slider.minValue = 5f;
         slider.maxValue = maxValue;
         slider.wholeNumbers = true;
 
