@@ -34,3 +34,4 @@ MonoBehaviour:
   titleDropAdd: 0.38
   skills:
   - {fileID: 11400000, guid: 6801b721a092aa441b857e149f4b2ff8, type: 2}
+  - {fileID: 11400000, guid: a776de36ed5592a4daafd2402c3e5798, type: 2}
