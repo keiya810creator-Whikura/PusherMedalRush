@@ -14,7 +14,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
     public const string PRODUCT_SPEED3X = "speed_3x";
     public const string PRODUCT_TITLE_BOOST = "title_boost";
     public const string PRODUCT_BUNDLE_PACK = "bundle_pack";
-    public const string PRODUCT_STORAGE_100 = "storage_100";
+    public const string PRODUCT_STORAGE_100 = "storage_100plus";
 
     public event Action OnIAPInitialized;
 

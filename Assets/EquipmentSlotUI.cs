@@ -218,6 +218,7 @@ public class EquipmentSlotUI : MonoBehaviour
         {
             // パーセンテージ
             case EquipmentSortType.AttackRate:
+            case EquipmentSortType.MaxMedalRate:
             case EquipmentSortType.CriticalRate:
             case EquipmentSortType.CriticalDamageRate:
             case EquipmentSortType.MedalConsumeZeroRate:
