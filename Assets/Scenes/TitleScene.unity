@@ -3430,7 +3430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dictionaryType: 0
-  key: ui_title_3
+  key: ui_mainmenu_8_12
 --- !u!114 &1318651491
 MonoBehaviour:
   m_ObjectHideFlags: 0

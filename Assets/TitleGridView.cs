@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -10,14 +10,16 @@ public class TitleGridView : MonoBehaviour
 
     public void ShowResult(List<SyougouData> list)
     {
-        // Šù‘¶ƒNƒŠƒA
+        // æ—¢å­˜ã‚¯ãƒªã‚¢
         foreach (Transform child in content)
             Destroy(child.gameObject);
 
         if (list == null || list.Count == 0)
             return;
 
-        // “¯ˆêÌ†‚ğ‚Ü‚Æ‚ß‚éiSOQÆ‚ÅƒOƒ‹[ƒv‰»j
+        // =========================
+        // åŒä¸€ç§°å·ã‚’ã¾ã¨ã‚ã‚‹
+        // =========================
         var grouped = list
             .Where(t => t != null)
             .GroupBy(t => t)
@@ -26,19 +28,24 @@ public class TitleGridView : MonoBehaviour
                 data = g.Key,
                 count = g.Count()
             })
+            // âœ… ãƒ¬ã‚¢ãƒªãƒ†ã‚£é †ï¼ˆâ˜…6 â†’ â˜…1ï¼‰
+            .OrderByDescending(s => s.data.rarity)
             .ToList();
 
+        // =========================
+        // è¡¨ç¤º
+        // =========================
         foreach (var stack in grouped)
         {
             var slot = Instantiate(slotPrefab, content);
 
-            // š ResultGained ƒ‚[ƒh‚Å•\¦i•t—^ƒ{ƒ^ƒ“”ñ•\¦j
             slot.Set(
                 stack,
-                null, // Result‚Å‚ÍƒNƒŠƒbƒNˆ—•s—v
+                null, // Resultã§ã¯ã‚¯ãƒªãƒƒã‚¯å‡¦ç†ä¸è¦
                 rarityTable,
                 TitleSelectPanel.TitleSelectMode.ResultGained
             );
         }
     }
+
 }

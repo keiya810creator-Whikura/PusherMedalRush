@@ -456,7 +456,7 @@ MonoBehaviour:
     ja: "\u8A00\u8A9E\u9078\u629E"
     en: Language Settings
   - key: ui_title_2
-    ja: "\u304A\u554F\u5408\u305B"
+    ja: "\u304A\u554F\u3044\u5408\u308F\u305B"
     en: Support
   - key: ui_toast_1
     ja: "{0}\u304C\u8FD4\u5374\u3055\u308C\u305F\uFF01\uFF01"
@@ -513,3 +513,14 @@ MonoBehaviour:
       special stats based on that Title.\\nTitles are always returned when equipment
       is dismantled or when a Title is removed.\\nYou\u2019ll never lose them so
       feel free to experiment and try different builds!"
+  - key: ui_mainmenu_8_10
+    ja: "\u30AF\u30EC\u30B8\u30C3\u30C8"
+    en: Credits
+  - key: ui_mainmenu_8_11
+    ja: "\u697D\u66F2\u63D0\u4F9B\uFF1A\u300C\u9B54\u738B\u9B42\u300D\u69D8"
+    en: Music provided by Maou Damashii
+  - key: ui_mainmenu_8_12
+    ja: "\u30B2\u30FC\u30E0\u306B\u95A2\u3059\u308B\u8981\u671B\u3084\u8CEA\u554F\u3001\u4E0D\u5177\u5408\u5831\u544A\u7B49\u304C\u3042\u308C\u3070\u4F5C\u8005\u306EX(\u65E7Twitter)\u307E\u3067DM\u3092\u304A\u9858\u3044\u3044\u305F\u3057\u307E\u3059\u3002\\n\u304A\u554F\u3044\u5408\u308F\u305B\u30DC\u30BF\u30F3\u3092\u62BC\u3059\u3068\u4F5C\u8005\u306EX\u306B\u753B\u9762\u504F\u79FB\u3057\u307E\u3059\u3002"
+    en: "If you have any requests or questions or bug reports regarding the game
+      please send a DM to the developer on X formerly Twitter\\nPressing the Contact
+      button will take you to the developer\u2019s X page"

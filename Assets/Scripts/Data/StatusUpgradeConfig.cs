@@ -98,22 +98,22 @@ public static class StatusUpgradeConfig
         {
             case PlayerStatusDatabase.StatusType.Attack:
             case PlayerStatusDatabase.StatusType.MaxMedal:
-                baseCost = 5; rate = 1.016f; break;
+                baseCost = 5; rate = 1.0151f; break;
 
             case PlayerStatusDatabase.StatusType.ShotCount:
-                baseCost = 50000; rate = 5.2f; break;
+                baseCost = 50000; rate = 7f; break;
 
             case PlayerStatusDatabase.StatusType.CriticalRate:
                 baseCost = 150; rate = 1.0425f; break;
 
             case PlayerStatusDatabase.StatusType.CriticalDamageRate:
-                baseCost = 300; rate = 1.0118f; break;
+                baseCost = 300; rate = 1.011f; break;
 
             case PlayerStatusDatabase.StatusType.RecoveryWaveMedalValue:
-                baseCost = 30000;rate = 1.28f; break;
+                baseCost = 30000;rate = 1.333f; break;
 
             case PlayerStatusDatabase.StatusType.RecoveryWaveExtendSeconds:
-                baseCost = 5; rate = 1.309f; break;
+                baseCost = 30000; rate = 1.138f; break;
 
             case PlayerStatusDatabase.StatusType.MedalConsumeZeroRate:
             case PlayerStatusDatabase.StatusType.Attack10xMedalRate:
@@ -124,7 +124,7 @@ public static class StatusUpgradeConfig
             case PlayerStatusDatabase.StatusType.GoldDropRate:
             case PlayerStatusDatabase.StatusType.EquipDropRate:
             case PlayerStatusDatabase.StatusType.TitleDropRate:
-                baseCost = 5; rate = 1.017f; break;
+                baseCost = 5000; rate = 1.0074f; break;
 
             default:
                 baseCost = 5; rate = 1.0545f; break;

@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 public class EquipmentGridView : MonoBehaviour
@@ -149,7 +149,7 @@ public class EquipmentGridView : MonoBehaviour
                 return true;
 
             // ------------------
-            // ‘•”õƒŒƒAƒŠƒeƒB
+            // è£…å‚™ãƒ¬ã‚¢ãƒªãƒ†ã‚£
             // ------------------
             case EquipmentFilterMode.EquipRarity1:
             case EquipmentFilterMode.EquipRarity2:
@@ -163,7 +163,7 @@ public class EquipmentGridView : MonoBehaviour
                 return s.master.rarity == equipRarity;
 
             // ------------------
-            // š Ì†ƒŒƒAƒŠƒeƒB
+            // â˜… ç§°å·ãƒ¬ã‚¢ãƒªãƒ†ã‚£
             // ------------------
             case EquipmentFilterMode.TitleRarity1:
             case EquipmentFilterMode.TitleRarity2:
@@ -178,11 +178,11 @@ public class EquipmentGridView : MonoBehaviour
                     (int)filterState.mode
                     - (int)EquipmentFilterMode.TitleRarity1 + 1;
 
-                // š 1‚Â‚Å‚àŠY“–ƒŒƒAƒŠƒeƒB‚ª‚ ‚ê‚ÎOK
+                // â˜… 1ã¤ã§ã‚‚è©²å½“ãƒ¬ã‚¢ãƒªãƒ†ã‚£ãŒã‚ã‚Œã°OK
                 return s.attachedTitles.Any(t => t.rarity == titleRarity);
 
             // ------------------
-            // Ì†‚ ‚è / ‚È‚µ
+            // ç§°å·ã‚ã‚Š / ãªã—
             // ------------------
             case EquipmentFilterMode.HasTitle:
                 return s.attachedTitles != null &&
@@ -193,12 +193,12 @@ public class EquipmentGridView : MonoBehaviour
                        s.attachedTitles.Count == 0;
 
             // ------------------
-            // ‚¨‹C‚É“ü‚è
+            // ãŠæ°—ã«å…¥ã‚Š
             // ------------------
             case EquipmentFilterMode.Favorite:
                 return s.isFavorite;
 
-            case EquipmentFilterMode.NotFavorite:   // š ’Ç‰Á
+            case EquipmentFilterMode.NotFavorite:   // â˜… è¿½åŠ 
                 return !s.isFavorite;
         }
 
@@ -229,34 +229,40 @@ public class EquipmentGridView : MonoBehaviour
     }
     public void OnFilterChanged(EquipmentFilterMode newMode)
     {
-        // ‡@ ƒtƒBƒ‹ƒ^[XV
+        // â‘  ãƒ•ã‚£ãƒ«ã‚¿ãƒ¼æ›´æ–°
         filterState.mode = newMode;
 
-        // ‡A ”„‹p‘I‘ğ‚ğ‘S‰ğœiš‚±‚±d—vj
+        // â‘¡ å£²å´é¸æŠã‚’å…¨è§£é™¤ï¼ˆâ˜…ã“ã“é‡è¦ï¼‰
         InventoryManager.Instance.ClearAllDismantleSelection();
 
-        // ‡B •\¦’†ƒXƒƒbƒg‚Ìƒ}[ƒNXV
+        // â‘¢ è¡¨ç¤ºä¸­ã‚¹ãƒ­ãƒƒãƒˆã®ãƒãƒ¼ã‚¯æ›´æ–°
         RefreshDisassembleMarks();
 
-        // ‡C ƒOƒŠƒbƒhÄ\’ziƒtƒBƒ‹ƒ^[“K—pj
+        // â‘£ ã‚°ãƒªãƒƒãƒ‰å†æ§‹ç¯‰ï¼ˆãƒ•ã‚£ãƒ«ã‚¿ãƒ¼é©ç”¨ï¼‰
         Refresh();
 
-        // ‡D Toolbar XV
+        // â‘¤ Toolbar æ›´æ–°
         DisassembleToolbar.Instance.Refresh();
     }
-    // Result‰æ–Ê—pFŠO•”ƒŠƒXƒg‚ğ‚»‚Ì‚Ü‚Ü•\¦
+    // Resultç”»é¢ç”¨ï¼šå¤–éƒ¨ãƒªã‚¹ãƒˆã‚’ãã®ã¾ã¾è¡¨ç¤º
     public void ShowResult(List<SoubiInstance> list)
     {
         currentMode = GridViewMode.Result;
 
         ClearGrid();
 
-        foreach (var soubi in list)
+        // âœ… ãƒ¬ã‚¢ãƒªãƒ†ã‚£é †ã«ã‚½ãƒ¼ãƒˆï¼ˆé™é †ï¼‰
+        var sorted = list
+            .OrderByDescending(s => s.master.rarity)
+            .ToList();
+
+        foreach (var soubi in sorted)
         {
             var slot = Instantiate(slotPrefab, content);
-            slot.Set(soubi, null); // ‘€ì•s‰Â
+            slot.Set(soubi, null); // æ“ä½œä¸å¯
         }
     }
+
     public void ShowInventory()
     {
         currentMode = GridViewMode.Inventory;
