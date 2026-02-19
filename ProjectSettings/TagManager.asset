@@ -19,7 +19,7 @@ TagManager:
   - Medal_Falling
   - Medal_Normal
   - UpperWall
-  - 
+  - TutorialTutorial
   - 
   - 
   - 
@@ -45,6 +45,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: TutorialTutorial
+    uniqueID: 883930597
     locked: 0
   m_RenderingLayers:
   - Default

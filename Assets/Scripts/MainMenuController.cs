@@ -17,6 +17,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject shopPanel;
 
     [SerializeField] private GameObject mainMenuTutorialPanel;
+    [SerializeField] private GameObject mainMenuTutorialPanel2;
 
     private void Start()
     {
@@ -32,6 +33,11 @@ public class MainMenuController : MonoBehaviour
 
         if (TutorialManager.Instance.CanShow(TutorialID.MainMenu))
             mainMenuTutorialPanel.SetActive(true);
+
+        /*if(TutorialManager.Instance.IsMainMenuSecondCondition())
+        {
+            mainMenuTutorialPanel2.SetActive(true);
+        }*/
 
         AdBuffManager.Instance.ClearRewardBuff();
     }
@@ -233,6 +239,11 @@ public class MainMenuController : MonoBehaviour
         RefreshRewardBoostButton();
         RefreshFinalDropText();
         InventoryManager.Instance.isDismantleMode = false;
+
+        if (TutorialManager.Instance.IsMainMenuSecondCondition())
+        {
+            mainMenuTutorialPanel2.SetActive(true);
+        }
     }
 
     public void OpenStatusMenuPanel()
@@ -324,6 +335,11 @@ public class MainMenuController : MonoBehaviour
 
         RefreshRewardBoostButton();
         RefreshFinalDropText();
+
+        if (TutorialManager.Instance.IsMainMenuSecondCondition())
+        {
+            mainMenuTutorialPanel2.SetActive(true);
+        }
     }
 
     private void ApplyRemoveAdsPermanentBoost()

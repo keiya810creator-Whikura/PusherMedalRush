@@ -392,6 +392,17 @@ MonoBehaviour:
   - key: ui_mainmenu_8_9
     ja: "\uFF1F\uFF1F\uFF1F"
     en: "\uFF1F\uFF1F\uFF1F"
+  - key: ui_mainmenu_8_10
+    ja: "\u30AF\u30EC\u30B8\u30C3\u30C8"
+    en: Credits
+  - key: ui_mainmenu_8_11
+    ja: "\u697D\u66F2\u63D0\u4F9B\uFF1A\u300C\u9B54\u738B\u9B42\u300D\u69D8"
+    en: Music provided by Maou Damashii
+  - key: ui_mainmenu_8_12
+    ja: "\u30B2\u30FC\u30E0\u306B\u95A2\u3059\u308B\u8981\u671B\u3084\u8CEA\u554F\u3001\u4E0D\u5177\u5408\u5831\u544A\u7B49\u304C\u3042\u308C\u3070\u4F5C\u8005\u306EX(\u65E7Twitter)\u307E\u3067DM\u3092\u304A\u9858\u3044\u3044\u305F\u3057\u307E\u3059\u3002\\n\u304A\u554F\u3044\u5408\u308F\u305B\u30DC\u30BF\u30F3\u3092\u62BC\u3059\u3068\u4F5C\u8005\u306EX\u306B\u753B\u9762\u504F\u79FB\u3057\u307E\u3059\u3002"
+    en: "If you have any requests or questions or bug reports regarding the game
+      please send a DM to the developer on X formerly Twitter\\nPressing the Contact
+      button will take you to the developer\u2019s X page"
   - key: ui_resultmenu_1
     ja: "\u5192\u967A\u304B\u3089\u306E\u5E30\u9084"
     en: Return from Adventure
@@ -485,7 +496,7 @@ MonoBehaviour:
   - key: ui_tutorial_1
     ja: "\u30D7\u30C3\u30B7\u30E3\u30FC\u30E1\u30C0\u30EB\u30E9\u30C3\u30B7\u30E5\u306E\u4E16\u754C\u3078\u3088\u3046\u3053\u305D\uFF01\\n\u3053\u3053\u306F\\n\u30E1\u30C0\u30EB\u3092\u6253\u3061\u51FA\u3057\u3001\u6575\u3092\u5012\u3057\u3001\u88C5\u5099\u3092\u96C6\u3081\u3066\u5F37\u304F\u306A\u308B\\n\u30CF\u30AF\u30B9\u30E9
       \xD7 \u30E1\u30C0\u30EB\u30B2\u30FC\u30E0\u306E\u4E16\u754C\u3002\\n\u65E9\u901F\u5192\u967A\u306B\u3067\u307E\u3057\u3087\u3046\uFF01\uFF01\uFF01"
-    en: "Welcome to the world of Pusher Medal Rush!\\nThis is a hack-and-slash \xD7
+    en: "Welcome to the world of Medal Rush Dungeon!\\nThis is a hack-and-slash \xD7
       medal game where you fire medals defeat enemies and collect equipment to grow
       stronger.\\nLet\u2019s jump into the adventure!"
   - key: ui_tutorial_2
@@ -513,14 +524,19 @@ MonoBehaviour:
       special stats based on that Title.\\nTitles are always returned when equipment
       is dismantled or when a Title is removed.\\nYou\u2019ll never lose them so
       feel free to experiment and try different builds!"
-  - key: ui_mainmenu_8_10
-    ja: "\u30AF\u30EC\u30B8\u30C3\u30C8"
-    en: Credits
-  - key: ui_mainmenu_8_11
-    ja: "\u697D\u66F2\u63D0\u4F9B\uFF1A\u300C\u9B54\u738B\u9B42\u300D\u69D8"
-    en: Music provided by Maou Damashii
-  - key: ui_mainmenu_8_12
-    ja: "\u30B2\u30FC\u30E0\u306B\u95A2\u3059\u308B\u8981\u671B\u3084\u8CEA\u554F\u3001\u4E0D\u5177\u5408\u5831\u544A\u7B49\u304C\u3042\u308C\u3070\u4F5C\u8005\u306EX(\u65E7Twitter)\u307E\u3067DM\u3092\u304A\u9858\u3044\u3044\u305F\u3057\u307E\u3059\u3002\\n\u304A\u554F\u3044\u5408\u308F\u305B\u30DC\u30BF\u30F3\u3092\u62BC\u3059\u3068\u4F5C\u8005\u306EX\u306B\u753B\u9762\u504F\u79FB\u3057\u307E\u3059\u3002"
-    en: "If you have any requests or questions or bug reports regarding the game
-      please send a DM to the developer on X formerly Twitter\\nPressing the Contact
-      button will take you to the developer\u2019s X page"
+  - key: ui_tutorial_7
+    ja: "\u30E1\u30C0\u30EB\u304C\u7121\u304F\u306A\u308A\u307E\u3057\u305F\u3002\u64A4\u9000\u30DC\u30BF\u30F3\u3092\u62BC\u3057\u3066\\n\u6226\u679C\u3092\u78BA\u8A8D\u3057\u307E\u3057\u3087\u3046\uFF01\uFF01"
+    en: You have run out of medals\nPress the Retreat button\nand check your battle
+      results!!
+  - key: ui_tutorial_8
+    ja: "\u521D\u5192\u967A\u304A\u75B2\u308C\u3055\u307E\u3067\u3057\u305F\u3002\\n\u6226\u95D8\u8A2D\u5B9A\u3067\u306F\u81EA\u52D5\u5206\u89E3\u306E\u8A2D\u5B9A\u3084\\n\u30B2\u30FC\u30E0\u901F\u5EA6\u306A\u3069\u306E\u6226\u95D8\u4E2D\u306E\u8A2D\u5B9A\u304C\u5909\u66F4\u3067\u304D\u307E\u3059\u3002"
+    en: Great job on your first adventure.\nIn the Battle Settings you can change
+      in-battle options such as auto disassembly and game speed.
+  - key: ui_tutorial_9
+    ja: "\u30B7\u30B9\u30C6\u30E0\u8A2D\u5B9A\u3067\u306F\u97F3\u91CF\u306E\u8A2D\u5B9A\u3084\\n\u81EA\u52D5\u5468\u56DE\u6642\u306E\u64A4\u9000\u6642\u9593\u306A\u3069\u306E\u8A2D\u5B9A\u304C\u5909\u66F4\u3067\u304D\u307E\u3059\u3002"
+    en: In the System Settings you can change options such as volume settings\nand
+      the retreat time during auto runs.
+  - key: ui_tutorial_10
+    ja: "\u30B9\u30C6\u30FC\u30BF\u30B9\u30E1\u30CB\u30E5\u30FC\u3067\u30B9\u30C6\u30FC\u30BF\u30B9\u3092\u5F37\u5316\u3057\u3066\\n\u88C5\u5099\u30E1\u30CB\u30E5\u30FC\u3067\u5165\u624B\u3057\u305F\u6B66\u5668\u3084\u9632\u5177\u3092\u88C5\u5099\u3057\\n\u3082\u3046\u4E00\u5EA6\u5192\u967A\u306B\u51FA\u767A\u3057\u307E\u3057\u3087\u3046\uFF01\uFF01"
+    en: Upgrade your stats in the Status Menu\nEquip the weapons and armor you have
+      obtained in the Equipment Menu\nand head out on another adventure!!

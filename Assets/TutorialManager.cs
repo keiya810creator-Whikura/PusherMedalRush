@@ -8,7 +8,10 @@ public enum TutorialID
     FirstBattle_2 = 3,   // 初戦闘②
     StatusMenu = 4,      // 初ステータスメニュー
     EquipmentMenu = 5,   // 初装備メニュー
-    TitleAssign = 6      // 初称号付与
+    TitleAssign = 6,     // 初称号付与
+
+    Tettai=7,            //初撤退時
+    MainMenuSecond=8     //メインメニュー二回目
 }
 
 public class TutorialManager : MonoBehaviour
@@ -46,6 +49,21 @@ public class TutorialManager : MonoBehaviour
             PlayerPrefs.DeleteKey($"Tutorial_{id}");
         }
         PlayerPrefs.Save();
+    }
+    public bool IsMainMenuSecondCondition()
+    {
+        bool mainMenuDone =
+            PlayerPrefs.GetInt($"Tutorial_{TutorialID.MainMenu}", 0) == 1;
+
+        bool mainMenuSecondNotDone =
+            PlayerPrefs.GetInt($"Tutorial_{TutorialID.MainMenuSecond}", 0) == 0;
+
+        return mainMenuDone && mainMenuSecondNotDone;
+    }
+    public bool IsTettaiTutorialActive()
+    {
+        // 撤退チュートリアルがまだ終わっていない
+        return CanShow(TutorialID.Tettai);
     }
 
 }

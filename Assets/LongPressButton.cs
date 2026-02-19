@@ -4,8 +4,7 @@ using System.Collections;
 
 public class LongPressButton : MonoBehaviour,
     IPointerDownHandler,
-    IPointerUpHandler,
-    IPointerExitHandler
+    IPointerUpHandler
 {
     public System.Action OnClickOnce;
     public System.Action OnHoldRepeat;
@@ -20,19 +19,13 @@ public class LongPressButton : MonoBehaviour,
     {
         holding = true;
 
-        // ✅最初に1回
+        // 最初に1回
         OnClickOnce?.Invoke();
 
-        // ✅長押し開始
         routine = StartCoroutine(HoldRoutine());
     }
 
     public void OnPointerUp(PointerEventData eventData)
-    {
-        StopHold();
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
     {
         StopHold();
     }
@@ -42,7 +35,10 @@ public class LongPressButton : MonoBehaviour,
         holding = false;
 
         if (routine != null)
+        {
             StopCoroutine(routine);
+            routine = null;
+        }
     }
 
     private IEnumerator HoldRoutine()

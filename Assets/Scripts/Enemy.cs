@@ -129,7 +129,15 @@ public class Enemy : MonoBehaviour
         if (monsterData.dropSoubiList.Count > 0)
         {
             float finalSoubiRate =
-                monsterData.soubiDropChance * status.EquipDropRate;
+    monsterData.soubiDropChance * status.EquipDropRate;
+
+            // ✅ 撤退チュートリアル中は100%
+            if (TutorialManager.Instance != null &&
+                TutorialManager.Instance.IsTettaiTutorialActive())
+            {
+                finalSoubiRate = 1f;
+            }
+
 
             int rollCount =
                 SkillManager.Instance.GetEquipDropRollCount();
@@ -178,7 +186,15 @@ public class Enemy : MonoBehaviour
         if (monsterData.dropShogoList.Count > 0)
         {
             float finalShogoRate =
-                monsterData.syougouDropChance * status.TitleDropRate;
+    monsterData.syougouDropChance * status.TitleDropRate;
+
+            // ✅ 撤退チュートリアル中は100%
+            if (TutorialManager.Instance != null &&
+                TutorialManager.Instance.IsTettaiTutorialActive())
+            {
+                finalShogoRate = 1f;
+            }
+
 
             // ✅スキルで判定回数増加
             int rollCount =

@@ -14,6 +14,8 @@ public class ResultFlowController : MonoBehaviour
     private Coroutine countdownCoroutine;
 
     [SerializeField] private GameObject TettaiButton;
+    [SerializeField] private GameObject TettaiTutorial;
+
 
     private void Start()
     {
@@ -77,6 +79,8 @@ public class ResultFlowController : MonoBehaviour
             {
                 // ✅通常周回：即撤退ボタン
                 TettaiButton.SetActive(true);
+                if (TutorialManager.Instance.CanShow(TutorialID.Tettai))
+                    TettaiTutorial.SetActive(true);
             }
         }
 
