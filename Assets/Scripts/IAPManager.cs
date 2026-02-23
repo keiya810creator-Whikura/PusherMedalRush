@@ -13,7 +13,12 @@ public class IAPManager : MonoBehaviour, IStoreListener
     public const string PRODUCT_REMOVE_ADS = "remove_ads_medalrush";
     public const string PRODUCT_SPEED3X = "speed_3x";
     public const string PRODUCT_TITLE_BOOST = "title_boost";
-    public const string PRODUCT_BUNDLE_PACK = "bundle_pack";
+#if UNITY_IOS
+    public　const string PRODUCT_BUNDLE_PACK == "bundle_pack"; // iOS（審査済み）
+#elif UNITY_ANDROID
+    public const string PRODUCT_BUNDLE_PACK = "starter_pack_android"; // 新ID
+#endif
+
     public const string PRODUCT_STORAGE_100 = "storage_100plus";
 
     public event Action OnIAPInitialized;
