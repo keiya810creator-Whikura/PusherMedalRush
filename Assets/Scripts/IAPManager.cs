@@ -2,7 +2,8 @@
 using UnityEngine.Purchasing;
 using System;
 using System.Collections;
-
+using System.Text;
+using UnityEngine.Purchasing;
 public class IAPManager : MonoBehaviour, IStoreListener
 {
     public static IAPManager Instance;
@@ -14,7 +15,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
     public const string PRODUCT_SPEED3X = "speed_3x";
     public const string PRODUCT_TITLE_BOOST = "title_boost";
 #if UNITY_IOS
-    public　const string PRODUCT_BUNDLE_PACK == "bundle_pack"; // iOS（審査済み）
+    public　const string PRODUCT_BUNDLE_PACK = "bundle_pack"; // iOS（審査済み）
 #elif UNITY_ANDROID
     public const string PRODUCT_BUNDLE_PACK = "starter_pack_android"; // 新ID
 #endif
@@ -87,6 +88,8 @@ public class IAPManager : MonoBehaviour, IStoreListener
 
         Debug.Log("✅ IAP 初期化完了");
 
+        DebugDumpProductsOnce();
+
         OnIAPInitialized?.Invoke();
     }
 
@@ -149,6 +152,36 @@ public class IAPManager : MonoBehaviour, IStoreListener
         return controller?.products.WithID(productId);
     }
 
+    public void DebugDumpProductsOnce()
+    {
+        if (controller == null)
+        {
+            Debug.LogWarning("❌ IAP not initialized yet");
+            return;
+        }
+
+        var sb = new StringBuilder();
+        sb.AppendLine("===== IAP DEBUG DUMP =====");
+
+        foreach (var p in controller.products.all)
+        {
+            if (p == null)
+            {
+                sb.AppendLine("Product: null");
+                continue;
+            }
+
+            sb.AppendLine($"ID: {p.definition.id}");
+            sb.AppendLine($"  availableToPurchase: {p.availableToPurchase}");
+            sb.AppendLine($"  localizedPriceString: {p.metadata?.localizedPriceString}");
+            sb.AppendLine($"  isoCurrencyCode: {p.metadata?.isoCurrencyCode}");
+            sb.AppendLine($"  localizedPrice(decimal): {p.metadata?.localizedPrice}");
+            sb.AppendLine("--------------------------");
+        }
+
+        sb.AppendLine("===== END IAP DEBUG =====");
+        Debug.Log(sb.ToString());
+    }
 #if UNITY_IOS
     public void RestorePurchases()
     {
