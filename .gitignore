@@ -6,6 +6,12 @@ Temp/
 Obj/
 Logs/
 UserSettings/
+Build/
+Builds/
+MemoryCaptures/
+
+# TMP（環境依存）
+Assets/TextMesh Pro/Resources/TMP Settings.asset
 
 # =========================
 # IDE / Editor
