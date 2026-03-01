@@ -66748,7 +66748,10 @@ MonoBehaviour:
     - m_FirstAdjustmentRecord:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
         m_GlyphIndex: 1245
@@ -66872,6 +66875,9 @@ MonoBehaviour:
       m_FeatureLookupFlags: 0
     - m_FirstAdjustmentRecord:
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
+=======
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
@@ -66890,7 +66896,11 @@ MonoBehaviour:
           m_YAdvance: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_FeatureLookupFlags: 2003134806
+=======
+      m_FeatureLookupFlags: 0
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
       m_FeatureLookupFlags: 0
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
@@ -66913,7 +66923,11 @@ MonoBehaviour:
           m_YAdvance: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_FeatureLookupFlags: 1139720192
+=======
+      m_FeatureLookupFlags: 0
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
       m_FeatureLookupFlags: 0
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
@@ -66936,7 +66950,11 @@ MonoBehaviour:
           m_YAdvance: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_FeatureLookupFlags: 808
+=======
+      m_FeatureLookupFlags: 0
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
       m_FeatureLookupFlags: 0
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
@@ -66972,6 +66990,7 @@ MonoBehaviour:
           m_YPlacement: 0
           m_XAdvance: 0
           m_YAdvance: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       m_FeatureLookupFlags: 2
@@ -67284,6 +67303,10 @@ MonoBehaviour:
       m_FeatureLookupFlags: 0
     - m_FirstAdjustmentRecord:
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
+=======
+      m_FeatureLookupFlags: 0
+    - m_FirstAdjustmentRecord:
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
         m_GlyphIndex: 1233
         m_GlyphValueRecord:
           m_XPlacement: 0
@@ -67299,7 +67322,11 @@ MonoBehaviour:
           m_YAdvance: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_FeatureLookupFlags: 2003134806
+=======
+      m_FeatureLookupFlags: 0
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
       m_FeatureLookupFlags: 0
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
@@ -67322,7 +67349,11 @@ MonoBehaviour:
           m_YAdvance: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_FeatureLookupFlags: 68049
+=======
+      m_FeatureLookupFlags: 0
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
       m_FeatureLookupFlags: 0
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
@@ -67345,7 +67376,11 @@ MonoBehaviour:
           m_YAdvance: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_FeatureLookupFlags: 77
+=======
+      m_FeatureLookupFlags: 0
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
       m_FeatureLookupFlags: 0
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
@@ -67383,7 +67418,11 @@ MonoBehaviour:
           m_YAdvance: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_FeatureLookupFlags: 2
+=======
+      m_FeatureLookupFlags: 0
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
       m_FeatureLookupFlags: 0
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
@@ -67405,6 +67444,7 @@ MonoBehaviour:
           m_XAdvance: 0
           m_YAdvance: 0
       m_FeatureLookupFlags: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     - m_FirstAdjustmentRecord:
@@ -67887,6 +67927,8 @@ MonoBehaviour:
           m_XAdvance: 0
           m_YAdvance: 0
       m_FeatureLookupFlags: -1
+=======
+>>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
 >>>>>>> ed335cfda4f7dac8baa199409b553379af0bf5d8
 =======
