@@ -49,7 +49,7 @@ public class BattleSettingSaveBridge : MonoBehaviour
             AdventureSession.EndWave = data.endWave;
         }
 
-        Debug.Log($"✅BattleSettings Load: {AdventureSession.StartWave} → {AdventureSession.EndWave}");
+        //Debug.Log($"✅BattleSettings Load: {AdventureSession.StartWave} → {AdventureSession.EndWave}");
     }
 
 }

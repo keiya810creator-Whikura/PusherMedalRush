@@ -86,7 +86,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
         this.extensions = extensions;
         isInitializing = false;
 
-        Debug.Log("✅ IAP 初期化完了");
+        //Debug.Log("✅ IAP 初期化完了");
 
         DebugDumpProductsOnce();
 
@@ -180,7 +180,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
         }
 
         sb.AppendLine("===== END IAP DEBUG =====");
-        Debug.Log(sb.ToString());
+        //Debug.Log(sb.ToString());
     }
 #if UNITY_IOS
     public void RestorePurchases()

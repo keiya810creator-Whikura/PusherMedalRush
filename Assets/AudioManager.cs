@@ -114,24 +114,32 @@ public class AudioManager : MonoBehaviour
     // =========================
     // ✅ 音量設定
     // =========================
-    public void SetBGMVolume(float value)
-    {
-        value = Mathf.Clamp(value, 0.001f, 1f);
-
-        mixer.SetFloat("BGMVolume", Mathf.Log10(value) * 20);
-
-        // ✅保存
-        PlayerPrefs.SetFloat("BGMVolumeValue", value);
-    }
-
     public void SetSEVolume(float value)
     {
+        if (value <= 0f)
+        {
+            mixer.SetFloat("SEVolume", -80f); // 完全ミュート
+            PlayerPrefs.SetFloat("SEVolumeValue", 0f);
+            return;
+        }
+
         value = Mathf.Clamp(value, 0.001f, 1f);
-
         mixer.SetFloat("SEVolume", Mathf.Log10(value) * 20);
-
-        // ✅保存
         PlayerPrefs.SetFloat("SEVolumeValue", value);
+    }
+
+    public void SetBGMVolume(float value)
+    {
+        if (value <= 0f)
+        {
+            mixer.SetFloat("BGMVolume", -80f);
+            PlayerPrefs.SetFloat("BGMVolumeValue", 0f);
+            return;
+        }
+
+        value = Mathf.Clamp(value, 0.001f, 1f);
+        mixer.SetFloat("BGMVolume", Mathf.Log10(value) * 20);
+        PlayerPrefs.SetFloat("BGMVolumeValue", value);
     }
 
 

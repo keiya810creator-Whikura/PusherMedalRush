@@ -90,7 +90,7 @@ public class DarkBallController : MonoBehaviour
         if (targetEnemy != null)
         {
             targetEnemy.GetComponent<Enemy>().TakeDamage(
-                Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 5.3f * BetManager.Instance.CurrentBet * BattleManager.Instance.Status.CriticalDamageRate),
+                Mathf.CeilToInt(BattleManager.Instance.Status.Attack * 7.5f * BetManager.Instance.CurrentBet * BattleManager.Instance.Status.CriticalDamageRate),
                 transform.position,
                 false,
                 true,

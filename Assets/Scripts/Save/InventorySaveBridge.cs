@@ -136,13 +136,30 @@ public class InventorySaveBridge : MonoBehaviour
             // ✅付与称号復元
             inst.attachedTitles.Clear();
 
+            // ✅付与称号復元（通常＋深層対応）
+            inst.attachedTitles.Clear();
+
             if (s.attachedTitleIds != null)
             {
                 foreach (var tid in s.attachedTitleIds)
                 {
+                    // ① 通常称号DB
                     var title = syougouDatabase.FindById(tid);
-                    if (title != null)
-                        inst.attachedTitles.Add(title);
+
+                    // ② 無ければ深層称号DB
+                    if (title == null)
+                    {
+                        title = sinnsouSyougouDatabase.FindById(tid);
+                    }
+
+                    // ③ 両方無ければエラー
+                    if (title == null)
+                    {
+                        Debug.LogError("❌装備付与称号IDがどちらのDBにも存在しません: " + tid);
+                        continue;
+                    }
+
+                    inst.attachedTitles.Add(title);
                 }
             }
 
