@@ -127,11 +127,6 @@ public class ResultFlowController : MonoBehaviour
         countdownText.gameObject.SetActive(false);
         GoToResult();
     }
-
-
-
-
-
     // =========================
     // カウントダウン中止＆リセット
     // =========================

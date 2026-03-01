@@ -16,6 +16,6 @@ public class ActiveSkillFromGenerator : ActiveSkillData
                 Instantiate(effectPrefab, startPos, Quaternion.identity);
         }
 
-        Debug.Log("🌪 アクティブスキル 発動！");
+        //Debug.Log("🌪 アクティブスキル 発動！");
     }
 }

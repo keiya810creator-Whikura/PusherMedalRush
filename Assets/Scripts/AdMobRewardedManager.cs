@@ -70,7 +70,7 @@ public class AdMobRewardedManager : MonoBehaviour
                 LoadRewarded();
             };
 
-            Debug.Log("✅ Rewarded loaded");
+           // Debug.Log("✅ Rewarded loaded");
         });
     }
 

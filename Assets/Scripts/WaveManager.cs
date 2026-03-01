@@ -405,4 +405,6 @@ public class WaveManager : MonoBehaviour
         for (int i = 0; i < count; i++)
             OnSoulFinished(); // 次Waveへ
     }
+
+
 }
