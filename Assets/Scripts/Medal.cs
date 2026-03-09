@@ -1,7 +1,9 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
+
 public class Medal : MonoBehaviour
 {
     // ✅追加：特殊メダルが回収されたら発動するスキル
@@ -28,7 +30,18 @@ public class Medal : MonoBehaviour
     private Collider2D col;
     private bool isFalling = true;
 
+    public bool isDuplicated = false;
+    public void MarkDuplicated()
+    {
+        isDuplicated = true;
+        StartCoroutine(ResetDuplicateFlag());
+    }
 
+    IEnumerator ResetDuplicateFlag()
+    {
+        yield return new WaitForSeconds(0.2f);
+        isDuplicated = false;
+    }
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -55,7 +68,7 @@ public class Medal : MonoBehaviour
     {
         isFalling = true;
         CanRidePusher = false;
-
+        isDuplicated = false;
         gameObject.layer = LayerMask.NameToLayer("Medal_Falling");
         col.sharedMaterial = fallingMaterial;
 
@@ -65,7 +78,7 @@ public class Medal : MonoBehaviour
 
    }
 
-    void SetNormalState()
+   public void SetNormalState()
     {
         isFalling = false;
 

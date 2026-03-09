@@ -43,6 +43,18 @@ public class AudioManager : MonoBehaviour
     public AudioClip medalSpawn;
     public AudioClip skillHatudou;
     public AudioClip medalKakutoku;
+
+    public AudioClip jackpot;
+    public AudioClip atari;
+    public AudioClip slotStop;
+    public AudioClip sloaStart;
+    public AudioClip tokusyukakutoku;
+
+    public AudioClip bureth;
+    public AudioClip rain;
+    public AudioClip renngeki;
+    public AudioClip godrain;
+    public AudioClip endworld;
     void Awake()
     {
         if (Instance != null)

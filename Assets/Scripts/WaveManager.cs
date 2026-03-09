@@ -15,7 +15,7 @@ public class WaveManager : MonoBehaviour
     // =========================
     // Wave 基本情報
     // =========================
-
+    private int currentStage;
     public int CurrentWave { get; private set; } = 1;
     public WaveState CurrentState { get; private set; } = WaveState.Battle;
 
@@ -33,16 +33,34 @@ public class WaveManager : MonoBehaviour
     private bool isEndlessRun;
     private long currentEnemyHP = 5;
     private const int BossInterval = 40;
-    private const float BossMultiplier = 1.475f;
 
     // =========================
-    // Wave501+ Endless Settings
+    // Stage1
+    // =========================
+    private const long Stage1StartHp = 5;
+    private const long Stage1HpAddPerWave = 10;
+    private const float Stage1BossMultiplier = 1.475f;
+
+    // =========================
+    // Stage2
+    // =========================
+    private const long Stage2StartHp = 10000000;
+    private const long Stage2HpAddPerWave = 10000;
+    private const float Stage2BossMultiplier = 1.1f;
+
+    // =========================
+    // Deep Layer
     // =========================
     private const int EndlessStartWave = 1001;
-    private const float EndlessHpMultiplier = 1.001f; // HP × 1.001 (毎Wave)
-    private const long EndlessGoldReward = 500;       // Gold 固定
+    private const float EndlessHpMultiplier = 1.001f;
+    private const long EndlessGoldReward = 500;
 
     [SerializeField] private BackgroundController backgroundController;
+    // =========================
+    // Enemy Count管理
+    // =========================
+    private int aliveEnemyCount = 0;
+    [SerializeField] private GameObject soulPrefab;
     void Awake()
     {
         Instance = this;
@@ -51,6 +69,9 @@ public class WaveManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
+
+        currentStage = SaveManager.Instance.Data.currentStage;
+
         // ✅戦闘開始時にSpeed適用
         SetGameSpeed(AdventureSession.GameSpeed);
     }
@@ -63,18 +84,53 @@ public class WaveManager : MonoBehaviour
     {
         return currentEnemyHP;
     }
+    public void RegisterEnemy()
+    {
+        aliveEnemyCount++;
+    }
+    public void UnregisterEnemy(Vector3 pos)
+    {
+        aliveEnemyCount--;
 
+        if (aliveEnemyCount <= 0)
+        {
+            SpawnSoul(pos);
+        }
+    }
+    void SpawnSoul(Vector3 pos)
+    {
+        GameObject soul = Instantiate(
+            soulPrefab,
+            pos,
+            Quaternion.identity
+        );
 
-
+        soul.GetComponent<Soul>().Init();
+    }
     public long GetEnemyGoldReward()
     {
-        // ✅Wave1001以降：Goldは固定
+        // =========================
+        // Stage2
+        // =========================
+        if (currentStage == 2)
+        {
+            long reward = 500 + (CurrentWave / 500) * 10;
+
+            if (reward > 10000)
+                reward = 10000;
+
+            return reward;
+        }
+
+        // =========================
+        // Stage1 深層
+        // =========================
         if (CurrentWave >= EndlessStartWave)
         {
             return EndlessGoldReward;
         }
 
-        long baseGold = Mathf.CeilToInt(CurrentWave/2);
+        long baseGold = CurrentWave / 2;
 
         if (IsBossWave())
         {
@@ -118,7 +174,13 @@ public class WaveManager : MonoBehaviour
 
         GameProgressManager.Instance.RecordClearedWave(clearedWave);
         ResultManager.Instance.currentResult.clearedWave = clearedWave;
-
+        // =========================
+        // Stage2解放
+        // =========================
+        if (currentStage == 1 && clearedWave >= 1000)
+        {
+            StageManager.Instance.UnlockStage2();
+        }
         if (ShouldEndAtWave(clearedWave))
         {
             if (isEndlessRun)
@@ -136,24 +198,24 @@ public class WaveManager : MonoBehaviour
         // =========================
         if (CurrentWave >= EndlessStartWave)
         {
-            // ✅Wave1001以降：HP×1.001（ボス倍率なし）
-            double next = Math.Ceiling(currentEnemyHP * EndlessHpMultiplier);
-            long nextHp = (long)next;
-            if (nextHp <= currentEnemyHP) nextHp = currentEnemyHP + 1; // 念のため停滞防止
+            long nextHp = (long)Math.Ceiling(currentEnemyHP * EndlessHpMultiplier);
+            if (nextHp <= currentEnemyHP)
+                nextHp = currentEnemyHP + 1;
+
             currentEnemyHP = nextHp;
         }
         else
         {
-            // ✅Wave1〜1000：従来ロジック（毎Wave +10 / ボス倍率）
-            currentEnemyHP += 10;
-
-            // ✅ボスWaveなら倍率
             if (CurrentWave % BossInterval == 0)
             {
-                currentEnemyHP = (long)(currentEnemyHP * BossMultiplier);
+                currentEnemyHP = (long)Math.Ceiling(currentEnemyHP * GetStageBossMultiplier());
+            }
+            else
+            {
+                currentEnemyHP += GetStageHpAddPerWave();
             }
         }
-        if (CurrentWave % 40 == 1 && CurrentWave != 1&&CurrentWave<=1000)
+        if (CurrentWave % 40 == 1 && CurrentWave != 1 && CurrentWave <= 1000)
         {
             ToastManager.Instance.ShowToast(string.Format(TextManager.Instance.GetUI("ui_toast_3")));
         }
@@ -175,7 +237,7 @@ public class WaveManager : MonoBehaviour
     void StartBattleWave()
     {
         if (EnemySpawner.Instance == null) return;
-
+        aliveEnemyCount = 0;
         if (backgroundController != null)
             backgroundController.OnWaveChanged(CurrentWave);
 
@@ -203,14 +265,14 @@ public class WaveManager : MonoBehaviour
 
         if (CurrentWave >= EndlessStartWave && abyssin == false)
         {
-            ToastManager.Instance.ShowToast(TextManager.Instance.GetUI("ui_toast_7"));
+            if (currentStage == 2)
+                ToastManager.Instance.ShowToast(TextManager.Instance.GetUI("ui_toast_9"));
+            else
+                ToastManager.Instance.ShowToast(TextManager.Instance.GetUI("ui_toast_7"));
+
             abyssin = true;
         }
     }
-
-
-
-
     // =========================
     // Recovery Wave
     // =========================
@@ -238,6 +300,14 @@ public class WaveManager : MonoBehaviour
 
     public long GetConsumeMedalPerShot()
     {
+        if (currentStage == 2)
+        {
+            // 26～50
+            long cost = 26 + (CurrentWave - 1) / BossInterval;
+            return Math.Min(cost, 50L);
+        }
+
+        // Stage1
         return 1 + (CurrentWave - 1) / BossInterval;
     }
 
@@ -313,6 +383,7 @@ public class WaveManager : MonoBehaviour
     }
     public void StartFromWave(int startWave)
     {
+        currentStage = SaveManager.Instance.Data.currentStage;
         isEndlessRun = AdventureSession.IsEndless;
 
         // ✅スライダー指定Waveで開始
@@ -343,13 +414,12 @@ public class WaveManager : MonoBehaviour
     }
     private void RecalculateEnemyHP()
     {
-        currentEnemyHP = 5;
+        currentEnemyHP = GetStageStartHp();
 
         for (int w = 2; w <= CurrentWave; w++)
         {
             if (w >= EndlessStartWave)
             {
-                // ✅501以降：×1.001成長
                 currentEnemyHP =
                     (long)Math.Ceiling(currentEnemyHP * EndlessHpMultiplier);
 
@@ -358,14 +428,14 @@ public class WaveManager : MonoBehaviour
             }
             else
             {
-                // ✅Wave1〜500：+10成長
-                currentEnemyHP += 10;
-
-                // ✅ボス倍率
                 if (w % BossInterval == 0)
                 {
                     currentEnemyHP =
-                        (long)(currentEnemyHP * BossMultiplier);
+                        (long)Math.Ceiling(currentEnemyHP * GetStageBossMultiplier());
+                }
+                else
+                {
+                    currentEnemyHP += GetStageHpAddPerWave();
                 }
             }
         }
@@ -406,5 +476,36 @@ public class WaveManager : MonoBehaviour
             OnSoulFinished(); // 次Waveへ
     }
 
+    private long GetStageStartHp()
+    {
+        switch (currentStage)
+        {
+            case 2:
+                return Stage2StartHp;
+            default:
+                return Stage1StartHp;
+        }
+    }
 
+    private long GetStageHpAddPerWave()
+    {
+        switch (currentStage)
+        {
+            case 2:
+                return Stage2HpAddPerWave;
+            default:
+                return Stage1HpAddPerWave;
+        }
+    }
+
+    private float GetStageBossMultiplier()
+    {
+        switch (currentStage)
+        {
+            case 2:
+                return Stage2BossMultiplier;
+            default:
+                return Stage1BossMultiplier;
+        }
+    }
 }

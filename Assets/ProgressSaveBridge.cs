@@ -13,11 +13,11 @@ public class ProgressSaveBridge : MonoBehaviour
     public void SaveProgress()
     {
         var data = SaveManager.Instance.Data;
-        data.highestClearedWave = GameProgressManager.Instance.HighestClearedWave;
+
+        data.stage1HighestWave = GameProgressManager.Instance.Stage1HighestWave;
+        data.stage2HighestWave = GameProgressManager.Instance.Stage2HighestWave;
 
         SaveManager.Instance.SaveToDisk();
-
-        //Debug.Log($"✅Progress Save: HighestWave={data.highestClearedWave}");
     }
 
     // ✅ロード
@@ -25,8 +25,15 @@ public class ProgressSaveBridge : MonoBehaviour
     {
         var data = SaveManager.Instance.Data;
 
-        GameProgressManager.Instance.SetHighestClearedWave(data.highestClearedWave);
+        // 旧セーブデータ救済
+        if (data.stage1HighestWave <= 1 && data.highestClearedWave > 1)
+        {
+            data.stage1HighestWave = data.highestClearedWave;
+        }
 
-        //Debug.Log($"✅Progress Load: HighestWave={data.highestClearedWave}");
+        GameProgressManager.Instance.Stage1HighestWave = data.stage1HighestWave;
+        GameProgressManager.Instance.Stage2HighestWave = data.stage2HighestWave;
+
+        Debug.Log($"Progress Load: Stage1={data.stage1HighestWave} Stage2={data.stage2HighestWave}");
     }
 }

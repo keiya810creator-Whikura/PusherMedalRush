@@ -30,58 +30,8 @@ public class WaveRangeSliderUI : MonoBehaviour
     }
     void Start()
     {
-        isInitializing = true;
-
-        maxClearedWave = Mathf.Max(1, GameProgressManager.Instance.HighestClearedWave);
-
-        startWaveSlider.minValue = 1;
-        startWaveSlider.maxValue = Mathf.Max(1, maxClearedWave - 10);
-        startWaveSlider.wholeNumbers = true;
-
-
-        endWaveSlider.minValue = 1;
-        endWaveSlider.maxValue = maxClearedWave + 1;
-        endWaveSlider.wholeNumbers = true;
-
-        // ✅イベント登録はまだしない！！
-
-        // =========================
-        // ✅復元（イベント暴発防止）
-        // =========================
-
-        startWaveSlider.SetValueWithoutNotify(
-            Mathf.Clamp(
-                AdventureSession.StartWave > 0 ? AdventureSession.StartWave : 1,
-                startWaveSlider.minValue,
-                startWaveSlider.maxValue
-            )
-        );
-
-        if (AdventureSession.IsEndless)
-        {
-            endWaveSlider.SetValueWithoutNotify(endWaveSlider.maxValue);
-        }
-        else
-        {
-            endWaveSlider.SetValueWithoutNotify(
-                Mathf.Clamp(
-                    AdventureSession.EndWave > 0 ? AdventureSession.EndWave : startWaveSlider.value,
-                    endWaveSlider.minValue,
-                    endWaveSlider.maxValue
-                )
-            );
-        }
-
-        // =========================
-        // ✅ここでイベント登録
-        // =========================
         startWaveSlider.onValueChanged.AddListener(OnStartWaveChanged);
         endWaveSlider.onValueChanged.AddListener(OnEndWaveChanged);
-
-        // ✅初期反映
-        OnStartWaveChanged(startWaveSlider.value);
-        OnEndWaveChanged(endWaveSlider.value);
-        isInitializing = false;
     }
 
 
@@ -190,5 +140,82 @@ public class WaveRangeSliderUI : MonoBehaviour
 
         endWaveSlider.value = newValue;
     }
+    public void RefreshFromSave()
+    {
+        isInitializing = true;
 
+        int stage = SaveManager.Instance.Data.currentStage;
+
+        maxClearedWave =
+            stage == 1
+            ? Mathf.Max(1, GameProgressManager.Instance.Stage1HighestWave)
+            : Mathf.Max(1, GameProgressManager.Instance.Stage2HighestWave);
+
+        startWaveSlider.minValue = 1;
+        startWaveSlider.maxValue = Mathf.Max(1, maxClearedWave - 10);
+
+        endWaveSlider.minValue = 1;
+        endWaveSlider.maxValue = maxClearedWave + 1;
+
+        var save = SaveManager.Instance.Data;
+
+        int start;
+        int end;
+
+        if (stage == 1)
+        {
+            start = save.stage1StartWave;
+            end = save.stage1EndWave;
+        }
+        else
+        {
+            start = save.stage2StartWave;
+            end = save.stage2EndWave;
+        }
+
+        startWaveSlider.SetValueWithoutNotify(start);
+        endWaveSlider.SetValueWithoutNotify(end);
+
+        AdventureSession.StartWave = start;
+        AdventureSession.EndWave = end;
+
+        // ★ StartWaveText更新
+        startWaveText.text = string.Format(
+            TextManager.Instance.GetUI("ui_mainmenu_1_9"),
+            start
+        );
+
+        bool isEndless = (end == endWaveSlider.maxValue);
+
+        if (isEndless)
+        {
+            endWaveText.text =
+                TextManager.Instance.GetUI("ui_mainmenu_1_13"); // 限界まで
+        }
+        else
+        {
+            endWaveText.text = string.Format(
+                TextManager.Instance.GetUI("ui_mainmenu_1_10"),
+                end);
+        }
+
+        isInitializing = false;
+    }
+    public void RebuildSliderRange()
+    {
+        int stage = SaveManager.Instance.Data.currentStage;
+
+        int highest =
+            stage == 1
+            ? GameProgressManager.Instance.Stage1HighestWave
+            : GameProgressManager.Instance.Stage2HighestWave;
+
+        highest = Mathf.Max(1, highest);
+
+        startWaveSlider.minValue = 1;
+        startWaveSlider.maxValue = Mathf.Max(1, highest - 10);
+
+        endWaveSlider.minValue = 1;
+        endWaveSlider.maxValue = highest + 1;
+    }
 }

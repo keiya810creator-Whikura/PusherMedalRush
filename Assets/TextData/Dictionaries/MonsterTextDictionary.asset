@@ -466,3 +466,456 @@ MonoBehaviour:
   - key: m_151_name
     ja: "\u30A2\u30EB\u30AB\u30CA\uFF1D\u30C9\u30E9\u30B0\u30CA\u30FC\u30EB"
     en: Arcana = Dragnall
+  - key: m_152_name
+    ja: "\u9306\u3073\u305F\u5751\u592B\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Rust Miner Skeleton
+  - key: m_153_name
+    ja: "\u6398\u524A\u30B4\u30D6\u30EA\u30F3"
+    en: Digger Goblin
+  - key: m_154_name
+    ja: "\u9244\u5C51\u30B9\u30E9\u30A4\u30E0"
+    en: Scrap Slime
+  - key: m_155_name
+    ja: "\u5D29\u843D\u30E2\u30FC\u30EB"
+    en: Collapse Mole
+  - key: m_156_name
+    ja: "\u7164\u307E\u307F\u308C\u306E\u5E7D\u970A"
+    en: Soot-Covered Ghost
+  - key: m_157_name
+    ja: "\u5751\u9053\u738B\u30FB\u30A2\u30A4\u30A2\u30F3\u30EC\u30A4\u30D0\u30FC"
+    en: Mine King Iron Labor
+  - key: m_158_name
+    ja: "\u6C34\u82D4\u30B9\u30E9\u30A4\u30E0"
+    en: Moss Slime
+  - key: m_159_name
+    ja: "\u6E7F\u6F64\u30E9\u30C3\u30C8"
+    en: Damp Rat
+  - key: m_160_name
+    ja: "\u6C34\u6CA1\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Drowned Skeleton
+  - key: m_161_name
+    ja: "\u6CBC\u30C8\u30AB\u30B2"
+    en: Swamp Lizard
+  - key: m_162_name
+    ja: "\u4E0B\u6C34\u30EF\u30FC\u30E0"
+    en: Sewer Worm
+  - key: m_163_name
+    ja: "\u6C34\u8DEF\u306E\u5B88\u8B77\u7363\u30FB\u30E2\u30B9\u30AC\u30FC\u30C7\u30A3\u30A2\u30F3"
+    en: Canal Guardian Moss Guardian
+  - key: m_164_name
+    ja: "\u8150\u9AA8\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Rotbone Skeleton
+  - key: m_165_name
+    ja: "\u5893\u5B88\u30BE\u30F3\u30D3"
+    en: Gravekeeper Zombie
+  - key: m_166_name
+    ja: "\u970A\u706B\u30A6\u30A3\u30B9\u30D7"
+    en: Spiritflame Wisp
+  - key: m_167_name
+    ja: "\u5893\u6A19\u30B4\u30FC\u30EC\u30E0"
+    en: Gravestone Golem
+  - key: m_168_name
+    ja: "\u5F77\u5FA8\u3046\u4EA1\u970A"
+    en: Wandering Wraith
+  - key: m_169_name
+    ja: "\u6B7B\u970A\u4FAF\u30FB\u30CD\u30AF\u30ED\u30ED\u30FC\u30C9"
+    en: Deathlord Necro Lord
+  - key: m_170_name
+    ja: "\u843D\u77F3\u30AF\u30E9\u30D6"
+    en: Falling Rock Crab
+  - key: m_171_name
+    ja: "\u5CA9\u76AE\u30D0\u30C3\u30C8"
+    en: Stonehide Bat
+  - key: m_172_name
+    ja: "\u6D1E\u7A74\u30C8\u30ED\u30FC\u30EB"
+    en: Cave Troll
+  - key: m_173_name
+    ja: "\u5730\u5272\u308C\u30B9\u30E9\u30A4\u30E0"
+    en: Fissure Slime
+  - key: m_174_name
+    ja: "\u63A1\u6398\u30D3\u30FC\u30C8\u30EB"
+    en: Mining Beetle
+  - key: m_175_name
+    ja: "\u6D1E\u7A9F\u5D29\u58CA\u7363\u30FB\u30ED\u30C3\u30AF\u30BF\u30A4\u30BF\u30F3"
+    en: Cavebreaker Rock Titan
+  - key: m_176_name
+    ja: "\u706B\u82B1\u30A4\u30F3\u30D7"
+    en: Spark Imp
+  - key: m_177_name
+    ja: "\u6EB6\u5CA9\u30B9\u30E9\u30A4\u30E0"
+    en: Lava Slime
+  - key: m_178_name
+    ja: "\u713C\u9AA8\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Burnbone Skeleton
+  - key: m_179_name
+    ja: "\u706B\u8725\u8734"
+    en: Fire Lizard
+  - key: m_180_name
+    ja: "\u7070\u7FFC\u30B3\u30A6\u30E2\u30EA"
+    en: Ashwing Bat
+  - key: m_181_name
+    ja: "\u707C\u71B1\u7ADC\u30FB\u30DE\u30B0\u30CA\uFF1D\u30C9\u30E9\u30B3"
+    en: Inferno Dragon Magna Draco
+  - key: m_182_name
+    ja: "\u6C37\u6676\u30B9\u30E9\u30A4\u30E0"
+    en: Crystal Ice Slime
+  - key: m_183_name
+    ja: "\u51CD\u9AA8\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Frostbone Skeleton
+  - key: m_184_name
+    ja: "\u96EA\u76AE\u30A6\u30EB\u30D5"
+    en: Snowhide Wolf
+  - key: m_185_name
+    ja: "\u6C37\u5203\u30D0\u30C3\u30C8"
+    en: Iceblade Bat
+  - key: m_186_name
+    ja: "\u971C\u30B4\u30FC\u30EC\u30E0"
+    en: Frost Golem
+  - key: m_187_name
+    ja: "\u6C37\u738B\u30FB\u30D5\u30ED\u30B9\u30C8\u30B3\u30ED\u30C3\u30B5\u30B9"
+    en: Frost King Frost Colossus
+  - key: m_188_name
+    ja: "\u98A8\u5203\u30D0\u30FC\u30C9"
+    en: Windblade Bird
+  - key: m_189_name
+    ja: "\u5CE1\u8C37\u30B4\u30D6\u30EA\u30F3"
+    en: Canyon Goblin
+  - key: m_190_name
+    ja: "\u7A81\u98A8\u30B9\u30E9\u30A4\u30E0"
+    en: Gust Slime
+  - key: m_191_name
+    ja: "\u5D16\u8DF3\u306D\u30E4\u30AE"
+    en: Cliffjumper Goat
+  - key: m_192_name
+    ja: "\u7A7A\u88C2\u30A6\u30A3\u30B9\u30D7"
+    en: Skytear Wisp
+  - key: m_193_name
+    ja: "\u66B4\u98A8\u7363\u30FB\u30C6\u30F3\u30DA\u30B9\u30C8\u30CF\u30A6\u30EB"
+    en: Storm Beast Tempest Howl
+  - key: m_194_name
+    ja: "\u653E\u96FB\u30B9\u30E9\u30A4\u30E0"
+    en: Discharge Slime
+  - key: m_195_name
+    ja: "\u96F7\u9AA8\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Thunderbone Skeleton
+  - key: m_196_name
+    ja: "\u30B9\u30D1\u30FC\u30AF\u30A4\u30F3\u30D7"
+    en: Spark Imp
+  - key: m_197_name
+    ja: "\u96FB\u6483\u30D3\u30FC\u30C8\u30EB"
+    en: Volt Beetle
+  - key: m_198_name
+    ja: "\u96F7\u7FBD\u30D0\u30FC\u30C9"
+    en: Thunderwing Bird
+  - key: m_199_name
+    ja: "\u96F7\u5E1D\u30FB\u30F4\u30A9\u30EB\u30C8\u30BF\u30A4\u30E9\u30F3\u30C8"
+    en: Thunder Emperor Volt Tyrant
+  - key: m_200_name
+    ja: "\u7802\u5875\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Sandstorm Skeleton
+  - key: m_201_name
+    ja: "\u907A\u8DE1\u30B9\u30AB\u30E9\u30D9"
+    en: Relic Scarab
+  - key: m_202_name
+    ja: "\u7802\u86C7"
+    en: Sand Serpent
+  - key: m_203_name
+    ja: "\u77F3\u50CF\u30AC\u30FC\u30C7\u30A3\u30A2\u30F3"
+    en: Statue Guardian
+  - key: m_204_name
+    ja: "\u6D41\u7802\u30B9\u30E9\u30A4\u30E0"
+    en: Quicksand Slime
+  - key: m_205_name
+    ja: "\u7802\u738B\u30FB\u30C7\u30B6\u30FC\u30C8\u30D5\u30A1\u30E9\u30AA"
+    en: Sand King Desert Pharaoh
+  - key: m_206_name
+    ja: "\u6BD2\u80DE\u30B9\u30E9\u30A4\u30E0"
+    en: Venom Spore Slime
+  - key: m_207_name
+    ja: "\u8150\u8449\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Rotleaf Skeleton
+  - key: m_208_name
+    ja: "\u6BD2\u7259\u30A6\u30EB\u30D5"
+    en: Venomfang Wolf
+  - key: m_209_name
+    ja: "\u6BD2\u9727\u30A6\u30A3\u30B9\u30D7"
+    en: Poison Mist Wisp
+  - key: m_210_name
+    ja: "\u8150\u6839\u30C8\u30EC\u30F3\u30C8"
+    en: Blightroot Treant
+  - key: m_211_name
+    ja: "\u7634\u6C17\u738B\u30FB\u30F4\u30A7\u30CE\u30E0\u30C9\u30E9\u30A4\u30A2\u30C9"
+    en: Miasma Queen Venom Dryad
+  - key: m_212_name
+    ja: "\u546A\u7B26\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Curse Talisman Skeleton
+  - key: m_213_name
+    ja: "\u66B4\u8D70\u30B0\u30EA\u30E2\u30A2"
+    en: Runaway Grimoire
+  - key: m_214_name
+    ja: "\u30A4\u30F3\u30AF\u30B9\u30E9\u30A4\u30E0"
+    en: Ink Slime
+  - key: m_215_name
+    ja: "\u9B54\u5C0E\u30B4\u30FC\u30EC\u30E0"
+    en: Arcane Golem
+  - key: m_216_name
+    ja: "\u8A60\u5531\u30A6\u30A3\u30B9\u30D7"
+    en: Chanting Wisp
+  - key: m_217_name
+    ja: "\u7981\u66F8\u7BA1\u7406\u8005\u30FB\u30A2\u30FC\u30AB\u30A4\u30F4\u30ED\u30FC\u30C9"
+    en: Forbidden Archive Lord
+  - key: m_218_name
+    ja: "\u5F71\u5175\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Shadow Soldier Skeleton
+  - key: m_219_name
+    ja: "\u30B7\u30E3\u30C9\u30A6\u30A4\u30F3\u30D7"
+    en: Shadow Imp
+  - key: m_220_name
+    ja: "\u95C7\u67D3\u307F\u30B9\u30E9\u30A4\u30E0"
+    en: Darkstain Slime
+  - key: m_221_name
+    ja: "\u5F71\u8D70\u308A\u30CF\u30A6\u30F3\u30C9"
+    en: Shadowrunner Hound
+  - key: m_222_name
+    ja: "\u6697\u5E55\u30A6\u30A3\u30B9\u30D7"
+    en: Blackveil Wisp
+  - key: m_223_name
+    ja: "\u5F71\u738B\u30FB\u30CA\u30A4\u30C8\u30B9\u30C6\u30C3\u30C1\u30E3\u30FC"
+    en: Shadow King Night Stitcher
+  - key: m_224_name
+    ja: "\u93E1\u50CF\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Mirror Skeleton
+  - key: m_225_name
+    ja: "\u5206\u88C2\u30B9\u30E9\u30A4\u30E0"
+    en: Split Slime
+  - key: m_226_name
+    ja: "\u53CD\u5C04\u30D3\u30FC\u30C8\u30EB"
+    en: Reflect Beetle
+  - key: m_227_name
+    ja: "\u865A\u50CF\u30A4\u30F3\u30D7"
+    en: Phantom Imp
+  - key: m_228_name
+    ja: "\u93E1\u970A\u30A6\u30A3\u30B9\u30D7"
+    en: Mirror Spirit Wisp
+  - key: m_229_name
+    ja: "\u8FF7\u5BAE\u4E3B\u30FB\u30EA\u30D5\u30EC\u30AF\u30BF\u30B9"
+    en: Labyrinth Lord Reflectus
+  - key: m_230_name
+    ja: "\u8840\u6676\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Blood Crystal Skeleton
+  - key: m_231_name
+    ja: "\u4F9B\u7269\u30BE\u30F3\u30D3"
+    en: Sacrifice Zombie
+  - key: m_232_name
+    ja: "\u8840\u6EF4\u30B9\u30E9\u30A4\u30E0"
+    en: Blooddrop Slime
+  - key: m_233_name
+    ja: "\u8840\u796D\u30A4\u30F3\u30D7"
+    en: Bloodrite Imp
+  - key: m_234_name
+    ja: "\u7D50\u6676\u30B4\u30FC\u30EC\u30E0"
+    en: Crystal Golem
+  - key: m_235_name
+    ja: "\u8840\u738B\u30FB\u30B5\u30AF\u30EA\u30D5\u30A1\u30A4\u30B9\u30ED\u30FC\u30C9"
+    en: Blood King Sacrifice Lord
+  - key: m_236_name
+    ja: "\u7D50\u754C\u5175\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Barrier Soldier Skeleton
+  - key: m_237_name
+    ja: "\u7D50\u754C\u30B9\u30E9\u30A4\u30E0"
+    en: Barrier Slime
+  - key: m_238_name
+    ja: "\u6DF1\u5C64\u30A4\u30F3\u30D7"
+    en: Deep Imp
+  - key: m_239_name
+    ja: "\u7D50\u754C\u30D3\u30FC\u30C8\u30EB"
+    en: Barrier Beetle
+  - key: m_240_name
+    ja: "\u9632\u8B77\u30A6\u30A3\u30B9\u30D7"
+    en: Ward Wisp
+  - key: m_241_name
+    ja: "\u7D50\u754C\u6838\u30FB\u30D7\u30ED\u30C6\u30AF\u30C8\u30B3\u30A2"
+    en: Barrier Core Protect Core
+  - key: m_242_name
+    ja: "\u6B6A\u6642\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Distorted Time Skeleton
+  - key: m_243_name
+    ja: "\u52A0\u901F\u30A4\u30F3\u30D7"
+    en: Accelerator Imp
+  - key: m_244_name
+    ja: "\u6E1B\u901F\u30B9\u30E9\u30A4\u30E0"
+    en: Slow Slime
+  - key: m_245_name
+    ja: "\u6642\u55B0\u3044\u30EF\u30FC\u30E0"
+    en: Time Devourer Worm
+  - key: m_246_name
+    ja: "\u6B6A\u66F2\u30A6\u30A3\u30B9\u30D7"
+    en: Warp Wisp
+  - key: m_247_name
+    ja: "\u6642\u738B\u30FB\u30AF\u30ED\u30CE\u30C7\u30A3\u30B9\u30C8\u30FC\u30BF"
+    en: Time King Chrono Distorter
+  - key: m_248_name
+    ja: "\u661F\u6BBB\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Star Shell Skeleton
+  - key: m_249_name
+    ja: "\u661F\u5149\u30B9\u30E9\u30A4\u30E0"
+    en: Starlight Slime
+  - key: m_250_name
+    ja: "\u5B87\u5B99\u30A4\u30F3\u30D7"
+    en: Cosmic Imp
+  - key: m_251_name
+    ja: "\u91CD\u529B\u30D3\u30FC\u30C8\u30EB"
+    en: Gravity Beetle
+  - key: m_252_name
+    ja: "\u661F\u970A\u30A6\u30A3\u30B9\u30D7"
+    en: Star Spirit Wisp
+  - key: m_253_name
+    ja: "\u661F\u55B0\u7363\u30FB\u30A2\u30B9\u30C8\u30E9\u30C7\u30F4\u30A1\u30A6\u30E9\u30FC"
+    en: Star Devourer Astra Devourer
+  - key: m_254_name
+    ja: "\u5951\u7D04\u5175\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Contract Soldier Skeleton
+  - key: m_255_name
+    ja: "\u5951\u7D04\u30A4\u30F3\u30D7"
+    en: Contract Imp
+  - key: m_256_name
+    ja: "\u8A93\u7D04\u30B9\u30E9\u30A4\u30E0"
+    en: Oath Slime
+  - key: m_257_name
+    ja: "\u8A66\u7DF4\u30B4\u30FC\u30EC\u30E0"
+    en: Trial Golem
+  - key: m_258_name
+    ja: "\u5951\u7D04\u30A6\u30A3\u30B9\u30D7"
+    en: Pact Wisp
+  - key: m_259_name
+    ja: "\u5951\u7D04\u738B\u30FB\u30AA\u30FC\u30B9\u30D6\u30EA\u30F3\u30AC\u30FC"
+    en: Contract King Oath Bringer
+  - key: m_260_name
+    ja: "\u53CD\u5FA9\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Repeat Skeleton
+  - key: m_261_name
+    ja: "\u7121\u9650\u30B9\u30E9\u30A4\u30E0"
+    en: Infinite Slime
+  - key: m_262_name
+    ja: "\u53CD\u5FA9\u30A4\u30F3\u30D7"
+    en: Repeat Imp
+  - key: m_263_name
+    ja: "\u30EB\u30FC\u30D7\u30D3\u30FC\u30C8\u30EB"
+    en: Loop Beetle
+  - key: m_264_name
+    ja: "\u56DE\u5ECA\u30A6\u30A3\u30B9\u30D7"
+    en: Corridor Wisp
+  - key: m_265_name
+    ja: "\u5FAA\u74B0\u738B\u30FB\u30A4\u30F3\u30D5\u30A3\u30CB\u30C6\u30A3\u30EB\u30FC\u30D7"
+    en: Cycle King Infinity Loop
+  - key: m_266_name
+    ja: "\u6DF7\u6210\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Hybrid Skeleton
+  - key: m_267_name
+    ja: "\u7834\u6EC5\u30A4\u30F3\u30D7"
+    en: Doom Imp
+  - key: m_268_name
+    ja: "\u66B4\u8D70\u30B9\u30E9\u30A4\u30E0"
+    en: Rampage Slime
+  - key: m_269_name
+    ja: "\u524D\u54E8\u30B4\u30FC\u30EC\u30E0"
+    en: Outpost Golem
+  - key: m_270_name
+    ja: "\u5D29\u58CA\u30A6\u30A3\u30B9\u30D7"
+    en: Collapse Wisp
+  - key: m_271_name
+    ja: "\u7834\u6EC5\u5C06\u30FB\u30A2\u30DD\u30AB\u30EA\u30D7\u30B9\u30AC\u30FC\u30C9"
+    en: Doom General Apocalypse Guard
+  - key: m_272_name
+    ja: "\u6DF1\u6DF5\u9AA8\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Abyssbone Skeleton
+  - key: m_273_name
+    ja: "\u4FB5\u98DF\u30B9\u30E9\u30A4\u30E0"
+    en: Corruption Slime
+  - key: m_274_name
+    ja: "\u6DF1\u6DF5\u30A4\u30F3\u30D7"
+    en: Abyss Imp
+  - key: m_275_name
+    ja: "\u4FB5\u98DF\u30D3\u30FC\u30C8\u30EB"
+    en: Corruption Beetle
+  - key: m_276_name
+    ja: "\u6DF1\u6DF5\u30A6\u30A3\u30B9\u30D7"
+    en: Abyss Wisp
+  - key: m_277_name
+    ja: "\u6DF1\u6DF5\u738B\u30FB\u30A2\u30D3\u30B9\u30AA\u30FC\u30D0\u30FC\u30ED\u30FC\u30C9"
+    en: Abyss King Abyss Overlord
+  - key: m_278_name
+    ja: "\u7121\u8272\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Colorless Skeleton
+  - key: m_279_name
+    ja: "\u865A\u7121\u30B9\u30E9\u30A4\u30E0"
+    en: Void Slime
+  - key: m_280_name
+    ja: "\u7121\u97F3\u30A4\u30F3\u30D7"
+    en: Silent Imp
+  - key: m_281_name
+    ja: "\u865A\u7121\u30B4\u30FC\u30EC\u30E0"
+    en: Void Golem
+  - key: m_282_name
+    ja: "\u7A7A\u767D\u30A6\u30A3\u30B9\u30D7"
+    en: Blank Wisp
+  - key: m_283_name
+    ja: "\u865A\u7121\u76E3\u8996\u8005\u30FB\u30CA\u30C3\u30B7\u30F3\u30B0\u30A6\u30A9\u30FC\u30C7\u30F3"
+    en: Void Watcher Nothing Warden
+  - key: m_284_name
+    ja: "\u9ED2\u66DC\u9AA8\u5175"
+    en: Obsidian Bone Soldier
+  - key: m_285_name
+    ja: "\u6226\u5834\u30A4\u30F3\u30D7"
+    en: Warfield Imp
+  - key: m_286_name
+    ja: "\u9ED2\u5203\u30B9\u30E9\u30A4\u30E0"
+    en: Blackblade Slime
+  - key: m_287_name
+    ja: "\u9ED2\u66DC\u30D3\u30FC\u30C8\u30EB"
+    en: Obsidian Beetle
+  - key: m_288_name
+    ja: "\u8840\u7159\u30A6\u30A3\u30B9\u30D7"
+    en: Bloodsmoke Wisp
+  - key: m_289_name
+    ja: "\u6226\u738B\u30FB\u30AA\u30D6\u30B7\u30C7\u30A3\u30A2\u30F3\u30ED\u30FC\u30C9"
+    en: War King Obsidian Lord
+  - key: m_290_name
+    ja: "\u795E\u9AA8\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Divine Bone Skeleton
+  - key: m_291_name
+    ja: "\u795E\u9AB8\u30B9\u30E9\u30A4\u30E0"
+    en: Divine Remnant Slime
+  - key: m_292_name
+    ja: "\u7737\u5C5E\u30A4\u30F3\u30D7"
+    en: Servant Imp
+  - key: m_293_name
+    ja: "\u795E\u6BBB\u30B4\u30FC\u30EC\u30E0"
+    en: Divine Shell Golem
+  - key: m_294_name
+    ja: "\u795E\u5149\u30A6\u30A3\u30B9\u30D7"
+    en: Holy Light Wisp
+  - key: m_295_name
+    ja: "\u795E\u9AB8\u738B\u30FB\u30C7\u30A3\u30F4\u30A1\u30A4\u30F3\u30EC\u30E0\u30CA\u30F3\u30C8"
+    en: Divine Remnant King
+  - key: m_296_name
+    ja: "\u6DF7\u6C8C\u9AA8\u30B9\u30B1\u30EB\u30C8\u30F3"
+    en: Chaosbone Skeleton
+  - key: m_297_name
+    ja: "\u6DF7\u6C8C\u30B9\u30E9\u30A4\u30E0"
+    en: Chaos Slime
+  - key: m_298_name
+    ja: "\u7D42\u7109\u30A4\u30F3\u30D7"
+    en: Doom Imp
+  - key: m_299_name
+    ja: "\u5D29\u58CA\u30B4\u30FC\u30EC\u30E0"
+    en: Cataclysm Golem
+  - key: m_300_name
+    ja: "\u7D42\u7109\u30A6\u30A3\u30B9\u30D7"
+    en: Apocalypse Wisp
+  - key: m_301_name
+    ja: "\u7D42\u7109\u7ADC\u30FB\u30A8\u30F3\u30C9\u30AA\u30D6\u30AB\u30BF\u30B9\u30C8\u30ED\u30D5"
+    en: End Dragon End of Catastrophe
+  - key: m_302_name
+    ja: "\u6DF1\u6DF5\u306E\u652F\u914D\u8005\u30FB\u30CD\u30B6\u30FC\u30E2\u30CA\u30FC\u30AF"
+    en: Nether Monarch Ruler of the Abyss

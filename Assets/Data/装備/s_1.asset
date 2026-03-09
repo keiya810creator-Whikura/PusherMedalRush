@@ -32,4 +32,9 @@ MonoBehaviour:
   goldDropAdd: 0.01
   equipmentDropAdd: 0.01
   titleDropAdd: 0.01
-  skills: []
+  skills:
+  - {fileID: 11400000, guid: ea9dfbbc778ede64e95aaf3bdbbfa7dd, type: 2}
+  - {fileID: 11400000, guid: 036bcaf6198ecc34e855af8718245c1c, type: 2}
+  - {fileID: 11400000, guid: 1b1e0c9a0d71f9346832dd446ed8e48b, type: 2}
+  - {fileID: 11400000, guid: b4ac9b0f489603e4dadaf4ac96c40a57, type: 2}
+  - {fileID: 11400000, guid: b7de55194e71868418384c183c57861f, type: 2}

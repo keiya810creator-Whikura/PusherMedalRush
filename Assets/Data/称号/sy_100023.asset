@@ -27,7 +27,7 @@ MonoBehaviour:
   maxMedalAdd: 0
   maxMedalRate: 0
   noMedalConsumeAdd: 0.024
-  recoveryWaveMedalValueAdd: 3
+  recoveryWaveMedalValueAdd: 12
   recoveryWaveDurationAdd: 15
   goldDropAdd: 1.2
   equipmentDropAdd: 1.2

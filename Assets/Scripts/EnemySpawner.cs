@@ -5,8 +5,9 @@ using System.Linq;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private MonsterDatabase monsterDatabase;
-    [SerializeField] private string currentStageId = "Stage1";
+
     public static EnemySpawner Instance;
+
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -14,12 +15,18 @@ public class EnemySpawner : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         Instance = this;
     }
+
     public void SpawnEnemy(int currentWave)
     {
+        // ★現在ステージ取得
+        int stage = SaveManager.Instance.Data.currentStage;
+        string stageId = "Stage" + stage;
+
         // =========================
-        // ✅ Wave1500：151番目のモンスターを固定出現（1始まり→index150）
+        // Wave1500 固定敵
         // =========================
         if (currentWave == 1500)
         {
@@ -28,38 +35,39 @@ public class EnemySpawner : MonoBehaviour
 
             if (monsterDatabase == null || monsterDatabase.monsterList == null)
             {
-                Debug.LogError("monsterDatabase / monsterList が null です");
+                Debug.LogError("monsterDatabase / monsterList null");
                 return;
             }
 
             if (monsterDatabase.monsterList.Count <= index)
             {
-                Debug.LogError($"monsterList に {oneBasedIndex}番目が存在しません。Count={monsterDatabase.monsterList.Count}");
+                Debug.LogError($"monsterList不足 Count={monsterDatabase.monsterList.Count}");
                 return;
             }
 
-            MonsterData selected = monsterDatabase.monsterList[index];
+            MonsterData selectedSpecial = monsterDatabase.monsterList[index];
 
-            // 図鑑記録
-            ZukanProgressManager.Instance.RecordEncounter(selected.id);
+            ZukanProgressManager.Instance.RecordEncounter(selectedSpecial.id);
 
-            // 生成
-            GameObject enemy = Instantiate(selected.prefab, transform.position, Quaternion.identity);
+            GameObject enemy =
+                Instantiate(selectedSpecial.prefab, transform.position, Quaternion.identity);
+
             long hp = WaveManager.Instance.GetEnemyHP();
-            enemy.GetComponent<Enemy>().Init(selected, hp);
+            enemy.GetComponent<Enemy>().Init(selectedSpecial, hp);
 
-            return; // ★ここで終わり（通常抽選に行かない）
+            return;
         }
 
-        // =========================
-        // Wave1001以降：全敵ランダム（ボス無し）
-        // =========================
         List<MonsterData> candidates;
+
+        // =========================
+        // Wave1001以降
+        // =========================
 
         if (currentWave >= 1001)
         {
             candidates = monsterDatabase.monsterList
-                .Where(m => m.stageId == currentStageId && !m.isBoss)
+                .Where(m => m.stageId == stageId && !m.isBoss)
                 .ToList();
 
             if (candidates.Count == 0)
@@ -73,7 +81,7 @@ public class EnemySpawner : MonoBehaviour
         {
             candidates = monsterDatabase.monsterList
                 .Where(m =>
-                    m.stageId == currentStageId &&
+                    m.stageId == stageId &&
                     currentWave >= m.minWave &&
                     currentWave <= m.maxWave
                 ).ToList();
@@ -81,30 +89,44 @@ public class EnemySpawner : MonoBehaviour
 
         if (candidates.Count == 0)
         {
-            Debug.LogError($"No monster for wave {currentWave}");
+            Debug.LogError($"No monster for wave {currentWave} stage {stageId}");
             return;
         }
 
-        MonsterData selectedNormal;
+        int spawnCount = (stage == 2) ? 2 : 1;
 
-        if (WaveManager.Instance.IsBossWave())
+        for (int i = 0; i < spawnCount; i++)
         {
-            MonsterData boss = candidates.FirstOrDefault(m => m.isBoss);
-            selectedNormal = boss != null ? boss : SelectByWeight(candidates);
-        }
-        else
-        {
-            selectedNormal = SelectByWeight(candidates);
-        }
+            MonsterData selected;
 
-        ZukanProgressManager.Instance.RecordEncounter(selectedNormal.id);
+            if (WaveManager.Instance.IsBossWave())
+            {
+                MonsterData boss = candidates.FirstOrDefault(m => m.isBoss);
+                selected = boss != null ? boss : SelectByWeight(candidates);
+            }
+            else
+            {
+                selected = SelectByWeight(candidates);
+            }
 
-        GameObject enemyObj = Instantiate(selectedNormal.prefab, transform.position, Quaternion.identity);
-        long hp2 = WaveManager.Instance.GetEnemyHP();
-        enemyObj.GetComponent<Enemy>().Init(selectedNormal, hp2);
+            ZukanProgressManager.Instance.RecordEncounter(selected.id);
+
+            Vector3 spawnPos = transform.position;
+
+            if (spawnCount > 1)
+            {
+                spawnPos.x += (i == 0) ? -2f : 2f;
+            }
+
+            GameObject enemyObj =
+                Instantiate(selected.prefab, spawnPos, Quaternion.identity);
+
+            long hp = WaveManager.Instance.GetEnemyHP();
+            enemyObj.GetComponent<Enemy>().Init(selected, hp);
+
+            WaveManager.Instance.RegisterEnemy();
+        }
     }
-
-
 
     // =========================
     // 重み抽選
@@ -116,9 +138,11 @@ public class EnemySpawner : MonoBehaviour
         int rand = Random.Range(0, total);
 
         int current = 0;
+
         foreach (var m in list)
         {
             current += m.syutugennritu;
+
             if (rand < current)
                 return m;
         }

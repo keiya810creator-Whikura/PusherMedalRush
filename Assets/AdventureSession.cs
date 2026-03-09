@@ -3,6 +3,8 @@
     public static int StartWave;
     public static int EndWave;
 
+    public static int Stage;
+
     public static bool IsAutoRun;
     public static bool IsEndless=true; // ★追加
 

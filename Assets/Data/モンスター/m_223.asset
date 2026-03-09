@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b779dace7b7b3c84c9df8f1fef89b4d7, type: 3}
+  m_Name: m_223
+  m_EditorClassIdentifier: 
+  id: m_223
+  nameKey: m_223_name
+  stageId: Stage2
+  icon: {fileID: -1029319319538805001, guid: 84e6668641fcaf3409e95e4b4bc80851, type: 3}
+  prefab: {fileID: 3697148881137515047, guid: 1fe5301bfa530d743b6fe13c61d91b9a, type: 3}
+  dropSoubiList:
+  - {fileID: 11400000, guid: d531348adca7c6441a3b9861e474f651, type: 2}
+  dropShogoList:
+  - {fileID: 11400000, guid: 8b8c0fd3d86ceed4bbf3c41738c15604, type: 2}
+  soubiDropChance: 0.0008
+  syougouDropChance: 0.00025
+  minWave: 480
+  maxWave: 480
+  syutugennritu: 100
+  syutugennStage: 
+  isBoss: 1

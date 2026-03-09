@@ -19,6 +19,10 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject mainMenuTutorialPanel;
     [SerializeField] private GameObject mainMenuTutorialPanel2;
 
+    [SerializeField] GameObject stageSelectButton;
+    [SerializeField] TMPro.TextMeshProUGUI stageText;
+
+    [SerializeField] WaveRangeSliderUI waveSlider;
     private void Start()
     {
         /*foreach (TutorialID id in System.Enum.GetValues(typeof(TutorialID)))
@@ -40,6 +44,59 @@ public class MainMenuController : MonoBehaviour
         }*/
 
         AdBuffManager.Instance.ClearRewardBuff();
+
+        UpdateStageButton();
+        UpdateStageText();
+        //ApplyStageWaveSetting();
+        AdventureSession.Stage = SaveManager.Instance.Data.currentStage;
+    }
+    public void RefreshFromSave()
+    {
+        waveSlider.RefreshFromSave();
+    }
+    void UpdateStageButton()
+    {
+        stageSelectButton.SetActive(
+            SaveManager.Instance.Data.stage2Unlocked
+        );
+    }
+    public void OnClickStageButton()
+    {
+        var save = SaveManager.Instance.Data;
+
+        save.currentStage = (save.currentStage == 1) ? 2 : 1;
+
+        // ★追加
+        AdventureSession.Stage = save.currentStage;
+
+        SaveManager.Instance.SaveToDisk();
+
+        WaveRangeSliderUI.instance?.RefreshFromSave();
+
+        UpdateStageText();
+    }
+    void UpdateStageText()
+    {
+        int stage = SaveManager.Instance.Data.currentStage;
+
+        Debug.Log("UI Stage = " + stage);
+
+        stageText.text = "Stage " + stage;
+    }
+    void ApplyStageWaveSetting()
+    {
+        var save = SaveManager.Instance.Data;
+
+        if (save.currentStage == 1)
+        {
+            AdventureSession.StartWave = save.stage1StartWave;
+            AdventureSession.EndWave = save.stage1EndWave;
+        }
+        else
+        {
+            AdventureSession.StartWave = save.stage2StartWave;
+            AdventureSession.EndWave = save.stage2EndWave;
+        }
     }
     public void RefreshRewardBoostButton()
     {// ✅広告削除課金済なら常時ON表示
@@ -117,8 +174,12 @@ public class MainMenuController : MonoBehaviour
         AdBuffManager.Instance.ActivateRewardBuff(2f);
     }
 
-    SceneManager.LoadScene("Stage1");
-}
+        int stage = SaveManager.Instance.Data.currentStage;
+
+        string sceneName = stage == 1 ? "Stage1" : "Stage2";
+
+        SceneManager.LoadScene(sceneName);
+    }
     public void OnClickAutoRun()
     {
         // ✅ まず倉庫チェック（最優先）
@@ -170,7 +231,11 @@ public class MainMenuController : MonoBehaviour
         AdventureSession.EndWave = waveRangeUI.EndWave;
 
         AutoRunController.Instance.StartAutoRun();
-        SceneManager.LoadScene("Stage1");
+        int stage = SaveManager.Instance.Data.currentStage;
+
+        string sceneName = stage == 1 ? "Stage1" : "Stage2";
+
+        SceneManager.LoadScene(sceneName);
     }
 
 

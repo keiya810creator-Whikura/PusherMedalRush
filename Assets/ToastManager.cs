@@ -8,6 +8,7 @@ public class ToastManager : MonoBehaviour
 
     [SerializeField] private ToastUI toastPrefab;
     [SerializeField] private RectTransform toastParent;
+    [SerializeField] private RectTransform toastParent2;
 
     private Queue<string> queue = new();
     private bool showing = false;
@@ -40,6 +41,35 @@ public class ToastManager : MonoBehaviour
 
             ToastUI toast =
     Instantiate(toastPrefab, toastParent, false);
+
+
+            toast.Show(msg);
+
+            // ✅次まで少し待つ
+            yield return new WaitForSeconds(1.0f);
+        }
+
+        showing = false;
+    }
+
+    public void ShowToast2(string msg)
+    {
+        queue.Enqueue(msg);
+
+        if (!showing)
+            StartCoroutine(ProcessQueue2());
+    }
+
+    IEnumerator ProcessQueue2()
+    {
+        showing = true;
+
+        while (queue.Count > 0)
+        {
+            string msg = queue.Dequeue();
+
+            ToastUI toast =
+    Instantiate(toastPrefab, toastParent2, false);
 
 
             toast.Show(msg);

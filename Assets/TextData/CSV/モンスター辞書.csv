@@ -150,3 +150,154 @@ m_148_name,アシュタロス・リリア,Ashtaroth Lilia
 m_149_name,ブッチャー・ゴルム,Butcher Golm
 m_150_name,ヴォイド・バルザーク,Void Balzark
 m_151_name,アルカナ＝ドラグナール,Arcana = Dragnall
+m_152_name,錆びた坑夫スケルトン,Rust Miner Skeleton
+m_153_name,掘削ゴブリン,Digger Goblin
+m_154_name,鉄屑スライム,Scrap Slime
+m_155_name,崩落モール,Collapse Mole
+m_156_name,煤まみれの幽霊,Soot-Covered Ghost
+m_157_name,坑道王・アイアンレイバー,Mine King Iron Labor
+m_158_name,水苔スライム,Moss Slime
+m_159_name,湿潤ラット,Damp Rat
+m_160_name,水没スケルトン,Drowned Skeleton
+m_161_name,沼トカゲ,Swamp Lizard
+m_162_name,下水ワーム,Sewer Worm
+m_163_name,水路の守護獣・モスガーディアン,Canal Guardian Moss Guardian
+m_164_name,腐骨スケルトン,Rotbone Skeleton
+m_165_name,墓守ゾンビ,Gravekeeper Zombie
+m_166_name,霊火ウィスプ,Spiritflame Wisp
+m_167_name,墓標ゴーレム,Gravestone Golem
+m_168_name,彷徨う亡霊,Wandering Wraith
+m_169_name,死霊侯・ネクロロード,Deathlord Necro Lord
+m_170_name,落石クラブ,Falling Rock Crab
+m_171_name,岩皮バット,Stonehide Bat
+m_172_name,洞穴トロール,Cave Troll
+m_173_name,地割れスライム,Fissure Slime
+m_174_name,採掘ビートル,Mining Beetle
+m_175_name,洞窟崩壊獣・ロックタイタン,Cavebreaker Rock Titan
+m_176_name,火花インプ,Spark Imp
+m_177_name,溶岩スライム,Lava Slime
+m_178_name,焼骨スケルトン,Burnbone Skeleton
+m_179_name,火蜥蜴,Fire Lizard
+m_180_name,灰翼コウモリ,Ashwing Bat
+m_181_name,灼熱竜・マグナ＝ドラコ,Inferno Dragon Magna Draco
+m_182_name,氷晶スライム,Crystal Ice Slime
+m_183_name,凍骨スケルトン,Frostbone Skeleton
+m_184_name,雪皮ウルフ,Snowhide Wolf
+m_185_name,氷刃バット,Iceblade Bat
+m_186_name,霜ゴーレム,Frost Golem
+m_187_name,氷王・フロストコロッサス,Frost King Frost Colossus
+m_188_name,風刃バード,Windblade Bird
+m_189_name,峡谷ゴブリン,Canyon Goblin
+m_190_name,突風スライム,Gust Slime
+m_191_name,崖跳ねヤギ,Cliffjumper Goat
+m_192_name,空裂ウィスプ,Skytear Wisp
+m_193_name,暴風獣・テンペストハウル,Storm Beast Tempest Howl
+m_194_name,放電スライム,Discharge Slime
+m_195_name,雷骨スケルトン,Thunderbone Skeleton
+m_196_name,スパークインプ,Spark Imp
+m_197_name,電撃ビートル,Volt Beetle
+m_198_name,雷羽バード,Thunderwing Bird
+m_199_name,雷帝・ヴォルトタイラント,Thunder Emperor Volt Tyrant
+m_200_name,砂塵スケルトン,Sandstorm Skeleton
+m_201_name,遺跡スカラベ,Relic Scarab
+m_202_name,砂蛇,Sand Serpent
+m_203_name,石像ガーディアン,Statue Guardian
+m_204_name,流砂スライム,Quicksand Slime
+m_205_name,砂王・デザートファラオ,Sand King Desert Pharaoh
+m_206_name,毒胞スライム,Venom Spore Slime
+m_207_name,腐葉スケルトン,Rotleaf Skeleton
+m_208_name,毒牙ウルフ,Venomfang Wolf
+m_209_name,毒霧ウィスプ,Poison Mist Wisp
+m_210_name,腐根トレント,Blightroot Treant
+m_211_name,瘴気王・ヴェノムドライアド,Miasma Queen Venom Dryad
+m_212_name,呪符スケルトン,Curse Talisman Skeleton
+m_213_name,暴走グリモア,Runaway Grimoire
+m_214_name,インクスライム,Ink Slime
+m_215_name,魔導ゴーレム,Arcane Golem
+m_216_name,詠唱ウィスプ,Chanting Wisp
+m_217_name,禁書管理者・アーカイヴロード,Forbidden Archive Lord
+m_218_name,影兵スケルトン,Shadow Soldier Skeleton
+m_219_name,シャドウインプ,Shadow Imp
+m_220_name,闇染みスライム,Darkstain Slime
+m_221_name,影走りハウンド,Shadowrunner Hound
+m_222_name,暗幕ウィスプ,Blackveil Wisp
+m_223_name,影王・ナイトステッチャー,Shadow King Night Stitcher
+m_224_name,鏡像スケルトン,Mirror Skeleton
+m_225_name,分裂スライム,Split Slime
+m_226_name,反射ビートル,Reflect Beetle
+m_227_name,虚像インプ,Phantom Imp
+m_228_name,鏡霊ウィスプ,Mirror Spirit Wisp
+m_229_name,迷宮主・リフレクタス,Labyrinth Lord Reflectus
+m_230_name,血晶スケルトン,Blood Crystal Skeleton
+m_231_name,供物ゾンビ,Sacrifice Zombie
+m_232_name,血滴スライム,Blooddrop Slime
+m_233_name,血祭インプ,Bloodrite Imp
+m_234_name,結晶ゴーレム,Crystal Golem
+m_235_name,血王・サクリファイスロード,Blood King Sacrifice Lord
+m_236_name,結界兵スケルトン,Barrier Soldier Skeleton
+m_237_name,結界スライム,Barrier Slime
+m_238_name,深層インプ,Deep Imp
+m_239_name,結界ビートル,Barrier Beetle
+m_240_name,防護ウィスプ,Ward Wisp
+m_241_name,結界核・プロテクトコア,Barrier Core Protect Core
+m_242_name,歪時スケルトン,Distorted Time Skeleton
+m_243_name,加速インプ,Accelerator Imp
+m_244_name,減速スライム,Slow Slime
+m_245_name,時喰いワーム,Time Devourer Worm
+m_246_name,歪曲ウィスプ,Warp Wisp
+m_247_name,時王・クロノディストータ,Time King Chrono Distorter
+m_248_name,星殻スケルトン,Star Shell Skeleton
+m_249_name,星光スライム,Starlight Slime
+m_250_name,宇宙インプ,Cosmic Imp
+m_251_name,重力ビートル,Gravity Beetle
+m_252_name,星霊ウィスプ,Star Spirit Wisp
+m_253_name,星喰獣・アストラデヴァウラー,Star Devourer Astra Devourer
+m_254_name,契約兵スケルトン,Contract Soldier Skeleton
+m_255_name,契約インプ,Contract Imp
+m_256_name,誓約スライム,Oath Slime
+m_257_name,試練ゴーレム,Trial Golem
+m_258_name,契約ウィスプ,Pact Wisp
+m_259_name,契約王・オースブリンガー,Contract King Oath Bringer
+m_260_name,反復スケルトン,Repeat Skeleton
+m_261_name,無限スライム,Infinite Slime
+m_262_name,反復インプ,Repeat Imp
+m_263_name,ループビートル,Loop Beetle
+m_264_name,回廊ウィスプ,Corridor Wisp
+m_265_name,循環王・インフィニティループ,Cycle King Infinity Loop
+m_266_name,混成スケルトン,Hybrid Skeleton
+m_267_name,破滅インプ,Doom Imp
+m_268_name,暴走スライム,Rampage Slime
+m_269_name,前哨ゴーレム,Outpost Golem
+m_270_name,崩壊ウィスプ,Collapse Wisp
+m_271_name,破滅将・アポカリプスガード,Doom General Apocalypse Guard
+m_272_name,深淵骨スケルトン,Abyssbone Skeleton
+m_273_name,侵食スライム,Corruption Slime
+m_274_name,深淵インプ,Abyss Imp
+m_275_name,侵食ビートル,Corruption Beetle
+m_276_name,深淵ウィスプ,Abyss Wisp
+m_277_name,深淵王・アビスオーバーロード,Abyss King Abyss Overlord
+m_278_name,無色スケルトン,Colorless Skeleton
+m_279_name,虚無スライム,Void Slime
+m_280_name,無音インプ,Silent Imp
+m_281_name,虚無ゴーレム,Void Golem
+m_282_name,空白ウィスプ,Blank Wisp
+m_283_name,虚無監視者・ナッシングウォーデン,Void Watcher Nothing Warden
+m_284_name,黒曜骨兵,Obsidian Bone Soldier
+m_285_name,戦場インプ,Warfield Imp
+m_286_name,黒刃スライム,Blackblade Slime
+m_287_name,黒曜ビートル,Obsidian Beetle
+m_288_name,血煙ウィスプ,Bloodsmoke Wisp
+m_289_name,戦王・オブシディアンロード,War King Obsidian Lord
+m_290_name,神骨スケルトン,Divine Bone Skeleton
+m_291_name,神骸スライム,Divine Remnant Slime
+m_292_name,眷属インプ,Servant Imp
+m_293_name,神殻ゴーレム,Divine Shell Golem
+m_294_name,神光ウィスプ,Holy Light Wisp
+m_295_name,神骸王・ディヴァインレムナント,Divine Remnant King
+m_296_name,混沌骨スケルトン,Chaosbone Skeleton
+m_297_name,混沌スライム,Chaos Slime
+m_298_name,終焉インプ,Doom Imp
+m_299_name,崩壊ゴーレム,Cataclysm Golem
+m_300_name,終焉ウィスプ,Apocalypse Wisp
+m_301_name,終焉竜・エンドオブカタストロフ,End Dragon End of Catastrophe
+m_302_name,深淵の支配者・ネザーモナーク,Nether Monarch Ruler of the Abyss

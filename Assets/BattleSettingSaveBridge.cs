@@ -16,16 +16,20 @@ public class BattleSettingSaveBridge : MonoBehaviour
     {
         var data = SaveManager.Instance.Data;
 
-        data.startWave = startWave;
-        data.endWave = endWave;
+        int stage = data.currentStage;
 
-        // ✅Max判定（EndWaveが最大ならtrue）
-        int maxWave = GameProgressManager.Instance.HighestClearedWave + 1;
-        data.isEndWaveMax = (endWave >= maxWave);
+        if (stage == 1)
+        {
+            data.stage1StartWave = startWave;
+            data.stage1EndWave = endWave;
+        }
+        else
+        {
+            data.stage2StartWave = startWave;
+            data.stage2EndWave = endWave;
+        }
 
         SaveManager.Instance.SaveToDisk();
-
-        Debug.Log($"✅BattleSettings Save: {startWave} → {endWave}, MaxFlag={data.isEndWaveMax}");
     }
 
     // ============================
@@ -35,21 +39,16 @@ public class BattleSettingSaveBridge : MonoBehaviour
     {
         var data = SaveManager.Instance.Data;
 
-        AdventureSession.StartWave = data.startWave;
-
-        // ✅MaxだったならEndWaveもMax扱いにする
-        if (data.isEndWaveMax)
+        if (data.currentStage == 1)
         {
-            AdventureSession.IsEndless = true;
-            AdventureSession.EndWave = GameProgressManager.Instance.HighestClearedWave + 1;
+            AdventureSession.StartWave = data.stage1StartWave;
+            AdventureSession.EndWave = data.stage1EndWave;
         }
         else
         {
-            AdventureSession.IsEndless = false;
-            AdventureSession.EndWave = data.endWave;
+            AdventureSession.StartWave = data.stage2StartWave;
+            AdventureSession.EndWave = data.stage2EndWave;
         }
-
-        //Debug.Log($"✅BattleSettings Load: {AdventureSession.StartWave} → {AdventureSession.EndWave}");
     }
 
 }

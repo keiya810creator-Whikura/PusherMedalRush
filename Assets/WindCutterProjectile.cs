@@ -11,6 +11,7 @@ public class WindCutterProjectile : MonoBehaviour
 
     void Start()
     {
+        Destroy(gameObject, 5f);
 
         // ✅敵が出るまで待機
         StartCoroutine(WaitForEnemy());

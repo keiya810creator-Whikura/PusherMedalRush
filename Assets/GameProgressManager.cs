@@ -4,7 +4,8 @@ public class GameProgressManager : MonoBehaviour
 {
     public static GameProgressManager Instance { get; private set; }
 
-    public int HighestClearedWave = 0;
+    public int Stage1HighestWave = 0;
+    public int Stage2HighestWave = 0;
 
     void Awake()
     {
@@ -19,17 +20,35 @@ public class GameProgressManager : MonoBehaviour
 
     public void RecordClearedWave(int wave)
     {
-        if (wave > HighestClearedWave)
-        {
-            HighestClearedWave = wave;
-            Debug.Log($"最高到達Wave更新: {HighestClearedWave}");
+        int stage = SaveManager.Instance.Data.currentStage;
 
-            FindAnyObjectByType<ProgressSaveBridge>()?.SaveProgress();
+        if (stage == 1)
+        {
+            if (wave > Stage1HighestWave)
+            {
+                Stage1HighestWave = wave;
+            }
         }
+        else
+        {
+            if (wave > Stage2HighestWave)
+            {
+                Stage2HighestWave = wave;
+            }
+        }
+
+        Debug.Log($"最高到達Wave更新: {wave}");
+
+        FindAnyObjectByType<ProgressSaveBridge>()?.SaveProgress();
     }
     public void SetHighestClearedWave(int wave)
     {
-        HighestClearedWave = wave;
+        int stage = SaveManager.Instance.Data.currentStage;
+
+        if (stage == 1)
+            Stage1HighestWave = wave;
+        else
+            Stage2HighestWave = wave;
     }
 
 }

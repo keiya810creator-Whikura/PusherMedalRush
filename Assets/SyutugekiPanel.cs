@@ -4,6 +4,6 @@ public class SyutugekiPanel : MonoBehaviour
 {
     private void OnEnable()
     {
-       // WaveRangeSliderUI.instance.SliderMaxSet();
+        WaveRangeSliderUI.instance?.RefreshFromSave();
     }
 }

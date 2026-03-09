@@ -1,36 +1,73 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class MedalKakutoku : MonoBehaviour
 {
+    [Header("特殊獲得口")]
+    [SerializeField] private bool isSlotHole;
+
+    bool slotTriggerLock;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Medal"))
             return;
 
-        // ✅Medalコンポーネント取得
         Medal medal = collision.GetComponent<Medal>();
 
         // =========================
-        // ✅特殊メダル回収スキル発動
+        // 🎰 特殊獲得口
         // =========================
+        if (isSlotHole)
+        {
+            if (SlotManager.Instance != null)
+            {
+                // ★二重防止
+                if (slotTriggerLock)
+                {
+                    MedalPoolManager.Instance.ReturnMedal(collision.gameObject);
+                    return;
+                }
+
+                AudioManager.Instance.PlaySE(AudioManager.Instance.tokusyukakutoku);
+
+                slotTriggerLock = true;
+
+                // =========================
+                // スロット処理
+                // =========================
+                if (SlotManager.Instance.IsSpinning)
+                {
+                    SlotManager.Instance.AddMultiplier();
+                }
+                else if (!SlotManager.Instance.IsCooldown)
+                {
+                    SlotManager.Instance.StartSlot();
+                }
+
+                // ★ロック解除
+                StartCoroutine(ResetTriggerLock());
+            }
+
+            MedalPoolManager.Instance.ReturnMedal(collision.gameObject);
+            //return;
+        }
+
+        // =========================
+        // 通常獲得口
+        // =========================
+
         if (SkillManager.Instance != null)
         {
             SkillManager.Instance.TriggerMedalCollected(medal);
         }
 
-        // =========================
-        // 倍率取得（Fire演出用）
-        // =========================
         int multiplier = 1;
-        MedalMultiplier multi =
-            collision.GetComponent<MedalMultiplier>();
+        MedalMultiplier multi = collision.GetComponent<MedalMultiplier>();
 
         if (multi != null)
             multiplier = multi.multiplier;
 
-        // =========================
-        // Fireエフェクト再生
-        // =========================
         FireType type = multiplier switch
         {
             2 => FireType.X2,
@@ -48,9 +85,13 @@ public class MedalKakutoku : MonoBehaviour
             );
         }
 
-        // =========================
-        // ✅Poolに返却（Destroy禁止）
-        // =========================
         MedalPoolManager.Instance.ReturnMedal(collision.gameObject);
+    }
+
+    IEnumerator ResetTriggerLock()
+    {
+        // ★少し待つと安定する
+        yield return new WaitForSeconds(0.1f);
+        slotTriggerLock = false;
     }
 }

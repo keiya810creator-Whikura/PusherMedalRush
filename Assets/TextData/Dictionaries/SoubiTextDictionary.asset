@@ -466,3 +466,456 @@ MonoBehaviour:
   - key: s_151_name
     ja: "\u30A8\u30EC\u30E1\u30F3\u30BF\u30EB\u30FB\u30C9\u30DF\u30CB\u30AA\u30F3"
     en: Elemental Dominion
+  - key: s_152_name
+    ja: "\u9AB8\u9244\u878D\u8755\u306E\u65AD\u7F6A\u9DB4\u5634"
+    en: Judgment Pickaxe of Corroded Bone Iron
+  - key: s_153_name
+    ja: "\u673D\u706F\u5751\u592B\u306E\u546A\u7E1B\u515C"
+    en: Cursed Helm of the Fading Miner
+  - key: s_154_name
+    ja: "\u5D29\u5CA9\u7E1B\u9396\u306E\u5DE8\u584A\u93A7"
+    en: Colossal Chainplate of Collapsing Stone
+  - key: s_155_name
+    ja: "\u5C51\u9244\u6F02\u754C\u306E\u65AD\u7247\u76FE"
+    en: Scrap Fragment Shield of the Rusted Realm
+  - key: s_156_name
+    ja: "\u7164\u95C7\u63FA\u754C\u306E\u5E7D\u74B0"
+    en: Phantom Ring of the Sooted Abyss
+  - key: s_157_name
+    ja: "\u6676\u9AA8\u738B\u306E\u84BC\u9271\u624B\u7532"
+    en: Azure Ore Gauntlets of the Crystal Bone King
+  - key: s_158_name
+    ja: "\u82D4\u6FC1\u306E\u6EF4\u5263\u30F4\u30A7\u30EB\u30C7\u30A3\u30AF\u30B9"
+    en: Verdix Dripblade of the Moss Mire
+  - key: s_159_name
+    ja: "\u8150\u6F6E\u9AB8\u76FE\u30B0\u30E9\u30FC\u30E0\u30B7\u30A7\u30EB"
+    en: Grave Tide Shield Graamshell
+  - key: s_160_name
+    ja: "\u6DF1\u6DF5\u6E7F\u8863\u30CD\u30AF\u30ED\u30DF\u30B9\u30C8"
+    en: Necromist Robe of the Sunken Depths
+  - key: s_161_name
+    ja: "\u6CBC\u9C57\u91CD\u6BBB\u30A2\u30EB\u30AC\u30ED\u30A2"
+    en: Swampscale Carapace Algaroa
+  - key: s_162_name
+    ja: "\u6C34\u8108\u5C01\u74B0\u30EA\u30F4\u30A3\u30A8\u30E9"
+    en: Riverseal Ring Riviera
+  - key: s_163_name
+    ja: "\u82D4\u6838\u306E\u51A5\u96EB\u30DA\u30F3\u30C0\u30F3\u30C8\u30FB\u30E2\u30EB\u30F4\u30A1"
+    en: Molvah Pendant of the Moss Core
+  - key: s_164_name
+    ja: "\u5893\u7A7F\u3061\u306E\u65AD\u5263"
+    en: Gravepiercer Blade
+  - key: s_165_name
+    ja: "\u5C4D\u93A7\u30B0\u30EC\u30A4\u30D6\u30D7\u30EC\u30FC\u30C8"
+    en: Graveplate Armor
+  - key: s_166_name
+    ja: "\u9AB8\u74B0\u30D6\u30EB\u30FC\u30EA\u30D2\u30C8"
+    en: Bluelicht Bone Ring
+  - key: s_167_name
+    ja: "\u5893\u7815\u304D\u306E\u5DE8\u5263"
+    en: Gravebreaker Greatsword
+  - key: s_168_name
+    ja: "\u5E7D\u8863\u30DF\u30B9\u30C8\u30F4\u30A7\u30FC\u30EB"
+    en: Mistveil Phantom Cloak
+  - key: s_169_name
+    ja: "\u51A5\u706F\u30DA\u30F3\u30C0\u30F3\u30C8"
+    en: Pendant of Netherlight
+  - key: s_170_name
+    ja: "\u843D\u6BBB\u306E\u5CA9\u76FE"
+    en: Falling Crag Shield
+  - key: s_171_name
+    ja: "\u6D1E\u93A7\u30B0\u30E9\u30D9\u30EB\u30E1\u30A4\u30EB"
+    en: Gravelmail Cavern Armor
+  - key: s_172_name
+    ja: "\u7FE0\u6838\u306E\u9271\u77F3\u74B0"
+    en: Verdant Core Ore Ring
+  - key: s_173_name
+    ja: "\u7A7F\u5CA9\u30C9\u30EA\u30EB\u30E9\u30F3\u30B9"
+    en: Drill Lance of the Piercing Stone
+  - key: s_174_name
+    ja: "\u5CA9\u7532\u30D3\u30FC\u30C8\u30EB\u30AC\u30FC\u30C9"
+    en: Beetle Guard Carapace
+  - key: s_175_name
+    ja: "\u6DF1\u7FE0\u306E\u7D50\u6676\u4F69\u7389"
+    en: Deep Verdant Crystal Charm
+  - key: s_176_name
+    ja: "\u71FC\u5C3E\u306E\u7114\u5203"
+    en: Cinder Tail Flameblade
+  - key: s_177_name
+    ja: "\u6EB6\u5FC3\u6838\u93A7"
+    en: Molten Core Armor
+  - key: s_178_name
+    ja: "\u8D64\u9AB8\u708E\u5263"
+    en: Redbone Flame Sword
+  - key: s_179_name
+    ja: "\u7194\u9C57\u91CD\u7532"
+    en: Magma Scale Heavy Armor
+  - key: s_180_name
+    ja: "\u7070\u7FFC\u51A5\u6676"
+    en: Ashwing Nether Crystal
+  - key: s_181_name
+    ja: "\u707C\u754C\u7ADC\u73E0"
+    en: Inferno Dragon Orb
+  - key: s_182_name
+    ja: "\u6C37\u6676\u7259\u5263"
+    en: Frostfang Crystal Blade
+  - key: s_183_name
+    ja: "\u51CD\u9AA8\u971C\u93A7"
+    en: Frozen Bone Frost Armor
+  - key: s_184_name
+    ja: "\u767D\u9280\u72FC\u5957"
+    en: Silverwolf Mantle
+  - key: s_185_name
+    ja: "\u6C37\u7FFC\u306E\u8B77\u7B26"
+    en: Icewing Talisman
+  - key: s_186_name
+    ja: "\u971C\u5DE8\u306E\u6C37\u7532"
+    en: Frost Giant Iceplate
+  - key: s_187_name
+    ja: "\u6C37\u738B\u6838\u306E\u6307\u8F2A"
+    en: Ring of the Frost King Core
+  - key: s_188_name
+    ja: "\u98A8\u5203\u5263\u30A2\u30EB\u30C6\u30A3\u30A2"
+    en: Windblade Altia
+  - key: s_189_name
+    ja: "\u5CE1\u5F71\u306E\u8EFD\u93A7"
+    en: Canyon Shadow Light Armor
+  - key: s_190_name
+    ja: "\u63FA\u98A8\u6838\u30ED\u30C3\u30C9"
+    en: Windsway Core Rod
+  - key: s_191_name
+    ja: "\u65AD\u5D16\u8DF3\u8E8D\u5177"
+    en: Cliffjumper Gear
+  - key: s_192_name
+    ja: "\u7A7A\u88C2\u84BC\u74B0"
+    en: Skytear Azure Ring
+  - key: s_193_name
+    ja: "\u5D50\u7259\u30DE\u30F3\u30C8"
+    en: Stormfang Mantle
+  - key: s_194_name
+    ja: "\u84BC\u96F7\u6EF4\u5263"
+    en: Azure Thunder Dripblade
+  - key: s_195_name
+    ja: "\u96F7\u9AB8\u93A7"
+    en: Thunderbone Armor
+  - key: s_196_name
+    ja: "\u9ED2\u722A\u96FB\u6838"
+    en: Blackclaw Thunder Core
+  - key: s_197_name
+    ja: "\u96F7\u6BBB\u91CD\u76FE"
+    en: Thunder Shell Greatshield
+  - key: s_198_name
+    ja: "\u84BC\u7FFC\u96F7\u88C5"
+    en: Azurewing Thunder Gear
+  - key: s_199_name
+    ja: "\u96F7\u6676\u53CC\u74B0"
+    en: Twin Thunder Crystal Rings
+  - key: s_200_name
+    ja: "\u5D29\u7802\u306E\u66F2\u5200"
+    en: Sandfall Curved Blade
+  - key: s_201_name
+    ja: "\u714C\u7532\u30B9\u30AB\u30E9\u30D9\u76FE"
+    en: Scarab Radiant Shield
+  - key: s_202_name
+    ja: "\u86C7\u7259\u306E\u546A\u5203"
+    en: Serpent Fang Cursed Blade
+  - key: s_203_name
+    ja: "\u53E4\u7891\u306E\u65AD\u939A"
+    en: Ancient Monolith Warhammer
+  - key: s_204_name
+    ja: "\u6D41\u7802\u306E\u7E8F\u5E03"
+    en: Quicksand Cloak
+  - key: s_205_name
+    ja: "\u738B\u5893\u53CC\u6708\u5263"
+    en: Twin Moon Pharaoh Blades
+  - key: s_206_name
+    ja: "\u8150\u80DE\u7815\u939A"
+    en: Rotspore Crusher
+  - key: s_207_name
+    ja: "\u673D\u9AB8\u306E\u8E0F\u93A7"
+    en: Decayed Bone Greaves
+  - key: s_208_name
+    ja: "\u78A7\u6BD2\u7259\u5263"
+    en: Venomfang Blade
+  - key: s_209_name
+    ja: "\u8150\u68EE\u7E8F\u8863"
+    en: Blightforest Cloak
+  - key: s_210_name
+    ja: "\u7D2B\u7634\u738B\u51A0"
+    en: Violet Miasma Crown
+  - key: s_211_name
+    ja: "\u7634\u74B0\u306E\u546A\u8F2A"
+    en: Cursed Miasma Ring
+  - key: s_212_name
+    ja: "\u546A\u523B\u65AD\u5203"
+    en: Runecut Cleaver
+  - key: s_213_name
+    ja: "\u66B4\u7259\u9B54\u5178"
+    en: Rampant Grimoire Fang
+  - key: s_214_name
+    ja: "\u9ED2\u6EF4\u6838\u8863"
+    en: Blackdrop Core Robe
+  - key: s_215_name
+    ja: "\u66F8\u6BBB\u91CD\u8155"
+    en: Tomeplate Gauntlets
+  - key: s_216_name
+    ja: "\u8A60\u74B0\u970A\u9396"
+    en: Chanting Spirit Chain
+  - key: s_217_name
+    ja: "\u7981\u5178\u84BC\u6756"
+    en: Forbidden Codex Staff
+  - key: s_218_name
+    ja: "\u9AB8\u5F71\u306E\u7E2B\u5203"
+    en: Shadowbone Stitchblade
+  - key: s_219_name
+    ja: "\u63FA\u5F71\u306E\u60AA\u622F\u74B0"
+    en: Trickster Ring of the Shifting Shade
+  - key: s_220_name
+    ja: "\u5438\u5149\u306E\u51A5\u88C5"
+    en: Lightdrain Nether Armor
+  - key: s_221_name
+    ja: "\u6B8B\u5F71\u7259\u9396"
+    en: Afterimage Fang Chain
+  - key: s_222_name
+    ja: "\u5E7D\u5E55\u306E\u9ED2\u706F"
+    en: Blackveil Spirit Lantern
+  - key: s_223_name
+    ja: "\u7E2B\u5F71\u738B\u306E\u65AD\u7AE0\u5916\u5957"
+    en: Shadow King Fragment Mantle
+  - key: s_224_name
+    ja: "\u53CD\u8EE2\u9AB8\u5203"
+    en: Reversed Bone Blade
+  - key: s_225_name
+    ja: "\u5897\u6620\u6838\u73E0"
+    en: Echoing Mirror Core Orb
+  - key: s_226_name
+    ja: "\u93E1\u6BBB\u88C5\u7532"
+    en: Mirror Shell Armor
+  - key: s_227_name
+    ja: "\u865A\u5F71\u53CC\u5203"
+    en: Phantom Twin Blades
+  - key: s_228_name
+    ja: "\u7815\u93E1\u970A\u74B0"
+    en: Shattered Mirror Spirit Ring
+  - key: s_229_name
+    ja: "\u4E07\u8C61\u53CD\u5C04\u5916\u5957"
+    en: Omnireflection Cloak
+  - key: s_230_name
+    ja: "\u7D05\u7A7F"
+    en: Crimson Piercer
+  - key: s_231_name
+    ja: "\u4F9B\u5100\u6838"
+    en: Sacrificial Core
+  - key: s_232_name
+    ja: "\u8840\u6EF4\u738B\u51A0"
+    en: Blooddrop Crown
+  - key: s_233_name
+    ja: "\u72C2\u4FE1\u5203"
+    en: Fanatic Blade
+  - key: s_234_name
+    ja: "\u8D64\u6676\u5DE8\u6BBB"
+    en: Red Crystal Colossus Carapace
+  - key: s_235_name
+    ja: "\u8840\u738B\u6838\u74B0"
+    en: Blood King Core Ring
+  - key: s_236_name
+    ja: "\u5149\u819C\u5263\u30A2\u30A6\u30E9\u30D6\u30EC\u30A4\u30C9"
+    en: Aurablade of the Radiant Veil
+  - key: s_237_name
+    ja: "\u900F\u754C\u6838\u306E\u6D41\u52D5\u30B3\u30A2"
+    en: Flowing Core of the Translucent Realm
+  - key: s_238_name
+    ja: "\u6DF1\u7D2B\u9B54\u88C5\u30F4\u30A1\u30A4\u30AA\u30EC\u30C3\u30C8\u30EC\u30AC\u30EA\u30A2"
+    en: Violet Regalia of the Deep Arcane
+  - key: s_239_name
+    ja: "\u76FE\u6BBB\u30AC\u30FC\u30C7\u30A3\u30A2\u30F3\u30B7\u30A7\u30EB"
+    en: Guardian Shell Bulwark
+  - key: s_240_name
+    ja: "\u7D0B\u7AE0\u970A\u74B0\u30A8\u30FC\u30C6\u30EB\u30EA\u30F3\u30B0"
+    en: Ether Ring of the Sigil Spirit
+  - key: s_241_name
+    ja: "\u7D50\u754C\u6A5F\u95A2\u30D7\u30ED\u30C6\u30AF\u30B7\u30AA\u30F3\u30FB\u30CF\u30FC\u30C8"
+    en: Protection Heart Barrier Engine
+  - key: s_242_name
+    ja: "\u6642\u88C2\u304D\u306E\u504F\u4F4D\u938C"
+    en: Chronosplit Deviant Scythe
+  - key: s_243_name
+    ja: "\u77AC\u9583\u53CC\u7259"
+    en: Flashfang Twin Blades
+  - key: s_244_name
+    ja: "\u505C\u6EDE\u306E\u7C98\u6676\u93A7"
+    en: Stagnant Crystal Slime Armor
+  - key: s_245_name
+    ja: "\u7802\u74B0\u306E\u55B0\u523B\u5916\u5957"
+    en: Time Eater Cloak of the Sand Ring
+  - key: s_246_name
+    ja: "\u76E4\u74B0\u306E\u6B6A\u5149\u74B0"
+    en: Distorted Halo of the Clock Ring
+  - key: s_247_name
+    ja: "\u738B\u523B\u306E\u5D29\u5929\u6838"
+    en: Cataclysm Core of the Time King
+  - key: s_248_name
+    ja: "\u661F\u9AB8\u93A7"
+    en: Starbone Armor
+  - key: s_249_name
+    ja: "\u661F\u6CE1\u6838"
+    en: Starlight Core Orb
+  - key: s_250_name
+    ja: "\u9ED2\u661F\u9B54\u5203"
+    en: Blackstar Sorcery Blade
+  - key: s_251_name
+    ja: "\u6B6A\u6BBB\u76FE"
+    en: Warp Shell Shield
+  - key: s_252_name
+    ja: "\u6D41\u661F\u74B0"
+    en: Meteor Ring
+  - key: s_253_name
+    ja: "\u661F\u55B0\u5927\u5263"
+    en: Star Devourer Greatsword
+  - key: s_254_name
+    ja: "\u523B\u5370\u51E6\u5211\u5263\u30FB\u30DC\u30FC\u30F3\u30A8\u30B0\u30BC\u30AD\u30E5\u30FC\u30BF\u30FC"
+    en: Bone Executor Engraved Execution Blade
+  - key: s_255_name
+    ja: "\u96B7\u5C5E\u306E\u7D05\u9396\u9996\u8F2A"
+    en: Crimson Chain Collar of Subjugation
+  - key: s_256_name
+    ja: "\u7D0B\u7AE0\u6838\u306E\u6D41\u8EE2\u73E0"
+    en: Sigil Core Orb of the Endless Cycle
+  - key: s_257_name
+    ja: "\u95D8\u6280\u77F3\u58C1\u306E\u5DE8\u88C5\u7532"
+    en: Colosseum Stonewall Colossal Armor
+  - key: s_258_name
+    ja: "\u8A93\u6587\u6E26\u5DFB\u306E\u970A\u6756"
+    en: Oathswirl Spirit Staff
+  - key: s_259_name
+    ja: "\u4E07\u5951\u738B\u8863\u30A2\u30A6\u30B9\u30FB\u30EC\u30AC\u30EA\u30A2"
+    en: Aus Regalia Mantle of the Pact King
+  - key: s_260_name
+    ja: "\u8F2A\u5EFB\u65AD\u5203\u30FB\u30EA\u30D5\u30EC\u30A4\u30F3\u30A8\u30C3\u30B8"
+    en: Refrain Edge Blade of Reincarnation
+  - key: s_261_name
+    ja: "\u518D\u751F\u6838\u30C9\u30ED\u30FC\u30E0\u30CF\u30FC\u30C8"
+    en: Dromeheart Regeneration Core
+  - key: s_262_name
+    ja: "\u53CD\u97FF\u9B54\u7FFC\u30B8\u30E3\u30B0\u30EB\u30EB"
+    en: Jaglur Echoing Demon Wings
+  - key: s_263_name
+    ja: "\u74B0\u6BBB\u7A7F\u69CD\u30A4\u30F3\u30BB\u30AF\u30C8\u30A5\u30B9"
+    en: Insectus Carapace Piercer
+  - key: s_264_name
+    ja: "\u7121\u7AAE\u970A\u74B0\u30B7\u30B0\u30DE\u30EA\u30A2"
+    en: Sigmaria Infinite Spirit Ring
+  - key: s_265_name
+    ja: "\u6C38\u52AB\u738B\u51A0\u30A4\u30F3\u30D5\u30A3\u30CB\u30AF\u30B9"
+    en: Infinix Eternal Crown
+  - key: s_266_name
+    ja: "\u9AB8\u7D99\u306E\u7570\u9AA8\u5927\u5263"
+    en: Aberrant Bone Greatsword
+  - key: s_267_name
+    ja: "\u904E\u88C5\u88C2\u706B\u306E\u9B54\u5C0E\u9283\u88C5"
+    en: Overloaded Flame Arcane Gunblade
+  - key: s_268_name
+    ja: "\u878D\u8755\u6838\u306E\u66B4\u6DB2\u6307\u8F2A"
+    en: Corrosion Core Liquid Ring
+  - key: s_269_name
+    ja: "\u7832\u57CE\u5805\u6BBB\u306E\u8981\u585E\u80F8\u7532"
+    en: Fortress Carapace Siegeplate
+  - key: s_270_name
+    ja: "\u6EC5\u706F\u306E\u7D05\u51A5\u6D6E\u73E0"
+    en: Crimson Nether Orb of Extinction
+  - key: s_271_name
+    ja: "\u7D42\u585E\u7687\u306E\u5DE8\u6EC5\u65AC"
+    en: Cataclysm Blade of the Final Bastion
+  - key: s_272_name
+    ja: "\u51A5\u9AB8\u65AD\u938C\u30B0\u30ED\u30FC\u30E0\u30B5\u30A4\u30BA"
+    en: Gloomscythe of the Netherbone
+  - key: s_273_name
+    ja: "\u4FB5\u8755\u6838\u30E1\u30EB\u30C6\u30A3\u30A2\u30ED\u30FC\u30D6"
+    en: Meltia Corrosion Core Robe
+  - key: s_274_name
+    ja: "\u5996\u95C7\u773C\u51A0\u30CE\u30AF\u30B9\u30EA\u30E0"
+    en: Noxrim Crown of the Abyssal Eye
+  - key: s_275_name
+    ja: "\u8150\u6BBB\u88C5\u7532\u30B0\u30E9\u30C7\u30A3\u30A6\u30B9\u30B7\u30A7\u30EB"
+    en: Gladius Shell Corrupted Armor
+  - key: s_276_name
+    ja: "\u6E26\u5F71\u970A\u73E0\u30F4\u30A9\u30A4\u30C9\u30AA\u30FC\u30D6"
+    en: Void Orb of the Spiral Shade
+  - key: s_277_name
+    ja: "\u6DF1\u6DF5\u738B\u7B0F\u30A2\u30D3\u30B9\u30EC\u30AC\u30EA\u30A2"
+    en: Abyss Regalia Scepter
+  - key: s_278_name
+    ja: "\u865A\u9AA8\u306E\u7121\u5F69\u5263"
+    en: Colorless Bone Blade
+  - key: s_279_name
+    ja: "\u96F6\u900F\u6838\u306E\u865A\u6EB6\u69CD"
+    en: Voidmelt Spear of the Null Core
+  - key: s_280_name
+    ja: "\u7121\u97FF\u306E\u5F71\u88C2\u8863"
+    en: Silent Shadow Ripper Cloak
+  - key: s_281_name
+    ja: "\u66D6\u6627\u5883\u754C\u306E\u865A\u93A7"
+    en: Ambiguous Voidplate Armor
+  - key: s_282_name
+    ja: "\u7A7A\u767D\u71D0\u5149\u306E\u6DE1\u74B0"
+    en: Pale Ring of the Blank Phosphor
+  - key: s_283_name
+    ja: "\u7121\u9762\u7D71\u5236\u306E\u865A\u76E3\u74B0"
+    en: Nullwarden Ring of Faceless Control
+  - key: s_284_name
+    ja: "\u9ED2\u9AA8\u306E\u6226\u9AB8\u5263"
+    en: Warbone Blackblade
+  - key: s_285_name
+    ja: "\u5C4D\u5175\u4E71\u821E\u306E\u9B54\u5203\u5177"
+    en: Undead Legion Arcane Weapon
+  - key: s_286_name
+    ja: "\u6D41\u5203\u306E\u9ED2\u6676\u80F8\u93A7"
+    en: Blackcrystal Chestplate of the Flowing Blade
+  - key: s_287_name
+    ja: "\u5C16\u89D2\u7532\u6BBB\u306E\u6226\u515C"
+    en: War Helm of the Spiked Carapace
+  - key: s_288_name
+    ja: "\u8840\u971E\u306E\u6028\u74B0"
+    en: Bloodmist Vengeful Ring
+  - key: s_289_name
+    ja: "\u9ED2\u66DC\u8987\u5C06\u306E\u7D71\u51A0"
+    en: Obsidian Warlord Crown
+  - key: s_290_name
+    ja: "\u795E\u9AB8\u65AD\u5263\u30B0\u30ED\u30EA\u30A2\u30B9\u30FB\u30EA\u30D6"
+    en: Glorious Rib Divine Bonebreaker
+  - key: s_291_name
+    ja: "\u8056\u878D\u6838\u30AA\u30EB\u30D3\u30B9\u30FB\u30BC\u30EA\u30AA\u30B9"
+    en: Orbis Zelios Divine Core
+  - key: s_292_name
+    ja: "\u71BE\u5929\u8F2A\u88C5\u30A2\u30EB\u30AB\u30FB\u30DF\u30CB\u30B9\u30C8\u30E9"
+    en: Arca Ministra Seraphic Halo Armor
+  - key: s_293_name
+    ja: "\u795E\u6BBB\u5DE8\u88C5\u30D8\u30EA\u30AA\u30FB\u30D5\u30E9\u30B0\u30E1\u30F3\u30C8"
+    en: Helio Fragment Divine Shell Armor
+  - key: s_294_name
+    ja: "\u767D\u91D1\u970A\u74B0\u30EB\u30DF\u30CA\u30FB\u30A2\u30A6\u30E9"
+    en: Lumina Aura Platinum Spirit Ring
+  - key: s_295_name
+    ja: "\u5815\u795E\u8987\u5263\u30EC\u30E0\u30CA\u30F3\u30C8\u30FB\u30A8\u30AF\u30B9\u30B7\u30A2"
+    en: Remnant Exsia Fallen God Blade
+  - key: s_296_name
+    ja: "\u4E07\u5F69\u9AB8\u5203\u30AB\u30AA\u30B9\u30EA\u30FC\u30D1\u30FC"
+    en: Chaos Reaper Prism Bone Blade
+  - key: s_297_name
+    ja: "\u6D41\u8EE2\u6838\u30B9\u30E9\u30A4\u30E0\u30AA\u30FC\u30D6"
+    en: Slime Orb of Eternal Flux
+  - key: s_298_name
+    ja: "\u6B6A\u66F2\u9B54\u5203\u30C7\u30A3\u30B9\u30C8\u30FC\u30B7\u30E7\u30F3\u30C0\u30AC\u30FC"
+    en: Distortion Dagger
+  - key: s_299_name
+    ja: "\u5D29\u661F\u91CD\u6BBB\u30AB\u30BF\u30B9\u30C8\u30D6\u30EC\u30B9\u30C8"
+    en: Catastrophe Breastplate
+  - key: s_300_name
+    ja: "\u865A\u6EC5\u970A\u74B0\u30A2\u30DD\u30AB\u30EA\u30D7\u30B9\u30EA\u30F3\u30B0"
+    en: Apocalypse Spirit Ring
+  - key: s_301_name
+    ja: "\u7D42\u7109\u8987\u9C57\u30A8\u30F3\u30C9\u30E9\u30B0\u30CA\u30A2\u30FC\u30DE\u30FC"
+    en: Endragna Armor of the Final Dragon
+  - key: s_302_name
+    ja: "\u865A\u754C\u65AD\u88C2\u5263"
+    en: Void Riftbreaker

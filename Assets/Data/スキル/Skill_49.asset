@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11f00f49a0d2dbf4bad6fe11e9dd5d19, type: 3}
+  m_Name: Skill_49
+  m_EditorClassIdentifier: 
+  skillId: 49
+  nameKey: skill_49_name
+  descriptionKey: Skill_49_des
+  triggerType: 4
+  waveInterval: 0
+  timeInterval: 0
+  actionType: 2
+  percentValue: 0
+  flatValue: 0
+  probability: 0.005
+  activeSkill: {fileID: 11400000, guid: e55ef79873e2c50409db50256edad36b, type: 2}
+  specialMedalPrefab: {fileID: 8993808988398658555, guid: 74c8bd3e27a4d2949ad85ac3c9b7d3e4, type: 3}

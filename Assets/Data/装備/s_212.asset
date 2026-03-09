@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00db274e49b999949bb495aa9ae8dfa3, type: 3}
+  m_Name: s_212
+  m_EditorClassIdentifier: 
+  id: s_212
+  nameKey: s_212_name
+  icon: {fileID: -5860234366985736507, guid: 0ba2404a07ff90647b39bdfb8a1f5ad0, type: 3}
+  rarity: 1
+  attackAdd: 98
+  attackRate: 0.49
+  simultaneousShotRate: 0
+  criticalAdd: 0.022
+  criticalDamageAdd: 0.061
+  attackMedal2xAdd: 0.022
+  attackMedal5xAdd: 0.011
+  attackMedal10xAdd: 0.001
+  maxMedalAdd: 0
+  maxMedalRate: 0
+  noMedalConsumeAdd: 0
+  recoveryWaveMedalValueAdd: 0
+  recoveryWaveDurationAdd: 3
+  goldDropAdd: 0
+  equipmentDropAdd: 0
+  titleDropAdd: 0
+  skills: []

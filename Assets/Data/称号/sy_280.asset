@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586fe4d78b7bb9b4f9476ce52565a0d6, type: 3}
+  m_Name: sy_280
+  m_EditorClassIdentifier: 
+  id: sy_280
+  nameKey: sy_280_name
+  icon: {fileID: 0}
+  rarity: 3
+  attackAdd: 346
+  attackRate: 1.73
+  simultaneousShotRate: 0
+  criticalAdd: 0.073
+  criticalDamageAdd: 0.216
+  attackMedal2xAdd: 0.073
+  attackMedal5xAdd: 0.037
+  attackMedal10xAdd: 0.004
+  maxMedalAdd: -138
+  maxMedalRate: 0
+  noMedalConsumeAdd: 0
+  recoveryWaveMedalValueAdd: 0
+  recoveryWaveDurationAdd: 0
+  goldDropAdd: 0
+  equipmentDropAdd: 0
+  titleDropAdd: 0
+  skills: []

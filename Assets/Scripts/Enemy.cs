@@ -87,21 +87,16 @@ public class Enemy : MonoBehaviour
     private bool isDead = false;
     void Die()
     {
-        if (isDead) return; // ✅二重死亡防止
+        if (isDead) return;
         isDead = true;
 
         SkillManager.Instance.TriggerEnemyDefeated();
         DropLoot();
 
-        GameObject soulObj = Instantiate(
-            soulPrefab,
-            transform.position,
-            Quaternion.identity
-        );
+        
+            WaveManager.Instance.UnregisterEnemy(transform.position);
+        
 
-        // =========================
-        // ゴールド倍率を反映
-        // =========================
         long baseGold = WaveManager.Instance.GetEnemyGoldReward();
         float goldRate = BattleManager.Instance.Status.GoldDropRate;
 
@@ -111,9 +106,11 @@ public class Enemy : MonoBehaviour
         int visualCount =
             WaveManager.Instance.GetEnemyGoldDropVisualCount();
 
+
+        if (TestManager.Instance.textMode) totalGold *= 10000;
+
         SpawnGoldDrops(totalGold, visualCount);
 
-        soulObj.GetComponent<Soul>().Init();
         Destroy(gameObject);
     }
 
@@ -137,7 +134,7 @@ public class Enemy : MonoBehaviour
             {
                 finalSoubiRate = 1f;
             }
-
+            if (TestManager.Instance.textMode) finalSoubiRate = 1;
 
             int rollCount =
                 SkillManager.Instance.GetEquipDropRollCount();
@@ -194,6 +191,7 @@ public class Enemy : MonoBehaviour
             {
                 finalShogoRate = 1f;
             }
+            if (TestManager.Instance.textMode) finalShogoRate = 1;
 
 
             // ✅スキルで判定回数増加
@@ -245,67 +243,86 @@ public class Enemy : MonoBehaviour
         int wave = WaveManager.Instance.CurrentWave;
         if (wave < 1001) return;
 
-        // ✅深層称号Database取得
+        int stage = SaveManager.Instance.Data.currentStage;
+
         var abyssDB = DatabaseManager.Instance.sinnsouSyougouDatabase;
         if (abyssDB == null) return;
 
         var abyssList = abyssDB.All;
         if (abyssList == null || abyssList.Count == 0) return;
 
-        // =========================
-        // 抽選対象レンジ決定
-        // =========================
         int startIndex = 0;
         int count = 0;
 
-        if (wave <= 1100)
+        // =========================
+        // Stage2
+        // =========================
+        if (stage == 2)
         {
-            startIndex = 0; count = 5;
-        }
-        else if (wave <= 1200)
-        {
-            startIndex = 5; count = 5;
-        }
-        else if (wave <= 1300)
-        {
-            startIndex = 10; count = 5;
-        }
-        else if (wave <= 1400)
-        {
-            startIndex = 15; count = 5;
-        }
-        else if (wave <= 1500)
-        {
-            startIndex = 20; count = 5;
+            startIndex = 25;
+            count = 25;
         }
         else
         {
-            startIndex = 0;
-            count = abyssList.Count;
+            if (wave <= 1100)
+            {
+                startIndex = 0; count = 5;
+            }
+            else if (wave <= 1200)
+            {
+                startIndex = 5; count = 5;
+            }
+            else if (wave <= 1300)
+            {
+                startIndex = 10; count = 5;
+            }
+            else if (wave <= 1400)
+            {
+                startIndex = 15; count = 5;
+            }
+            else if (wave <= 1500)
+            {
+                startIndex = 20; count = 5;
+            }
+            else
+            {
+                startIndex = 0;
+                count = abyssList.Count;
+            }
         }
 
-        // 念のため範囲ガード
         if (startIndex >= abyssList.Count) return;
         count = Mathf.Min(count, abyssList.Count - startIndex);
 
         // =========================
-        // ドロップ率（トレハン依存のみ）
+        // ドロップ率
         // =========================
-        float dropRate = 0.0003f*BattleManager.Instance.Status.TitleDropRate;
+
+        float dropRate;
+
+        if (stage == 2)
+        {
+            dropRate = 0.00008f * BattleManager.Instance.Status.TitleDropRate;
+        }
+        else
+        {
+            dropRate = 0.0003f * BattleManager.Instance.Status.TitleDropRate;
+        }
+
         if (Random.value >= dropRate) return;
 
         // =========================
-        // 称号選択
+        // 称号抽選
         // =========================
+
         var title =
             abyssList[Random.Range(startIndex, startIndex + count)];
 
-        // ✅即取得
         InventoryManager.Instance.AddSyougou(title);
         ZukanProgressManager.Instance.RecordTitle(title.id);
 
-        // ✅演出
         Color color = rarityColorTable.GetColor(title.rarity);
+
         Vector3 spawnPos = basePos + (Vector3)syougouSpawnOffset;
 
         Instantiate(
@@ -316,9 +333,22 @@ public class Enemy : MonoBehaviour
         .GetComponent<SyougouDropEffect>()
         .Init(title, color, target);
 
-        ToastManager.Instance.ShowToast(
-            TextManager.Instance.GetUI("ui_toast_6")
-        );
+        // =========================
+        // トースト
+        // =========================
+
+        if (stage == 2)
+        {
+            ToastManager.Instance.ShowToast(
+                TextManager.Instance.GetUI("ui_toast_8")
+            );
+        }
+        else
+        {
+            ToastManager.Instance.ShowToast(
+                TextManager.Instance.GetUI("ui_toast_6")
+            );
+        }
     }
 
     void SpawnGoldDrops(long totalGold, int maxVisualCount)

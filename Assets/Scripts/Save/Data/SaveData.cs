@@ -4,9 +4,26 @@ using System.Collections.Generic;
 [Serializable]
 public class SaveData
 {
+    //======================
+    // Stage
+    //======================
+
+    public int currentStage = 1;
+
+    public bool stage2Unlocked = false;
+
+    public int stage1HighestWave = 1;
+    public int stage2HighestWave = 1;
+
+    // Stage1
+    public int stage1StartWave = 1;
+    public int stage1EndWave = 10;
+
+    // Stage2
+    public int stage2StartWave = 1;
+    public int stage2EndWave = 10;
     //戦闘設定
-    public int startWave = 1;
-    public int endWave = 10;
+    // Stage1
     // ✅追加：終了WaveがMaxだったか
     public bool isEndWaveMax = false;
     public int highestClearedWave = 0;

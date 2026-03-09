@@ -23,4 +23,4 @@ MonoBehaviour:
   flatValue: 3
   probability: 0.1
   activeSkill: {fileID: 0}
-  specialMedalPrefab: {fileID: 0}
+  specialMedalPrefab: {fileID: 8993808988398658555, guid: f9ac52a2a8c9df34d94150884360394a, type: 3}
