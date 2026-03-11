@@ -11,8 +11,14 @@ Builds/
 MemoryCaptures/
 Recordings/
 
-# TMP（環境依存）
+# =========================
+# TextMesh Pro（環境依存）
+# =========================
 Assets/TextMesh Pro/Resources/TMP Settings.asset
+Assets/TextMesh Pro/Fonts/*.asset
+Assets/TextMesh Pro/Fonts/*.asset.meta
+Assets/TextMesh Pro/Sprites/*.asset
+Assets/TextMesh Pro/Sprites/*.asset.meta
 
 # =========================
 # IDE / Editor
@@ -21,6 +27,12 @@ Assets/TextMesh Pro/Resources/TMP Settings.asset
 *.csproj
 *.sln
 .vsconfig
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
 
 # =========================
 # OS
