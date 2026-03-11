@@ -5493,6 +5493,7 @@ MonoBehaviour:
   monsterDatabase: {fileID: 11400000, guid: 4abb9ac70eb171641ac6e16a50685a8e, type: 2}
   soubiDatabase: {fileID: 11400000, guid: 243021e47d694a94f84c987db8f00cc6, type: 2}
   syougouDatabase: {fileID: 11400000, guid: a5cdd7c1104c29c4b8b5d5cf84c15aad, type: 2}
+  sinnsouSyougouDatabase: {fileID: 11400000, guid: 3ecd8e65b595dc546817d7a283502889, type: 2}
   progressText: {fileID: 126763258}
 --- !u!114 &126763258
 MonoBehaviour:
@@ -19677,7 +19678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.240509, y: 33.96631}
+  m_AnchoredPosition: {x: -4.2404785, y: 33.96631}
   m_SizeDelta: {x: -73.203, y: -370.11353}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &621633828

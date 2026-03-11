@@ -22,11 +22,13 @@ public class BattleSettingSaveBridge : MonoBehaviour
         {
             data.stage1StartWave = startWave;
             data.stage1EndWave = endWave;
+            SaveManager.Instance.Data.stage1Endless = AdventureSession.IsEndless;
         }
         else
         {
             data.stage2StartWave = startWave;
             data.stage2EndWave = endWave;
+            SaveManager.Instance.Data.stage2Endless = AdventureSession.IsEndless;
         }
 
         SaveManager.Instance.SaveToDisk();

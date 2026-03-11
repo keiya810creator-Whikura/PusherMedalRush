@@ -185,15 +185,28 @@ public class WaveRangeSliderUI : MonoBehaviour
             start
         );
 
-        bool isEndless = (end == endWaveSlider.maxValue);
+        bool isEndless =
+    stage == 1
+    ? save.stage1Endless
+    : save.stage2Endless;
 
         if (isEndless)
         {
+            endWaveSlider.SetValueWithoutNotify(endWaveSlider.maxValue);
+
+            AdventureSession.IsEndless = true;
+            AdventureSession.EndWave = (int)endWaveSlider.maxValue;
+
             endWaveText.text =
-                TextManager.Instance.GetUI("ui_mainmenu_1_13"); // 限界まで
+                TextManager.Instance.GetUI("ui_mainmenu_1_13");
         }
         else
         {
+            endWaveSlider.SetValueWithoutNotify(end);
+
+            AdventureSession.IsEndless = false;
+            AdventureSession.EndWave = end;
+
             endWaveText.text = string.Format(
                 TextManager.Instance.GetUI("ui_mainmenu_1_10"),
                 end);

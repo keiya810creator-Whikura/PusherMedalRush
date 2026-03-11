@@ -7,6 +7,7 @@ public class DexProgressUI : MonoBehaviour
     [SerializeField] private MonsterDatabase monsterDatabase;
     [SerializeField] private SoubiDatabase soubiDatabase;
     [SerializeField] private SyougouDatabase syougouDatabase;
+    [SerializeField] private SyougouDatabase sinnsouSyougouDatabase;
 
     [Header("UI")]
     [SerializeField] private TMP_Text progressText;
@@ -20,7 +21,7 @@ public class DexProgressUI : MonoBehaviour
     {
         int monsterTotal = monsterDatabase.All.Count;
         int equipTotal = soubiDatabase.All.Count;
-        int titleTotal = syougouDatabase.All.Count;
+        int titleTotal = syougouDatabase.All.Count+sinnsouSyougouDatabase.All.Count;
 
         // ✅遭遇数（Monster）
         int monsterEncountered =

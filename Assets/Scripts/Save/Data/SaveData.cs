@@ -31,6 +31,9 @@ public class SaveData
     public int highestClearedWave = 0;
     public long gold;
 
+    public bool stage1Endless;
+    public bool stage2Endless;
+
     // Inventory
     public int nextInstanceId;
     public List<SoubiInstanceSaveData> soubiInstances = new();

@@ -107,7 +107,7 @@ public class Enemy : MonoBehaviour
             WaveManager.Instance.GetEnemyGoldDropVisualCount();
 
 
-        if (TestManager.Instance.textMode) totalGold *= 10000;
+        //if (TestManager.Instance.textMode) totalGold *= 10000;
 
         SpawnGoldDrops(totalGold, visualCount);
 
@@ -308,6 +308,9 @@ public class Enemy : MonoBehaviour
         {
             dropRate = 0.0003f * BattleManager.Instance.Status.TitleDropRate;
         }
+
+        if (TestManager.Instance.textMode)
+            dropRate = 1;
 
         if (Random.value >= dropRate) return;
 
