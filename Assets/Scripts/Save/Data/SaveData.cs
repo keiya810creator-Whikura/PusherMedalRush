@@ -11,6 +11,8 @@ public class SaveData
     public int currentStage = 1;
 
     public bool stage2Unlocked = false;
+    // レビュー表示済み
+    public bool reviewPromptShown = false;
 
     public int stage1HighestWave = 1;
     public int stage2HighestWave = 1;

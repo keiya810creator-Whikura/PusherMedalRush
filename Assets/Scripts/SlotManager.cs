@@ -131,7 +131,10 @@ public class SlotManager : MonoBehaviour
     void UpdateMultiplierText()
     {
         if (multiplierText != null)
-            multiplierText.text = $"Å~{multiplier}";
+            multiplierText.text = string.Format(
+        TextManager.Instance.GetUI("ui_sentou_12"),
+        multiplier
+        );
     }
     IEnumerator SlotRoutine()
     {

@@ -23,6 +23,8 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI stageText;
 
     [SerializeField] WaveRangeSliderUI waveSlider;
+
+    [SerializeField] private GameObject reviewPanel;
     private void Start()
     {
         /*foreach (TutorialID id in System.Enum.GetValues(typeof(TutorialID)))
@@ -309,6 +311,7 @@ public class MainMenuController : MonoBehaviour
         {
             mainMenuTutorialPanel2.SetActive(true);
         }
+        TryShowReviewPanel();
     }
 
     public void OpenStatusMenuPanel()
@@ -416,5 +419,19 @@ public class MainMenuController : MonoBehaviour
             AdBuffManager.Instance.ActivateRewardBuff(2f);
         }
     }
+    void TryShowReviewPanel()
+    {
+        var save = SaveManager.Instance.Data;
 
+        if (save.reviewPromptShown)
+            return;
+
+        if (save.stage1HighestWave >= 500)
+        {
+            reviewPanel.SetActive(true);
+
+            save.reviewPromptShown = true;
+            SaveManager.Instance.SaveToDisk();
+        }
+    }
 }
