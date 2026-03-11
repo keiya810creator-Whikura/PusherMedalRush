@@ -98,7 +98,7 @@ public static class StatusUpgradeConfig
         {
             case PlayerStatusDatabase.StatusType.Attack:
             case PlayerStatusDatabase.StatusType.MaxMedal:
-                baseCost = 5; rate = 1.0151f; break;
+                baseCost = 5; rate = 1.0077f; break;
 
             case PlayerStatusDatabase.StatusType.ShotCount:
                 baseCost = 50000; rate = 7f; break;
@@ -124,7 +124,7 @@ public static class StatusUpgradeConfig
             case PlayerStatusDatabase.StatusType.GoldDropRate:
             case PlayerStatusDatabase.StatusType.EquipDropRate:
             case PlayerStatusDatabase.StatusType.TitleDropRate:
-                baseCost = 5000; rate = 1.0074f; break;
+                baseCost = 5000; rate = 1.004f; break;
 
             default:
                 baseCost = 5; rate = 1.0545f; break;
@@ -141,13 +141,13 @@ public static class StatusUpgradeConfig
         new Dictionary<PlayerStatusDatabase.StatusType, int>()
     {
     // ✅1000回
-    { PlayerStatusDatabase.StatusType.Attack, 999 },
-    { PlayerStatusDatabase.StatusType.MaxMedal, 999 },
+    { PlayerStatusDatabase.StatusType.Attack, 2000 },
+    { PlayerStatusDatabase.StatusType.MaxMedal, 2000 },
     { PlayerStatusDatabase.StatusType.CriticalDamageRate, 1000 },
 
-    { PlayerStatusDatabase.StatusType.GoldDropRate, 1000 },
-    { PlayerStatusDatabase.StatusType.EquipDropRate, 1000 },
-    { PlayerStatusDatabase.StatusType.TitleDropRate, 1000 },
+    { PlayerStatusDatabase.StatusType.GoldDropRate, 2000 },
+    { PlayerStatusDatabase.StatusType.EquipDropRate, 2000 },
+    { PlayerStatusDatabase.StatusType.TitleDropRate, 2000 },
 
     // ✅5回
     { PlayerStatusDatabase.StatusType.ShotCount, 5 },
