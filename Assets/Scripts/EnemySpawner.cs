@@ -30,33 +30,30 @@ public class EnemySpawner : MonoBehaviour
         // =========================
         if (currentWave == 1500)
         {
-            const int oneBasedIndex = 151;
-            int index = oneBasedIndex - 1;
+            MonsterData boss1500 = monsterDatabase.monsterList
+                .FirstOrDefault(m =>
+                    m.stageId == stageId &&
+                    m.isBoss &&
+                    m.minWave <= currentWave &&
+                    m.maxWave >= currentWave);
 
-            if (monsterDatabase == null || monsterDatabase.monsterList == null)
+            if (boss1500 == null)
             {
-                Debug.LogError("monsterDatabase / monsterList null");
+                Debug.LogError($"1500 boss not found for {stageId}");
                 return;
             }
 
-            if (monsterDatabase.monsterList.Count <= index)
-            {
-                Debug.LogError($"monsterList不足 Count={monsterDatabase.monsterList.Count}");
-                return;
-            }
-
-            MonsterData selectedSpecial = monsterDatabase.monsterList[index];
-
-            ZukanProgressManager.Instance.RecordEncounter(selectedSpecial.id);
+            ZukanProgressManager.Instance.RecordEncounter(boss1500.id);
 
             GameObject enemy =
-                Instantiate(selectedSpecial.prefab, transform.position, Quaternion.identity);
+                Instantiate(boss1500.prefab, transform.position, Quaternion.identity);
 
             long hp = WaveManager.Instance.GetEnemyHP();
-            enemy.GetComponent<Enemy>().Init(selectedSpecial, hp);
+            enemy.GetComponent<Enemy>().Init(boss1500, hp);
 
             return;
         }
+
 
         List<MonsterData> candidates;
 

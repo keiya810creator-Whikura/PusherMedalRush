@@ -1,12 +1,23 @@
 # ninja log v5
+7	2269	7936112769346931	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	8edcead36e16e89f
 68	450	7936112751030087	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	16cf81ff91236191
+21	2218	7936112768893427	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	82bd562bb36e1d2f
 453	746	7936112753903211	C:/Users/KEIYA/Documents/GitHub/PusherMedalRush/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4q155m2f/obj/armeabi-v7a/libswappywrapper.so	c8a17c393d64569b
 38	1832	7936112764960009	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	c1b1b6398c78f1f9
+46	2038	7936112767088996	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9fa16701b56aa5cd
 14	1848	7936112765146134	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	50a2ce9f257f55aa
 29	1883	7936112765500344	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	3168b8e3577763e6
-59	1926	7936112765977257	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b5c97e8a3029e47d
 1	1949	7936112766167816	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	99aa37a9924a7ac8
-46	2038	7936112767088996	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9fa16701b56aa5cd
-21	2218	7936112768893427	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	82bd562bb36e1d2f
-7	2269	7936112769346931	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	8edcead36e16e89f
+59	1926	7936112765977257	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b5c97e8a3029e47d
 2270	2372	7936112770460172	C:/Users/KEIYA/Documents/GitHub/PusherMedalRush/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4q155m2f/obj/armeabi-v7a/libgame.so	cb384768f9657357
+83	519	7949474529891464	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	16cf81ff91236191
+520	1230	7949474535668047	C:/Users/KEIYA/Documents/GitHub/PusherMedalRush/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4q155m2f/obj/armeabi-v7a/libswappywrapper.so	c8a17c393d64569b
+31	2525	7949474549522587	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	c1b1b6398c78f1f9
+15	2554	7949474550101850	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	50a2ce9f257f55aa
+50	2562	7949474550091715	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	3168b8e3577763e6
+23	2691	7949474551439469	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	99aa37a9924a7ac8
+39	2818	7949474552809286	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	b5c97e8a3029e47d
+72	2980	7949474554468868	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9fa16701b56aa5cd
+60	3124	7949474555898782	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	82bd562bb36e1d2f
+9	3244	7949474557076100	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	8edcead36e16e89f
+3245	3413	7949474558782129	C:/Users/KEIYA/Documents/GitHub/PusherMedalRush/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4q155m2f/obj/armeabi-v7a/libgame.so	cb384768f9657357

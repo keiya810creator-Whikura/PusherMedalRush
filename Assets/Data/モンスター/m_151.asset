@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: m_151
   nameKey: m_151_name
-  stageId: stage1
+  stageId: Stage1
   icon: {fileID: 4992795740451895645, guid: 7969ec7869150db48b3725ae2ca3c460, type: 3}
   prefab: {fileID: 3697148881137515047, guid: 2596fa596ba54e649bb6006fb2892848, type: 3}
   dropSoubiList:
