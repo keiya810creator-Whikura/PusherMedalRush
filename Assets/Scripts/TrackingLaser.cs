@@ -27,6 +27,8 @@ public class TrackingLaser : MonoBehaviour
 
     private void OnEnable()
     {
+        Destroy(gameObject, 5);
+
         damagePerHit = Mathf.CeilToInt(BattleManager.Instance.Status.Attack * .875f * BetManager.Instance.CurrentBet * BattleManager.Instance.Status.CriticalDamageRate);
         StartLaser();
     }

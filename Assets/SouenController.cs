@@ -5,7 +5,7 @@ public class SouenController : MonoBehaviour
 {
     [Header("Fall Settings")]
     [SerializeField] private float fallSpeed = 8f;
-    [SerializeField] private float lifeTime = 3f;
+    [SerializeField] private float lifeTime = 2f;
 
     private bool isFalling = false;
 

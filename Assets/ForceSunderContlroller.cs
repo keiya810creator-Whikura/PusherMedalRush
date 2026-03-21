@@ -11,6 +11,7 @@ public class ForceSunderContlroller : MonoBehaviour
 
     void Start()
     {
+        Destroy(gameObject, 2);
         // ✅敵が出現するまで待機開始
         StartCoroutine(WaitForEnemy());
     }

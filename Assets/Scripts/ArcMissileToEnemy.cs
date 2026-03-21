@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ArcHomingMissile : MonoBehaviour
 {
@@ -46,15 +46,39 @@ public class ArcHomingMissile : MonoBehaviour
 
     private void Start()
     {
+        // ★ここ追加
+        if (!HasEnemy())
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Destroy(gameObject, destroyTime);
 
         state = State.Rise;
 
         SetRotation(Vector2.up);
     }
+    // さらに軽量版（1フレームに1回だけ検索）
+    private static int lastCheckFrame = -1;
+    private static bool hasEnemyCache;
 
+    bool HasEnemy()
+    {
+        if (lastCheckFrame != Time.frameCount)
+        {
+            lastCheckFrame = Time.frameCount;
+
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag(targetTag);
+            hasEnemyCache = enemies.Length > 0;
+        }
+
+        return hasEnemyCache;
+    }
     void Update()
     {
+        searchTimer += Time.deltaTime; // ★追加
+
         switch (state)
         {
             case State.Rise:
@@ -92,7 +116,7 @@ public class ArcHomingMissile : MonoBehaviour
             }
             else
             {
-                // �����Ă�������֎U��
+                // 向いている方向へ散る
                 scatterDir = transform.up;
                 state = State.Scatter;
             }
@@ -169,8 +193,18 @@ public class ArcHomingMissile : MonoBehaviour
         arcControl = mid + Vector3.up * height + side * sideOffset;
     }
 
+    // 追加
+    private float searchTimer;
+    [SerializeField] private float searchInterval = 0.25f; // ★ここ調整（0.2〜0.5くらい）
+
     Transform FindTarget()
     {
+        // ★毎回検索しない
+        if (searchTimer < searchInterval)
+            return target;
+
+        searchTimer = 0f;
+
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(targetTag);
 
         if (enemies.Length == 0)

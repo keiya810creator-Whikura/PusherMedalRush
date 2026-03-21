@@ -24,6 +24,8 @@ public class DarkBallController : MonoBehaviour
 
     void Start()
     {
+        Destroy(gameObject, 5);
+
         AudioManager.Instance.PlaySE(AudioManager.Instance.darkBall);
         // ✅速度をランダム確定
         finalSpeed = Random.Range(
